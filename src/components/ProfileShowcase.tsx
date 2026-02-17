@@ -26,6 +26,41 @@ const profiles = [
     tag: "Hub",
   },
   {
+    name: "PhD Research Assistant",
+    desc: "AI-assisted research companion for PhD-level academic work.",
+    url: "https://kalilurrahman.github.io/PhDResearchAssistant.html",
+    screenshot: masterProfileScreenshot, // Placeholder
+    tag: "Tool",
+  },
+  {
+    name: "KR Prompts App",
+    desc: "Curated prompt library for working smarter with AI.",
+    url: "https://krpromptsapp.lovable.app/",
+    screenshot: masterProfileScreenshot, // Placeholder
+    tag: "Lovable App",
+  },
+  {
+    name: "Tech Curator Guide",
+    desc: "Interactive guide for technology curation and discovery.",
+    url: "https://kr-tech-curator-guide.lovable.app/",
+    screenshot: masterProfileScreenshot, // Placeholder
+    tag: "Lovable App",
+  },
+  {
+    name: "Pocket News",
+    desc: "Personalised news curation — stay informed on what matters.",
+    url: "https://kr-pocket-news.lovable.app/",
+    screenshot: masterProfileScreenshot, // Placeholder
+    tag: "Lovable App",
+  },
+  {
+    name: "Islamic Duas",
+    desc: "A personal collection of duas and supplications.",
+    url: "https://kr-islamic-duas.lovable.app/",
+    screenshot: masterProfileScreenshot, // Placeholder
+    tag: "Lovable App",
+  },
+  {
     name: "Framer Visual Portfolio",
     desc: "A modern visual portfolio with smooth animations, role-based profiles, and testimonials.",
     url: "https://kalilurrahman.framer.website/",
