@@ -10,6 +10,11 @@ import masterProfileScreenshot from "@/assets/screenshots/master-profile.png";
 import mainPortfolioScreenshot from "@/assets/screenshots/main-portfolio.png";
 import linktreeScreenshot from "@/assets/screenshots/linktree.png";
 
+import krPromptsCollage from "@/assets/screenshots/kr-prompts-app_collage.png";
+import techCuratorCollage from "@/assets/screenshots/tech-curator-guide_collage.png";
+import pocketNewsCollage from "@/assets/screenshots/pocket-news_collage.png";
+import islamicDuasCollage from "@/assets/screenshots/islamic-duas_collage.png";
+
 const profiles = [
   {
     name: "Main Portfolio",
@@ -29,35 +34,35 @@ const profiles = [
     name: "PhD Research Assistant",
     desc: "AI-assisted research companion for PhD-level academic work.",
     url: "https://kalilurrahman.github.io/PhDResearchAssistant.html",
-    screenshot: masterProfileScreenshot, // Placeholder
+    screenshot: masterProfileScreenshot, // Still using master profile as placeholder if no specific screenshot requested
     tag: "Tool",
   },
   {
     name: "KR Prompts App",
     desc: "Curated prompt library for working smarter with AI.",
     url: "https://krpromptsapp.lovable.app/",
-    screenshot: masterProfileScreenshot, // Placeholder
+    screenshot: krPromptsCollage,
     tag: "Lovable App",
   },
   {
     name: "Tech Curator Guide",
     desc: "Interactive guide for technology curation and discovery.",
     url: "https://kr-tech-curator-guide.lovable.app/",
-    screenshot: masterProfileScreenshot, // Placeholder
+    screenshot: techCuratorCollage,
     tag: "Lovable App",
   },
   {
     name: "Pocket News",
     desc: "Personalised news curation — stay informed on what matters.",
     url: "https://kr-pocket-news.lovable.app/",
-    screenshot: masterProfileScreenshot, // Placeholder
+    screenshot: pocketNewsCollage,
     tag: "Lovable App",
   },
   {
     name: "Islamic Duas",
     desc: "A personal collection of duas and supplications.",
     url: "https://kr-islamic-duas.lovable.app/",
-    screenshot: masterProfileScreenshot, // Placeholder
+    screenshot: islamicDuasCollage,
     tag: "Lovable App",
   },
   {

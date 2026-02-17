@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { ThemeToggle } from "./ThemeToggle";
 
 const navItems = [
   { label: "Summary", href: "#summary" },
@@ -56,20 +57,24 @@ const Navbar = () => {
               {item.label}
             </a>
           ))}
+          <ThemeToggle />
         </div>
 
         {/* Mobile toggle */}
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-foreground p-2"
-          aria-label="Toggle menu"
-        >
-          <div className="space-y-1.5">
-            <span className={`block w-5 h-px bg-foreground transition-transform ${isOpen ? "rotate-45 translate-y-[7px]" : ""}`} />
-            <span className={`block w-5 h-px bg-foreground transition-opacity ${isOpen ? "opacity-0" : ""}`} />
-            <span className={`block w-5 h-px bg-foreground transition-transform ${isOpen ? "-rotate-45 -translate-y-[7px]" : ""}`} />
-          </div>
-        </button>
+        <div className="flex items-center gap-2 md:hidden">
+          <ThemeToggle />
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="text-foreground p-2"
+            aria-label="Toggle menu"
+          >
+            <div className="space-y-1.5">
+              <span className={`block w-5 h-px bg-foreground transition-transform ${isOpen ? "rotate-45 translate-y-[7px]" : ""}`} />
+              <span className={`block w-5 h-px bg-foreground transition-opacity ${isOpen ? "opacity-0" : ""}`} />
+              <span className={`block w-5 h-px bg-foreground transition-transform ${isOpen ? "-rotate-45 -translate-y-[7px]" : ""}`} />
+            </div>
+          </button>
+        </div>
       </div>
 
       {/* Mobile menu */}
