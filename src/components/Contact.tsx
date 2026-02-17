@@ -13,9 +13,9 @@ const Contact = () => {
         className="max-w-2xl"
       >
         <p className="text-secondary-foreground/75 leading-relaxed mb-8">
-          Open to advisory conversations, board‑level discussions, speaking engagements,
-          and thought‑leadership collaborations. Please include a brief context (organisation,
-          topic, and timeline) and I'll respond as soon as possible.
+          Open to advisory conversations, board‑level discussions, speaking engagements, and thought‑leadership
+          collaborations. Please include a brief context (organisation, topic, and timeline) and I'll respond as soon as
+          possible.
         </p>
 
         <div className="space-y-4 mb-8">
@@ -25,8 +25,11 @@ const Contact = () => {
           </div>
           <div className="flex items-center gap-3 text-sm">
             <Mail className="w-4 h-4 text-primary" />
-            <a href="mailto:kalilur.rahman@gmail.com" className="text-foreground hover:text-primary transition-colors">
-              kalilur.rahman@gmail.com
+            <a
+              href="mailto:rahman.kalilur@outlook.com"
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              Email
             </a>
           </div>
         </div>
