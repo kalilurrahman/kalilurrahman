@@ -11,11 +11,13 @@ import ProfileShowcase from "@/components/ProfileShowcase";
 import OmniChannel from "@/components/OmniChannel";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
+      <ScrollToTop />
       <Hero />
       <ExecutiveSummary />
       <div className="section-divider" />
