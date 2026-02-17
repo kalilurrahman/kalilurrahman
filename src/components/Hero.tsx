@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Download } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const badges = [
@@ -70,7 +70,24 @@ const Hero = () => {
               <ExternalLink className="w-4 h-4" />
             </a>
             <a
+              href="https://kalilurrahman.framer.website/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 border border-primary/40 text-primary font-medium text-sm tracking-wide hover:bg-primary/10 transition-colors"
+            >
+              <Download className="w-4 h-4" />
+              Download CV / Resume
+            </a>
+            <a
               href="#contact"
+              onClick={(e) => {
+                e.preventDefault();
+                const el = document.querySelector("#contact");
+                if (el) {
+                  const top = el.getBoundingClientRect().top + window.scrollY - 60;
+                  window.scrollTo({ top, behavior: "smooth" });
+                }
+              }}
               className="inline-flex items-center gap-2 px-6 py-3 border border-border text-foreground font-medium text-sm tracking-wide hover:border-primary/50 transition-colors"
             >
               Get in Touch

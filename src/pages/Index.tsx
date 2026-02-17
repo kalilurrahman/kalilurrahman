@@ -5,6 +5,7 @@ import Leadership from "@/components/Leadership";
 import DataAI from "@/components/DataAI";
 import Books from "@/components/Books";
 import Awards from "@/components/Awards";
+import Certifications from "@/components/Certifications";
 import ProfileShowcase from "@/components/ProfileShowcase";
 import OmniChannel from "@/components/OmniChannel";
 import Contact from "@/components/Contact";
@@ -24,6 +25,8 @@ const Index = () => {
       <Books />
       <div className="section-divider" />
       <Awards />
+      <div className="section-divider" />
+      <Certifications />
       <div className="section-divider" />
       <ProfileShowcase />
       <div className="section-divider" />
