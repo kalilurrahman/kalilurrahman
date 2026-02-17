@@ -6,6 +6,7 @@ const navItems = [
   { label: "Data & AI", href: "#data-ai" },
   { label: "Books", href: "#books" },
   { label: "Awards", href: "#awards" },
+  { label: "Profiles", href: "#profiles" },
   { label: "Links", href: "#omni" },
   { label: "Contact", href: "#contact" },
 ];
