@@ -1,73 +1,85 @@
-# Welcome to your Lovable project
+# Kalilur Rahman - Professional Portfolio & Landing Page
 
-## Project info
+This repository hosts the source code for the professional portfolio and landing page of **Kalilur Rahman**, a Global IT Executive, Author, and Kaggle Grandmaster. The site showcases his extensive career, achievements, publications, and digital presence across various platforms.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Project Overview
 
-## How can I edit this code?
+This project is a modern, responsive single-page application built with React, TypeScript, and Tailwind CSS. It features a clean design with smooth animations and interactive elements to highlight key professional milestones.
 
-There are several ways of editing your application.
+### Key Sections
+- **Hero Section**: Introduction and key stats.
+- **Executive Summary**: Overview of professional mission and strengths.
+- **Leadership**: Details on enterprise transformation and GCC leadership.
+- **Data & AI**: Highlights of Kaggle Grandmaster status and data science work.
+- **Books & Publications**: Showcase of authored books and research papers.
+- **Awards & Recognition**: List of industry awards and accolades.
+- **Certifications**: Professional certifications and badges.
+- **Profile Showcase**: Links to various digital profiles including GitHub, Kaggle, and Framer.
+- **Mentorship & Community**: (New) Information on GLEAC Mentorship and Della Leaders Club membership.
+- **Omni-Channel Presence**: Consolidated links to all social and professional channels.
 
-**Use Lovable**
+## Tech Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+- **Framework**: [React](https://reactjs.org/) with [Vite](https://vitejs.dev/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components**: [shadcn/ui](https://ui.shadcn.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Routing**: [React Router](https://reactrouter.com/)
+- **Testing**: [Vitest](https://vitest.dev/)
 
-Changes made via Lovable will be committed automatically to this repo.
+## Getting Started
 
-**Use your preferred IDE**
+### Prerequisites
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- Node.js & npm (or bun/yarn/pnpm) installed.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Installation
 
-Follow these steps:
+1.  Clone the repository:
+    ```bash
+    git clone <repository-url>
+    cd <repository-directory>
+    ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+3.  Start the development server:
+    ```bash
+    npm run dev
+    ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+4.  Open your browser and navigate to `http://localhost:8080` (or the port shown in your terminal).
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+## Building for Production
+
+To build the project for production:
+
+```bash
+npm run build
 ```
 
-**Edit a file directly in GitHub**
+This will generate the static files in the `dist` directory, ready for deployment.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Deployment
 
-**Use GitHub Codespaces**
+The project is designed to be deployed on platforms like Vercel, Netlify, or GitHub Pages.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
+For Lovable deployment:
 Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
 
-## Can I connect a custom domain to my Lovable project?
+## Author
 
-Yes, you can!
+**Kalilur Rahman**
+- [LinkedIn](https://www.linkedin.com/in/kalilurrahman/)
+- [GitHub](https://github.com/kalilurrahman)
+- [Kaggle](https://www.kaggle.com/kalilurrahman)
+- [Website](https://kalilurrahman.github.io/)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## License
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+This project is licensed under the MIT License.

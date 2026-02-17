@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import ExecutiveSummary from "@/components/ExecutiveSummary";
 import Leadership from "@/components/Leadership";
+import Mentorship from "@/components/Mentorship";
 import DataAI from "@/components/DataAI";
 import Books from "@/components/Books";
 import Awards from "@/components/Awards";
@@ -19,6 +20,8 @@ const Index = () => {
       <ExecutiveSummary />
       <div className="section-divider" />
       <Leadership />
+      <div className="section-divider" />
+      <Mentorship />
       <div className="section-divider" />
       <DataAI />
       <div className="section-divider" />
