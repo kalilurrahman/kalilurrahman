@@ -1,12 +1,33 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import ExecutiveSummary from "@/components/ExecutiveSummary";
+import Leadership from "@/components/Leadership";
+import DataAI from "@/components/DataAI";
+import Books from "@/components/Books";
+import Awards from "@/components/Awards";
+import OmniChannel from "@/components/OmniChannel";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <Navbar />
+      <Hero />
+      <ExecutiveSummary />
+      <div className="section-divider" />
+      <Leadership />
+      <div className="section-divider" />
+      <DataAI />
+      <div className="section-divider" />
+      <Books />
+      <div className="section-divider" />
+      <Awards />
+      <div className="section-divider" />
+      <OmniChannel />
+      <div className="section-divider" />
+      <Contact />
+      <Footer />
     </div>
   );
 };
