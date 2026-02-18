@@ -70,7 +70,7 @@ const Hero = () => {
               <ExternalLink className="w-4 h-4" />
             </a>
             <a
-              href="https://kalilurrahman.framer.website/"
+              href="https://www.linkedin.com/in/kalilurrahman/overlay/1735344498686/single-media-viewer/?profileId=ACoAAA2T1rcBaEMOH-v4KDMJZZLSHiIpRjE5Jkk"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 border border-primary/40 text-primary font-medium text-sm tracking-wide hover:bg-primary/10 transition-colors"
