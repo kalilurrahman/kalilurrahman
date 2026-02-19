@@ -12,6 +12,7 @@ import OmniChannel from "@/components/OmniChannel";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
+import KnowledgeHubSection from "@/components/KnowledgeHubSection";
 
 const Index = () => {
   return (
@@ -32,6 +33,8 @@ const Index = () => {
       <Awards />
       <div className="section-divider" />
       <Certifications />
+      <div className="section-divider" />
+      <KnowledgeHubSection />
       <div className="section-divider" />
       <ProfileShowcase />
       <div className="section-divider" />
