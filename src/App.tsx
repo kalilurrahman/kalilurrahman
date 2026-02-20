@@ -6,19 +6,24 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "next-themes";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import DigitalHub from "./pages/DigitalHub";
+import KnowledgeHubPage from "./pages/KnowledgeHubPage";
+import AgenticAIPage from "./pages/AgenticAIPage";
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+    <ThemeProvider attribute="class" defaultTheme="dark" enableSystem themes={["light", "dark", "sepia", "midnight"]}>
       <TooltipProvider>
         <Toaster />
         <Sonner />
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="/digital-hub" element={<DigitalHub />} />
+            <Route path="/knowledge-hub" element={<KnowledgeHubPage />} />
+            <Route path="/ai-agents" element={<AgenticAIPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

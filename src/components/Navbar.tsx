@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { ThemeToggle } from "./ThemeToggle";
 
 const navItems = [
@@ -10,6 +11,12 @@ const navItems = [
   { label: "Certs", href: "#certifications" },
   { label: "Profiles", href: "#profiles" },
   { label: "Contact", href: "#contact" },
+];
+
+const pageLinks = [
+  { label: "📚 Knowledge Hub", to: "/knowledge-hub" },
+  { label: "🤖 AI Agents", to: "/ai-agents" },
+  { label: "Digital Hub", to: "/digital-hub" },
 ];
 
 const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -56,6 +63,15 @@ const Navbar = () => {
             >
               {item.label}
             </a>
+          ))}
+          {pageLinks.map((pl) => (
+            <Link
+              key={pl.label}
+              to={pl.to}
+              className="text-xs tracking-[0.05em] text-primary bg-primary/10 border border-primary/20 rounded px-2 py-0.5 hover:bg-primary/20 transition-colors"
+            >
+              {pl.label}
+            </Link>
           ))}
           <ThemeToggle />
         </div>
