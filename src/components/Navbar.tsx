@@ -19,6 +19,13 @@ const pageLinks = [
   { label: "Digital Hub", to: "/digital-hub" },
 ];
 
+const profileLinks = [
+  { label: "AI Advisor", to: "/profile/ai-advisor" },
+  { label: "GCC Advisor", to: "/profile/gcc-advisor" },
+  { label: "CoE Champion", to: "/profile/coe-champion" },
+  { label: "DX Champion", to: "/profile/digital-transformation" },
+];
+
 const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
   e.preventDefault();
   if (href === "#") {
@@ -73,6 +80,15 @@ const Navbar = () => {
               {pl.label}
             </Link>
           ))}
+          {profileLinks.map((pl) => (
+            <Link
+              key={pl.label}
+              to={pl.to}
+              className="text-xs tracking-[0.05em] text-accent bg-accent/10 border border-accent/20 rounded px-2 py-0.5 hover:bg-accent/20 transition-colors"
+            >
+              {pl.label}
+            </Link>
+          ))}
           <ThemeToggle />
         </div>
 
@@ -110,6 +126,17 @@ const Navbar = () => {
                 {item.label}
               </a>
             ))}
+            <div className="border-t border-border pt-3 space-y-2">
+              {pageLinks.map((pl) => (
+                <Link key={pl.label} to={pl.to} onClick={() => setIsOpen(false)} className="block text-sm text-primary hover:underline">{pl.label}</Link>
+              ))}
+            </div>
+            <div className="border-t border-border pt-3 space-y-2">
+              <span className="text-[10px] uppercase tracking-wider text-muted-foreground font-bold">Role Profiles</span>
+              {profileLinks.map((pl) => (
+                <Link key={pl.label} to={pl.to} onClick={() => setIsOpen(false)} className="block text-sm text-accent hover:underline">{pl.label}</Link>
+              ))}
+            </div>
           </div>
         </div>
       )}

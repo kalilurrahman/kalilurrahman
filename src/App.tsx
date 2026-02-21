@@ -9,6 +9,11 @@ import NotFound from "./pages/NotFound";
 import DigitalHub from "./pages/DigitalHub";
 import KnowledgeHubPage from "./pages/KnowledgeHubPage";
 import AgenticAIPage from "./pages/AgenticAIPage";
+import ProfileAIAdvisor from "./pages/ProfileAIAdvisor";
+import ProfileGCCAdvisor from "./pages/ProfileGCCAdvisor";
+import ProfileCoEChampion from "./pages/ProfileCoEChampion";
+import ProfileDigitalTransformation from "./pages/ProfileDigitalTransformation";
+import InstallPage from "./pages/InstallPage";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +29,11 @@ const App = () => (
             <Route path="/digital-hub" element={<DigitalHub />} />
             <Route path="/knowledge-hub" element={<KnowledgeHubPage />} />
             <Route path="/ai-agents" element={<AgenticAIPage />} />
+            <Route path="/profile/ai-advisor" element={<ProfileAIAdvisor />} />
+            <Route path="/profile/gcc-advisor" element={<ProfileGCCAdvisor />} />
+            <Route path="/profile/coe-champion" element={<ProfileCoEChampion />} />
+            <Route path="/profile/digital-transformation" element={<ProfileDigitalTransformation />} />
+            <Route path="/install" element={<InstallPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
