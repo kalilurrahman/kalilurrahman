@@ -69,23 +69,6 @@ const fadeUp = {
 export default function DigitalHub() {
   return (
     <div className="min-h-screen bg-background">
-      {/* Nav */}
-      <nav className="sticky top-0 z-50 bg-card/80 backdrop-blur-md border-b border-border">
-        <div className="max-w-[1200px] mx-auto px-6 h-14 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2.5 no-underline">
-            <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center text-xs font-mono font-semibold text-primary-foreground">KR</div>
-            <div>
-              <div className="font-semibold text-sm text-foreground">Kalilur Rahman</div>
-              <div className="text-[10px] text-muted-foreground font-mono">Global IT Executive · Author · Kaggle Grandmaster</div>
-            </div>
-          </Link>
-          <div className="hidden md:flex items-center gap-1">
-            <Link to="/" className="px-2.5 py-1 rounded-md text-xs font-medium text-muted-foreground hover:bg-secondary hover:text-foreground transition-colors">Home</Link>
-            <Link to="/knowledge-hub" className="px-2.5 py-1 rounded-md text-xs font-medium text-primary bg-primary/10 border border-primary/20 transition-colors">📚 Knowledge Hub</Link>
-            <Link to="/ai-agents" className="px-2.5 py-1 rounded-md text-xs font-medium text-primary bg-primary/10 border border-primary/20 transition-colors">🤖 AI Agents</Link>
-          </div>
-        </div>
-      </nav>
 
       {/* Hero */}
       <motion.section className="text-center py-14 px-6 relative overflow-hidden" {...fadeUp}>

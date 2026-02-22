@@ -101,24 +101,6 @@ export default function KnowledgeHubPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Nav */}
-      <nav className="sticky top-0 z-50 bg-card/80 backdrop-blur-md border-b border-border">
-        <div className="max-w-[1100px] mx-auto px-6 flex items-center justify-between">
-          <div className="flex items-center gap-2.5 py-2.5 border-b border-border w-full text-xs text-muted-foreground">
-            <Link to="/" className="text-muted-foreground hover:text-primary transition-colors no-underline">← Portfolio</Link>
-            <span className="text-border">·</span>
-            <Link to="/digital-hub" className="text-muted-foreground hover:text-primary transition-colors no-underline">Hub</Link>
-            <span className="text-border">·</span>
-            <span className="text-foreground/70">Knowledge Hub</span>
-            <div className="ml-auto flex gap-2">
-              <Link to="/ai-agents" className="text-xs text-muted-foreground border border-border rounded-md px-2.5 py-1 hover:border-primary hover:text-primary transition-colors no-underline">🤖 AI Agents</Link>
-            </div>
-          </div>
-        </div>
-        <div className="max-w-[1100px] mx-auto px-6 h-12 flex items-center justify-between">
-          <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center text-xs font-mono font-semibold text-primary-foreground">KR</div>
-        </div>
-      </nav>
 
       <main className="max-w-[1100px] mx-auto px-6 py-10">
         {/* Hero */}

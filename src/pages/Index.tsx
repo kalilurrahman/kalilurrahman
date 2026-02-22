@@ -1,4 +1,3 @@
-import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import ExecutiveSummary from "@/components/ExecutiveSummary";
 import Leadership from "@/components/Leadership";
@@ -17,7 +16,6 @@ import KnowledgeHubSection from "@/components/KnowledgeHubSection";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
       <ScrollToTop />
       <Hero />
       <ExecutiveSummary />
