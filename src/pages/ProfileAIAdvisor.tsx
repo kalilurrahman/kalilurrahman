@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ExternalLink, Brain, Sparkles, BookOpen, Award, Cpu, Database, Bot, GraduationCap } from "lucide-react";
-import { ThemeToggle } from "@/components/ThemeToggle";
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
@@ -54,22 +53,6 @@ const engagementTypes = [
 export default function ProfileAIAdvisor() {
   return (
     <div className="min-h-screen bg-background">
-      {/* Nav */}
-      <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-        <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2.5 no-underline">
-            <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center text-xs font-mono font-semibold text-primary-foreground">KR</div>
-            <span className="text-sm font-medium text-foreground hidden sm:block">AI Advisor Profile</span>
-          </Link>
-          <div className="flex items-center gap-3">
-            <Link to="/" className="text-xs text-muted-foreground hover:text-primary transition-colors">Home</Link>
-            <Link to="/profile/gcc-advisor" className="text-xs text-muted-foreground hover:text-primary transition-colors hidden sm:block">GCC</Link>
-            <Link to="/profile/coe-champion" className="text-xs text-muted-foreground hover:text-primary transition-colors hidden sm:block">CoE</Link>
-            <Link to="/profile/digital-transformation" className="text-xs text-muted-foreground hover:text-primary transition-colors hidden sm:block">DX</Link>
-            <ThemeToggle />
-          </div>
-        </div>
-      </nav>
 
       {/* Hero */}
       <motion.section className="relative py-20 px-6 overflow-hidden" {...fadeUp}>

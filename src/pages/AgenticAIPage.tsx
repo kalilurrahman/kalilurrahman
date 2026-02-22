@@ -34,23 +34,6 @@ export default function AgenticAIPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="sticky top-0 z-50 bg-card/90 backdrop-blur-md border-b border-border">
-        <div className="max-w-[1600px] mx-auto px-6 h-14 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2.5 no-underline">
-            <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center text-xs font-mono font-semibold text-primary-foreground">KR</div>
-            <div className="hidden sm:block">
-              <div className="font-semibold text-sm text-foreground">Kalilur Rahman</div>
-              <div className="text-[10px] text-muted-foreground font-mono">Agentic AI Library</div>
-            </div>
-          </Link>
-          <div className="hidden md:flex items-center gap-1">
-            <Link to="/" className="px-2.5 py-1 rounded-md text-xs text-muted-foreground hover:bg-secondary transition-colors no-underline">Home</Link>
-            <Link to="/digital-hub" className="px-2.5 py-1 rounded-md text-xs text-muted-foreground hover:bg-secondary transition-colors no-underline">Digital Hub</Link>
-            <Link to="/knowledge-hub" className="px-2.5 py-1 rounded-md text-xs text-muted-foreground hover:bg-secondary transition-colors no-underline">📚 Knowledge Hub</Link>
-          </div>
-        </div>
-      </header>
 
       <div className="flex">
         {/* Sidebar */}

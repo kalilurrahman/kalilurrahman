@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "next-themes";
+import Navbar from "./components/Navbar";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import DigitalHub from "./pages/DigitalHub";
@@ -24,6 +25,8 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <Navbar />
+          <div className="pt-12">
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/digital-hub" element={<DigitalHub />} />
@@ -36,6 +39,7 @@ const App = () => (
             <Route path="/install" element={<InstallPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
+          </div>
         </BrowserRouter>
       </TooltipProvider>
     </ThemeProvider>
