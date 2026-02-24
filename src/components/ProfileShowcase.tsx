@@ -16,6 +16,7 @@ import krPromptsCollage from "@/assets/screenshots/kr-prompts-app_collage.png";
 import techCuratorCollage from "@/assets/screenshots/tech-curator-guide_collage.png";
 import pocketNewsCollage from "@/assets/screenshots/pocket-news_collage.png";
 import islamicDuasCollage from "@/assets/screenshots/islamic-duas_collage.png";
+import trainingPortfolioScreenshot from "@/assets/screenshots/training-portfolio.png";
 
 const profiles = [
   {
@@ -67,6 +68,14 @@ const profiles = [
     url: "https://kr-islamic-duas.lovable.app/",
     screenshot: islamicDuasCollage,
     tag: "Lovable App",
+  },
+  {
+    name: "Training Portfolio",
+    desc: "60 strategic corporate training programs across Quality Engineering, AI & GenAI, Healthcare, GCC Strategy, and Leadership — delivered in-person and virtually.",
+    url: "https://kr-training-portfolio.lovable.app/",
+    screenshot: trainingPortfolioScreenshot,
+    tag: "Lovable App",
+    stats: ["60 Programs", "15+ Industry Tracks", "4 Delivery Formats"],
   },
   {
     name: "Framer Visual Portfolio",

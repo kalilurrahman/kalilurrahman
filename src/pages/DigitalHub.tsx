@@ -37,6 +37,7 @@ const ghPages = [
   { emoji: "🤖", type: "Static Site · v3.0", name: "Agentic AI Library", desc: "350+ AI agent definitions across 28 categories — Technology, Research, Advisory, Engineering and more.", link: "/ai-agents", external: false },
   { emoji: "📖", type: "GitHub · Open Source", name: "Quality Engineering Book by LLMs", desc: "An experimental book on Quality Engineering generated entirely by large language models.", link: "https://github.com/kalilurrahman/QualityEngineeringBookByLLMs", external: true },
   { emoji: "🌐", type: "Portfolio Site", name: "Main Portfolio", desc: "Global IT Executive portfolio — executive summary, leadership, books, awards, projects, and omni-channel presence.", link: "/", external: false },
+  { emoji: "🎓", type: "Lovable App", name: "Training Portfolio", desc: "60 strategic corporate training programs across QE, AI, Healthcare, GCC Strategy & Leadership.", link: "https://kr-training-portfolio.lovable.app/", external: true },
 ];
 
 const platforms = [
