@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ExternalLink, Brain, Sparkles, BookOpen, Award, Cpu, Database, Bot, GraduationCap } from "lucide-react";
+import profileAiHero from "@/assets/profile-ai-hero.jpg";
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
@@ -56,8 +57,10 @@ export default function ProfileAIAdvisor() {
 
       {/* Hero */}
       <motion.section className="relative py-20 px-6 overflow-hidden" {...fadeUp}>
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/5 pointer-events-none" />
-        <div className="absolute top-10 right-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute inset-0">
+          <img src={profileAiHero} alt="" className="w-full h-full object-cover opacity-15 dark:opacity-20" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background" />
+        </div>
         <div className="max-w-5xl mx-auto relative">
           <div className="flex items-center gap-3 mb-6">
             <span className="px-3 py-1 bg-primary/10 border border-primary/20 rounded-full text-xs text-primary font-medium">🤖 AI Advisor</span>

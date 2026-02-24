@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ExternalLink, Building2, Users, TrendingUp, Globe, Target, BarChart3, Shield, Briefcase } from "lucide-react";
+import profileGccHero from "@/assets/profile-gcc-hero.jpg";
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
@@ -50,7 +51,10 @@ export default function ProfileGCCAdvisor() {
 
       {/* Hero */}
       <motion.section className="relative py-20 px-6 overflow-hidden" {...fadeUp}>
-        <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-background to-primary/5 pointer-events-none" />
+        <div className="absolute inset-0">
+          <img src={profileGccHero} alt="" className="w-full h-full object-cover opacity-15 dark:opacity-20" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background" />
+        </div>
         <div className="max-w-5xl mx-auto relative">
           <div className="flex items-center gap-3 mb-6">
             <span className="px-3 py-1 bg-primary/10 border border-primary/20 rounded-full text-xs text-primary font-medium">🏢 GCC Advisor</span>

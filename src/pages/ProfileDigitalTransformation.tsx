@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ExternalLink, Zap, Rocket, Globe, Award, Lightbulb, BarChart3, Smartphone, Cloud } from "lucide-react";
+import profileDxHero from "@/assets/profile-dx-hero.jpg";
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
@@ -58,8 +59,10 @@ export default function ProfileDigitalTransformation() {
 
       {/* Hero */}
       <motion.section className="relative py-20 px-6 overflow-hidden" {...fadeUp}>
-        <div className="absolute inset-0 bg-gradient-to-br from-accent/8 via-background to-primary/8 pointer-events-none" />
-        <div className="absolute -bottom-20 -right-20 w-[500px] h-[500px] bg-primary/3 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute inset-0">
+          <img src={profileDxHero} alt="" className="w-full h-full object-cover opacity-15 dark:opacity-20" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background" />
+        </div>
         <div className="max-w-5xl mx-auto relative">
           <div className="flex items-center gap-3 mb-6">
             <span className="px-3 py-1 bg-primary/10 border border-primary/20 rounded-full text-xs text-primary font-medium">🚀 Digital Transformation</span>
