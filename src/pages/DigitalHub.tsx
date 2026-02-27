@@ -38,6 +38,9 @@ const ghPages = [
   { emoji: "📖", type: "GitHub · Open Source", name: "Quality Engineering Book by LLMs", desc: "An experimental book on Quality Engineering generated entirely by large language models.", link: "https://github.com/kalilurrahman/QualityEngineeringBookByLLMs", external: true },
   { emoji: "🌐", type: "Portfolio Site", name: "Main Portfolio", desc: "Global IT Executive portfolio — executive summary, leadership, books, awards, projects, and omni-channel presence.", link: "/", external: false },
   { emoji: "🎓", type: "Lovable App", name: "Training Portfolio", desc: "60 strategic corporate training programs across QE, AI, Healthcare, GCC Strategy & Leadership.", link: "https://kr-training-portfolio.lovable.app/", external: true },
+  { emoji: "🏢", type: "Lovable App", name: "GCC Playbook", desc: "Comprehensive guide to building and scaling Global Capability Centers — phases, maturity, geography.", link: "https://kr-gcc-playbook.lovable.app", external: true },
+  { emoji: "⚛️", type: "Lovable App", name: "Quantum Computing Guide", desc: "201 essential quantum computing terms — searchable glossary across 6 categories.", link: "https://kr-quantum-hub.lovable.app/", external: true },
+  { emoji: "🧠", type: "Lovable App", name: "Agentic AI Prompts Hub", desc: "200+ agentic AI prompts with PDF/JSON export and custom library upload.", link: "https://kr-agentic-ai-prompts.lovable.app", external: true },
 ];
 
 const platforms = [
