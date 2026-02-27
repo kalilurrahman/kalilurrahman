@@ -17,6 +17,9 @@ import techCuratorCollage from "@/assets/screenshots/tech-curator-guide_collage.
 import pocketNewsCollage from "@/assets/screenshots/pocket-news_collage.png";
 import islamicDuasCollage from "@/assets/screenshots/islamic-duas_collage.png";
 import trainingPortfolioScreenshot from "@/assets/screenshots/training-portfolio.png";
+import gccPlaybookScreenshot from "@/assets/screenshots/gcc-playbook.png";
+import quantumHubScreenshot from "@/assets/screenshots/quantum-hub.png";
+import agenticAIPromptsScreenshot from "@/assets/screenshots/agentic-ai-prompts.png";
 
 const profiles = [
   {
@@ -76,6 +79,30 @@ const profiles = [
     screenshot: trainingPortfolioScreenshot,
     tag: "Lovable App",
     stats: ["60 Programs", "15+ Industry Tracks", "4 Delivery Formats"],
+  },
+  {
+    name: "GCC Playbook",
+    desc: "Comprehensive guide to building, scaling, and optimizing Global Capability Centers — covering lifecycle phases, maturity levels, geographies, and proven strategies.",
+    url: "https://kr-gcc-playbook.lovable.app",
+    screenshot: gccPlaybookScreenshot,
+    tag: "Lovable App",
+    stats: ["6,000+ GCCs", "1,700+ in India", "$64.6B Export Value"],
+  },
+  {
+    name: "Quantum Computing Guide",
+    desc: "Pocket glossary of 201 essential quantum computing terms — searchable, filterable across Physics, Hardware, Gates, Algorithms, Error Correction & Security.",
+    url: "https://kr-quantum-hub.lovable.app/",
+    screenshot: quantumHubScreenshot,
+    tag: "Lovable App",
+    stats: ["201 Terms", "6 Categories", "Offline Ready"],
+  },
+  {
+    name: "Agentic AI Prompts Hub",
+    desc: "Browse 200+ agentic AI prompts grouped by category — export as PDF or JSON. Upload your own prompt library for a fully customisable experience.",
+    url: "https://kr-agentic-ai-prompts.lovable.app",
+    screenshot: agenticAIPromptsScreenshot,
+    tag: "Lovable App",
+    stats: ["200+ Prompts", "100 Agents", "PDF & JSON Export"],
   },
   {
     name: "Framer Visual Portfolio",
