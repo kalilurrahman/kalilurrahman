@@ -41,6 +41,7 @@ const ghPages = [
   { emoji: "🏢", type: "Lovable App", name: "GCC Playbook", desc: "Comprehensive guide to building and scaling Global Capability Centers — phases, maturity, geography.", link: "https://kr-gcc-playbook.lovable.app", external: true },
   { emoji: "⚛️", type: "Lovable App", name: "Quantum Computing Guide", desc: "201 essential quantum computing terms — searchable glossary across 6 categories.", link: "https://kr-quantum-hub.lovable.app/", external: true },
   { emoji: "🧠", type: "Lovable App", name: "Agentic AI Prompts Hub", desc: "200+ agentic AI prompts with PDF/JSON export and custom library upload.", link: "https://kr-agentic-ai-prompts.lovable.app", external: true },
+  { emoji: "💹", type: "Lovable App", name: "Financial Engineering & Advisory Prompts", desc: "1,120+ curated prompts across 3 AI platforms with Bloomberg-style FINPROMPT Terminal.", link: "https://kr-finance-prompt-hub.lovable.app/", external: true },
 ];
 
 const platforms = [
