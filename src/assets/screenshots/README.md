@@ -1,58 +1,23 @@
 # Screenshots Directory
 
-This folder contains screenshots and generated collages of the main portfolio and supplementary applications, used to showcase the projects in the `README.md`.
+This directory contains screenshots used in the main repository's `README.md` to showcase the UI of the Kalilur Rahman Portfolio and its associated applications.
 
-## Main Portfolio
-![Main Portfolio](./main-portfolio.png)
+## Recently Added/Updated App Screenshots
 
-## Professional Profiles
-| Amazon Author | GitHub Profile | Kaggle Profile |
-| :---: | :---: | :---: |
-| ![Amazon Author](./amazon-author.png) | ![GitHub Profile](./github-profile.png) | ![Kaggle Profile](./kaggle-profile.png) |
+Below are screenshots for the main portfolio application (responsive views):
 
-| Linktree | Framer Portfolio | Master Profile |
-| :---: | :---: | :---: |
-| ![Linktree](./linktree.png) | ![Framer Portfolio](./framer-portfolio.png) | ![Master Profile](./master-profile.png) |
+- `portfolio-home_desktop.png` - Home page desktop view.
+- `portfolio-home_mobile.png` - Home page mobile view.
+- `portfolio-library_desktop.png` - `/library` page desktop view.
+- `portfolio-library_mobile.png` - `/library` page mobile view.
 
-## Specialized Prompts & Guides
-| Agentic AI Prompts | Finance Prompts | GCC Playbook |
-| :---: | :---: | :---: |
-| ![Agentic AI Prompts](./agentic-ai-prompts.png) | ![Finance Prompts](./finance-prompts.png) | ![GCC Playbook](./gcc-playbook.png) |
+## Supplemental Ecosystem Apps (Collages)
 
-| PhD Research Assistant | Quantum Hub | Training Portfolio |
-| :---: | :---: | :---: |
-| ![PhD Research Assistant](./phd-research-assistant.png) | ![Quantum Hub](./quantum-hub.png) | ![Training Portfolio](./training-portfolio.png) |
+These images combine desktop and mobile views of associated projects:
 
-## Generated App Collages
+- `kr-prompts-app_collage.png`
+- `tech-curator-guide_collage.png`
+- `pocket-news_collage.png`
+- `islamic-duas_collage.png`
 
-These are automatically generated using the `generate_app_screenshots.py` script.
-
-### KR Prompts App
-![KR Prompts App Collage](./kr-prompts-app_collage.png)
-
-### Tech Curator Guide
-![Tech Curator Guide Collage](./tech-curator-guide_collage.png)
-
-### Pocket News
-![Pocket News Collage](./pocket-news_collage.png)
-
-### Islamic Duas
-![Islamic Duas Collage](./islamic-duas_collage.png)
-
-## Generated Device Screenshots
-
-### KR Prompts App
-- [Desktop](./kr-prompts-app_desktop.png)
-- [Mobile](./kr-prompts-app_mobile.png)
-
-### Tech Curator Guide
-- [Desktop](./tech-curator-guide_desktop.png)
-- [Mobile](./tech-curator-guide_mobile.png)
-
-### Pocket News
-- [Desktop](./pocket-news_desktop.png)
-- [Mobile](./pocket-news_mobile.png)
-
-### Islamic Duas
-- [Desktop](./islamic-duas_desktop.png)
-- [Mobile](./islamic-duas_mobile.png)
+*(Additional full-resolution desktop and mobile images for these apps are also available in this directory.)*
