@@ -20,6 +20,7 @@ import trainingPortfolioScreenshot from "@/assets/screenshots/training-portfolio
 import gccPlaybookScreenshot from "@/assets/screenshots/gcc-playbook.png";
 import quantumHubScreenshot from "@/assets/screenshots/quantum-hub.png";
 import agenticAIPromptsScreenshot from "@/assets/screenshots/agentic-ai-prompts.png";
+import financePromptsScreenshot from "@/assets/screenshots/finance-prompts.png";
 
 const profiles = [
   {
@@ -46,10 +47,11 @@ const profiles = [
   },
   {
     name: "KR Prompts App",
-    desc: "Curated prompt library for working smarter with AI.",
+    desc: "Comprehensive LLM Prompts Library — 510 expert AI prompts across 46 categories for reasoning, research, creative work & professional problem-solving. Download in CSV, Markdown, JSON or Text.",
     url: "https://krpromptsapp.lovable.app/",
     screenshot: krPromptsCollage,
     tag: "Lovable App",
+    stats: ["510 Prompts", "46 Categories", "5 Export Formats"],
   },
   {
     name: "Tech Curator Guide",
@@ -103,6 +105,14 @@ const profiles = [
     screenshot: agenticAIPromptsScreenshot,
     tag: "Lovable App",
     stats: ["200+ Prompts", "100 Agents", "PDF & JSON Export"],
+  },
+  {
+    name: "Financial Engineering & Advisory Prompts",
+    desc: "Executive prompt compendium — 1,120+ curated prompts across 3 AI platforms. Bloomberg-style FINPROMPT Terminal with 500+ searchable prompts covering Strategy, M&A, Equity Research, Private Equity & Economics.",
+    url: "https://kr-finance-prompt-hub.lovable.app/",
+    screenshot: financePromptsScreenshot,
+    tag: "Lovable App",
+    stats: ["1,120+ Prompts", "3 AI Platforms", "FINPROMPT Terminal"],
   },
   {
     name: "Framer Visual Portfolio",
