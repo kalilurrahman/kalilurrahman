@@ -1,6 +1,8 @@
 # Kalilur Rahman - Professional Portfolio & Landing Page
 
-This repository hosts the source code for the professional portfolio and landing page of **Kalilur Rahman**, a Global IT Executive, Author, and Kaggle Grandmaster. The site showcases his extensive career, achievements, publications, and digital presence across various platforms.
+![Main Portfolio](src/assets/screenshots/main-portfolio.png)
+
+This repository hosts the source code for the professional portfolio and landing page of **Kalilur Rahman**, a Global IT Executive, Author, and Kaggle Grandmaster. The site showcases his extensive career, achievements, publications, and digital presence across various platforms. You can view the live site at [kalilurrahman.lovable.app](https://kalilurrahman.lovable.app/).
 
 ## Project Overview
 
@@ -17,6 +19,22 @@ This project is a modern, responsive single-page application built with React, T
 - **Profile Showcase**: Links to various digital profiles including GitHub, Kaggle, and Framer.
 - **Mentorship & Community**: (New) Information on GLEAC Mentorship and Della Leaders Club membership.
 - **Omni-Channel Presence**: Consolidated links to all social and professional channels.
+
+## App Showcases
+
+We have developed several supplementary apps that are part of the broader portfolio ecosystem.
+
+### KR Prompts App
+![KR Prompts App](src/assets/screenshots/kr-prompts-app_collage.png)
+
+### Tech Curator Guide
+![Tech Curator Guide](src/assets/screenshots/tech-curator-guide_collage.png)
+
+### Pocket News
+![Pocket News](src/assets/screenshots/pocket-news_collage.png)
+
+### Islamic Duas
+![Islamic Duas](src/assets/screenshots/islamic-duas_collage.png)
 
 ## Tech Stack
 
