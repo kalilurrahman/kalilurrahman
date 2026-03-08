@@ -44,6 +44,7 @@ const ghPages = [
   { emoji: "🖥️", type: "Lovable App", name: "Prompt Terminal Builder", desc: "Interactive prompt engineering workbench — terminal-style interface with template library and multi-model export.", link: "https://kr-prompt-terminal-builder.lovable.app", external: true },
   { emoji: "💹", type: "Lovable App", name: "Financial Engineering & Advisory Prompts", desc: "1,120+ curated prompts across 3 AI platforms with Bloomberg-style FINPROMPT Terminal.", link: "https://kr-finance-prompt-hub.lovable.app/", external: true },
   { emoji: "🛡️", type: "Lovable App", name: "ACUITAS — AI QE Framework", desc: "7-pillar AI Quality Engineering framework aligned with ISO 42001, NIST AI RMF & EU AI Act. 6 use cases, 4 case studies, 6 templates.", link: "https://kr-acuiitas-clarity-frameworks.lovable.app/", external: true },
+  { emoji: "✅", type: "Lovable App", name: "VERITAS — QE Framework", desc: "Comprehensive Quality Engineering framework — Verification, Evaluation, Risk, Integrity, Testing, Assurance & Standards.", link: "https://kr-veritas-qe-framework.lovable.app", external: true },
 ];
 
 const platforms = [
