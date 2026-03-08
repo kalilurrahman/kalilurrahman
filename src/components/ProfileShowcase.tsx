@@ -125,6 +125,22 @@ const promptsAndAI: Profile[] = [
     stats: ["7 Pillars", "Compliance Mapping", "Testing Standards"],
   },
   {
+    name: "ExecComms Forge",
+    desc: "AI-powered executive communication builder — board memos, slide outlines, budget justifications, OKR write-ups, and town hall scripts. 40+ templates across BFSI, Pharma & Technology.",
+    url: "https://kr-exec-scribe.lovable.app",
+    screenshot: execScribeScreenshot,
+    tag: "Lovable App",
+    stats: ["40+ Templates", "9 Personas", "4 Tone Profiles"],
+  },
+  {
+    name: "AI Literacy Hub",
+    desc: "Comprehensive AI education platform — courses, modules, and structured learning paths covering AI fundamentals, machine learning, neural networks, and practical applications.",
+    url: "https://kr-ai-literacy-hub.lovable.app",
+    screenshot: aiLiteracyHubScreenshot,
+    tag: "Lovable App",
+    stats: ["AI Fundamentals", "ML Basics", "Learning Paths"],
+  },
+  {
     name: "PhD Research Assistant",
     desc: "v7.0 · 236 expert-grade prompts across 39 domains — covering PhD-exclusive tracks, qualitative & quantitative research methods, dissertation architecture, grant writing, academic publishing and more.",
     url: "https://kalilurrahman.github.io/PhDResearchAssistant.html",
