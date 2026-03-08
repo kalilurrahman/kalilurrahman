@@ -36,6 +36,8 @@ import execScribeScreenshot from "@/assets/screenshots/exec-scribe.png";
 import kaggleSkillHubScreenshot from "@/assets/screenshots/kaggle-skill-hub.png";
 import aiLiteracyHubScreenshot from "@/assets/screenshots/ai-literacy-hub.png";
 import interviewPrepScreenshot from "@/assets/screenshots/interview-prep-vault.png";
+import cyberLexiconScreenshot from "@/assets/screenshots/cyber-lexicon-hub.png";
+import quizBlitzScreenshot from "@/assets/screenshots/quiz-blitz-hub.png";
 
 interface Profile {
   name: string;
@@ -213,6 +215,22 @@ const trainingAndGuides: Profile[] = [
     screenshot: interviewPrepScreenshot,
     tag: "Lovable App",
     stats: ["Coding Challenges", "System Design", "Behavioral Prep"],
+  },
+  {
+    name: "Acronym Buster — Cyber Lexicon Hub",
+    desc: "Comprehensive tech reference guide — 1,837 acronyms across Cyber Security (487), Infrastructure (387), Cloud (494) & Operations (469) with searchable cards.",
+    url: "https://kr-cyber-lexicon-hub.lovable.app",
+    screenshot: cyberLexiconScreenshot,
+    tag: "Lovable App",
+    stats: ["1,837 Acronyms", "4 Categories", "Searchable"],
+  },
+  {
+    name: "Quiz Master — Quiz Blitz Hub",
+    desc: "Trending topic quiz platform — 9 active topics across Technology, AI, Business, World Economy, Finance, Sports & Current Affairs with leaderboard tracking.",
+    url: "https://kr-quiz-blitz-hub.lovable.app",
+    screenshot: quizBlitzScreenshot,
+    tag: "Lovable App",
+    stats: ["9 Topics", "Leaderboard", "Multi-Category"],
   },
 ];
 

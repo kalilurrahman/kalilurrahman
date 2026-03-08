@@ -52,6 +52,8 @@ const ghPages = [
   { emoji: "📊", type: "Lovable App", name: "Kaggle Bootcamp", desc: "90-day learning path from Python basics to Kaggle competitions — daily challenges, notebook templates, Grandmaster strategies.", link: "https://kr-kaggle-skill-hub.lovable.app", external: true },
   { emoji: "🧠", type: "Lovable App", name: "AI Literacy Hub", desc: "AI education platform — courses, modules, and learning paths covering AI fundamentals, machine learning, and neural networks.", link: "https://kr-ai-literacy-hub.lovable.app", external: true },
   { emoji: "💼", type: "Lovable App", name: "Interview Prep Vault", desc: "Technical interview preparation — coding challenges, behavioral questions, system design practice, and structured guides.", link: "https://kr-interview-prep-vault.lovable.app", external: true },
+  { emoji: "🔐", type: "Lovable App", name: "Acronym Buster — Cyber Lexicon Hub", desc: "1,837 tech acronyms across Cyber Security, Infrastructure, Cloud & Operations — searchable reference cards.", link: "https://kr-cyber-lexicon-hub.lovable.app", external: true },
+  { emoji: "🧩", type: "Lovable App", name: "Quiz Master — Quiz Blitz Hub", desc: "Trending topic quiz platform — 9 categories including Technology, AI, Business, Finance & Current Affairs with leaderboard.", link: "https://kr-quiz-blitz-hub.lovable.app", external: true },
 ];
 
 const platforms = [
