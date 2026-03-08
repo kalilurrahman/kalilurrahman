@@ -1,6 +1,18 @@
 # Kalilur Rahman - Professional Portfolio & Landing Page
 
-![Main Portfolio](src/assets/screenshots/main-portfolio.png)
+### 🖥️ Desktop Experience
+**Home Page**
+![Home Desktop](src/assets/screenshots/main-portfolio-desktop.png)
+
+**Library Page**
+![Library Desktop](src/assets/screenshots/main-portfolio-library-desktop.png)
+
+### 📱 Mobile Experience
+**Home Page (Mobile)**
+![Home Mobile](src/assets/screenshots/main-portfolio-mobile.png)
+
+**Library Page (Mobile)**
+![Library Mobile](src/assets/screenshots/main-portfolio-library-mobile.png)
 
 This repository hosts the source code for the professional portfolio and landing page of **Kalilur Rahman**, a Global IT Executive, Author, and Kaggle Grandmaster. The site showcases his extensive career, achievements, publications, and digital presence across various platforms. You can view the live site at [kalilurrahman.lovable.app](https://kalilurrahman.lovable.app/).
 
