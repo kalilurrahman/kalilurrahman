@@ -29,6 +29,13 @@ import farzi10thScreenshot from "@/assets/screenshots/farzi-10th.png";
 import arcadeGamesScreenshot from "@/assets/screenshots/arcade-games.png";
 import promptTerminalBuilderScreenshot from "@/assets/screenshots/prompt-terminal-builder.png";
 import veritasQEScreenshot from "@/assets/screenshots/veritas-qe-framework.png";
+import gccCompassScreenshot from "@/assets/screenshots/gcc-compass.png";
+import corpUpskillScreenshot from "@/assets/screenshots/corp-upskill.png";
+import qeCompassScreenshot from "@/assets/screenshots/qe-compass.png";
+import execScribeScreenshot from "@/assets/screenshots/exec-scribe.png";
+import kaggleSkillHubScreenshot from "@/assets/screenshots/kaggle-skill-hub.png";
+import aiLiteracyHubScreenshot from "@/assets/screenshots/ai-literacy-hub.png";
+import interviewPrepScreenshot from "@/assets/screenshots/interview-prep-vault.png";
 
 interface Profile {
   name: string;
