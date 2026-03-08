@@ -22,6 +22,11 @@ import quantumHubScreenshot from "@/assets/screenshots/quantum-hub.png";
 import agenticAIPromptsScreenshot from "@/assets/screenshots/agentic-ai-prompts.png";
 import financePromptsScreenshot from "@/assets/screenshots/finance-prompts.png";
 import acuitasScreenshot from "@/assets/screenshots/acuitas-framework.png";
+import socialAuthorityScreenshot from "@/assets/screenshots/social-authority-hub.png";
+import biztechQuizzerScreenshot from "@/assets/screenshots/biztech-quizzer.png";
+import newsAppScreenshot from "@/assets/screenshots/news-app.png";
+import farzi10thScreenshot from "@/assets/screenshots/farzi-10th.png";
+import arcadeGamesScreenshot from "@/assets/screenshots/arcade-games.png";
 
 interface Profile {
   name: string;
