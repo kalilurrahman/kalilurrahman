@@ -22,6 +22,11 @@ import quantumHubScreenshot from "@/assets/screenshots/quantum-hub.png";
 import agenticAIPromptsScreenshot from "@/assets/screenshots/agentic-ai-prompts.png";
 import financePromptsScreenshot from "@/assets/screenshots/finance-prompts.png";
 import acuitasScreenshot from "@/assets/screenshots/acuitas-framework.png";
+import socialAuthorityScreenshot from "@/assets/screenshots/social-authority-hub.png";
+import biztechQuizzerScreenshot from "@/assets/screenshots/biztech-quizzer.png";
+import newsAppScreenshot from "@/assets/screenshots/news-app.png";
+import farzi10thScreenshot from "@/assets/screenshots/farzi-10th.png";
+import arcadeGamesScreenshot from "@/assets/screenshots/arcade-games.png";
 
 interface Profile {
   name: string;
@@ -53,6 +58,14 @@ const promptsAndAI: Profile[] = [
     screenshot: acuitasScreenshot,
     tag: "Framework",
     stats: ["7 Pillars", "6 Use Cases", "4 Case Studies", "6 Templates"],
+  },
+  {
+    name: "Social Authority Hub",
+    desc: "AI-powered content generation for thought leaders — authority command centre with AI Content Engine, Content Calendar, 90-Day Sprint planning, and multi-format export for LinkedIn, newsletters & whitepapers.",
+    url: "https://kr-social-authority-hub.lovable.app",
+    screenshot: socialAuthorityScreenshot,
+    tag: "Lovable App",
+    stats: ["5 Authority Pillars", "AI Content Engine", "90-Day Sprint"],
   },
   {
     name: "Agentic AI Prompts Hub",
@@ -112,15 +125,47 @@ const trainingAndGuides: Profile[] = [
     screenshot: techCuratorCollage,
     tag: "Lovable App",
   },
+  {
+    name: "BizTech Quiz Arena",
+    desc: "Gamified quiz platform — 9,000+ questions across 9 categories with 5 game modes and 8 difficulty levels. Test your business & technology knowledge.",
+    url: "https://kr-biztech-quizzer.lovable.app",
+    screenshot: biztechQuizzerScreenshot,
+    tag: "Lovable App",
+    stats: ["9,000+ Questions", "9 Categories", "5 Game Modes"],
+  },
 ];
 
 const hobbyAndPersonal: Profile[] = [
+  {
+    name: "NewsVault",
+    desc: "Full-featured news aggregator with real-time feeds, category filtering, bookmarking, and personalised recommendations across 15+ topics.",
+    url: "https://kr-news-app.lovable.app/",
+    screenshot: newsAppScreenshot,
+    tag: "Lovable App",
+    stats: ["15+ Topics", "Real-time Feeds", "Bookmarks"],
+  },
   {
     name: "Pocket News",
     desc: "Personalised news curation — stay informed on what matters.",
     url: "https://kr-pocket-news.lovable.app/",
     screenshot: pocketNewsCollage,
     tag: "Lovable App",
+  },
+  {
+    name: "Farzi 10th — CBSE Board Prep",
+    desc: "200-day structured study plan for CBSE Class 10 — AI doubt solver, formula bank, streak system, mock tests & 1,000+ practice questions across 6 subjects.",
+    url: "https://farzi-10th.lovable.app",
+    screenshot: farzi10thScreenshot,
+    tag: "Lovable App",
+    stats: ["200-Day Plan", "6 Subjects", "1,000+ Questions"],
+  },
+  {
+    name: "Arcade Vault",
+    desc: "Retro arcade gaming hub — 8 classic games including Tetris, Arkanoid, Snake, 2048, Minesweeper, Pong & Flappy Bird with score tracking.",
+    url: "https://kr-arcade-games.lovable.app",
+    screenshot: arcadeGamesScreenshot,
+    tag: "Lovable App",
+    stats: ["8 Classic Games", "Score Tracking", "Retro UI"],
   },
   {
     name: "Islamic Duas",
