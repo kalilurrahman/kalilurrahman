@@ -27,6 +27,8 @@ import biztechQuizzerScreenshot from "@/assets/screenshots/biztech-quizzer.png";
 import newsAppScreenshot from "@/assets/screenshots/news-app.png";
 import farzi10thScreenshot from "@/assets/screenshots/farzi-10th.png";
 import arcadeGamesScreenshot from "@/assets/screenshots/arcade-games.png";
+import promptTerminalBuilderScreenshot from "@/assets/screenshots/prompt-terminal-builder.png";
+import veritasQEScreenshot from "@/assets/screenshots/veritas-qe-framework.png";
 
 interface Profile {
   name: string;
@@ -90,6 +92,22 @@ const promptsAndAI: Profile[] = [
     screenshot: krPromptsCollage,
     tag: "Lovable App",
     stats: ["510 Prompts", "46 Categories", "5 Export Formats"],
+  },
+  {
+    name: "Prompt Terminal Builder",
+    desc: "Interactive prompt engineering workbench — build, test, and refine AI prompts with a terminal-style interface. Template library, version history, and multi-model export.",
+    url: "https://kr-prompt-terminal-builder.lovable.app",
+    screenshot: promptTerminalBuilderScreenshot,
+    tag: "Lovable App",
+    stats: ["Terminal UI", "Prompt Templates", "Multi-Model Export"],
+  },
+  {
+    name: "VERITAS — QE Framework",
+    desc: "Verification, Evaluation, Risk, Integrity, Testing, Assurance & Standards — a comprehensive Quality Engineering framework with compliance mapping, testing standards, and verification processes.",
+    url: "https://kr-veritas-qe-framework.lovable.app",
+    screenshot: veritasQEScreenshot,
+    tag: "Framework",
+    stats: ["7 Pillars", "Compliance Mapping", "Testing Standards"],
   },
   {
     name: "PhD Research Assistant",
