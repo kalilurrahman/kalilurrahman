@@ -3,7 +3,20 @@
 This folder contains screenshots and generated collages of the main portfolio and supplementary applications, used to showcase the projects in the `README.md`.
 
 ## Main Portfolio
-![Main Portfolio](./main-portfolio.png)
+
+### 🖥️ Desktop Experience
+**Home Page**
+![Home Desktop](./main-portfolio-desktop.png)
+
+**Library Page**
+![Library Desktop](./main-portfolio-library-desktop.png)
+
+### 📱 Mobile Experience
+**Home Page (Mobile)**
+![Home Mobile](./main-portfolio-mobile.png)
+
+**Library Page (Mobile)**
+![Library Mobile](./main-portfolio-library-mobile.png)
 
 ## Professional Profiles
 | Amazon Author | GitHub Profile | Kaggle Profile |
