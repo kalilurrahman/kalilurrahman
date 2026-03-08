@@ -45,6 +45,13 @@ const ghPages = [
   { emoji: "💹", type: "Lovable App", name: "Financial Engineering & Advisory Prompts", desc: "1,120+ curated prompts across 3 AI platforms with Bloomberg-style FINPROMPT Terminal.", link: "https://kr-finance-prompt-hub.lovable.app/", external: true },
   { emoji: "🛡️", type: "Lovable App", name: "ACUITAS — AI QE Framework", desc: "7-pillar AI Quality Engineering framework aligned with ISO 42001, NIST AI RMF & EU AI Act. 6 use cases, 4 case studies, 6 templates.", link: "https://kr-acuiitas-clarity-frameworks.lovable.app/", external: true },
   { emoji: "✅", type: "Lovable App", name: "VERITAS — QE Framework", desc: "Comprehensive Quality Engineering framework — Verification, Evaluation, Risk, Integrity, Testing, Assurance & Standards.", link: "https://kr-veritas-qe-framework.lovable.app", external: true },
+  { emoji: "🏢", type: "Lovable App", name: "GCC Compass", desc: "Operating dashboard for GCC leaders — maturity assessments, 19-phase lifecycle map, AI advisor, cost model calculator.", link: "https://kr-gcc-compass.lovable.app", external: true },
+  { emoji: "📝", type: "Lovable App", name: "ExecComms Forge", desc: "AI-powered executive communication builder — board memos, presentations, OKR write-ups. 40+ templates across 5 sectors.", link: "https://kr-exec-scribe.lovable.app", external: true },
+  { emoji: "🎯", type: "Lovable App", name: "Corporate Upskilling Planner", desc: "L&D roadmap builder — structured 6/12-month learning roadmaps with skills matrices and certification alignment.", link: "https://kr-corp-upskill.lovable.app", external: true },
+  { emoji: "🔍", type: "Lovable App", name: "QE Compass", desc: "Quality Engineering reference platform — ISTQB cert prep, AI test case generator, 180+ quizzes, 400+ glossary terms.", link: "https://kr-qe-compass.lovable.app", external: true },
+  { emoji: "📊", type: "Lovable App", name: "Kaggle Bootcamp", desc: "90-day learning path from Python basics to Kaggle competitions — daily challenges, notebook templates, Grandmaster strategies.", link: "https://kr-kaggle-skill-hub.lovable.app", external: true },
+  { emoji: "🧠", type: "Lovable App", name: "AI Literacy Hub", desc: "AI education platform — courses, modules, and learning paths covering AI fundamentals, machine learning, and neural networks.", link: "https://kr-ai-literacy-hub.lovable.app", external: true },
+  { emoji: "💼", type: "Lovable App", name: "Interview Prep Vault", desc: "Technical interview preparation — coding challenges, behavioral questions, system design practice, and structured guides.", link: "https://kr-interview-prep-vault.lovable.app", external: true },
 ];
 
 const platforms = [

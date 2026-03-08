@@ -29,6 +29,13 @@ import farzi10thScreenshot from "@/assets/screenshots/farzi-10th.png";
 import arcadeGamesScreenshot from "@/assets/screenshots/arcade-games.png";
 import promptTerminalBuilderScreenshot from "@/assets/screenshots/prompt-terminal-builder.png";
 import veritasQEScreenshot from "@/assets/screenshots/veritas-qe-framework.png";
+import gccCompassScreenshot from "@/assets/screenshots/gcc-compass.png";
+import corpUpskillScreenshot from "@/assets/screenshots/corp-upskill.png";
+import qeCompassScreenshot from "@/assets/screenshots/qe-compass.png";
+import execScribeScreenshot from "@/assets/screenshots/exec-scribe.png";
+import kaggleSkillHubScreenshot from "@/assets/screenshots/kaggle-skill-hub.png";
+import aiLiteracyHubScreenshot from "@/assets/screenshots/ai-literacy-hub.png";
+import interviewPrepScreenshot from "@/assets/screenshots/interview-prep-vault.png";
 
 interface Profile {
   name: string;
@@ -49,6 +56,14 @@ const gccSection: Profile[] = [
     screenshot: gccPlaybookScreenshot,
     tag: "Lovable App",
     stats: ["6,000+ GCCs", "1,700+ in India", "$64.6B Export Value"],
+  },
+  {
+    name: "GCC Compass",
+    desc: "The operating dashboard for GCC leaders — maturity assessments, 19-phase lifecycle map, AI strategic advisor, cost model calculator, and 500+ curated resources.",
+    url: "https://kr-gcc-compass.lovable.app",
+    screenshot: gccCompassScreenshot,
+    tag: "Lovable App",
+    stats: ["19-Phase Lifecycle", "AI Advisor", "Cost Model"],
   },
 ];
 
@@ -110,6 +125,22 @@ const promptsAndAI: Profile[] = [
     stats: ["7 Pillars", "Compliance Mapping", "Testing Standards"],
   },
   {
+    name: "ExecComms Forge",
+    desc: "AI-powered executive communication builder — board memos, slide outlines, budget justifications, OKR write-ups, and town hall scripts. 40+ templates across BFSI, Pharma & Technology.",
+    url: "https://kr-exec-scribe.lovable.app",
+    screenshot: execScribeScreenshot,
+    tag: "Lovable App",
+    stats: ["40+ Templates", "9 Personas", "4 Tone Profiles"],
+  },
+  {
+    name: "AI Literacy Hub",
+    desc: "Comprehensive AI education platform — courses, modules, and structured learning paths covering AI fundamentals, machine learning, neural networks, and practical applications.",
+    url: "https://kr-ai-literacy-hub.lovable.app",
+    screenshot: aiLiteracyHubScreenshot,
+    tag: "Lovable App",
+    stats: ["AI Fundamentals", "ML Basics", "Learning Paths"],
+  },
+  {
     name: "PhD Research Assistant",
     desc: "v7.0 · 236 expert-grade prompts across 39 domains — covering PhD-exclusive tracks, qualitative & quantitative research methods, dissertation architecture, grant writing, academic publishing and more.",
     url: "https://kalilurrahman.github.io/PhDResearchAssistant.html",
@@ -127,6 +158,30 @@ const trainingAndGuides: Profile[] = [
     screenshot: trainingPortfolioScreenshot,
     tag: "Lovable App",
     stats: ["60 Programs", "15+ Industry Tracks", "4 Delivery Formats"],
+  },
+  {
+    name: "Corporate Upskilling Planner",
+    desc: "L&D roadmap builder for enterprise teams — generate structured 6/12-month learning roadmaps with printable skills matrices, individual paths, and certification alignment.",
+    url: "https://kr-corp-upskill.lovable.app",
+    screenshot: corpUpskillScreenshot,
+    tag: "Lovable App",
+    stats: ["Team Roadmaps", "Skills Matrix", "Cert Pathways"],
+  },
+  {
+    name: "QE Compass",
+    desc: "The definitive Quality Engineering reference & practice platform — ISTQB certification prep, AI-powered test case generation, 180+ quiz questions, 400+ glossary terms across 6 QE domains.",
+    url: "https://kr-qe-compass.lovable.app",
+    screenshot: qeCompassScreenshot,
+    tag: "Lovable App",
+    stats: ["6 QE Domains", "180+ Quizzes", "AI Test Gen"],
+  },
+  {
+    name: "Kaggle Bootcamp",
+    desc: "90-day structured learning path from Python basics to competitive machine learning — daily challenges, 15 notebook templates, competition strategies from a Kaggle Grandmaster.",
+    url: "https://kr-kaggle-skill-hub.lovable.app",
+    screenshot: kaggleSkillHubScreenshot,
+    tag: "Lovable App",
+    stats: ["90-Day Path", "90+ Challenges", "15 Templates"],
   },
   {
     name: "Quantum Computing Guide",
@@ -150,6 +205,14 @@ const trainingAndGuides: Profile[] = [
     screenshot: biztechQuizzerScreenshot,
     tag: "Lovable App",
     stats: ["9,000+ Questions", "9 Categories", "5 Game Modes"],
+  },
+  {
+    name: "Interview Prep Vault",
+    desc: "Technical interview preparation platform — coding challenges, behavioral questions, system design practice areas, and structured preparation guides.",
+    url: "https://kr-interview-prep-vault.lovable.app",
+    screenshot: interviewPrepScreenshot,
+    tag: "Lovable App",
+    stats: ["Coding Challenges", "System Design", "Behavioral Prep"],
   },
 ];
 
