@@ -57,6 +57,14 @@ const gccSection: Profile[] = [
     tag: "Lovable App",
     stats: ["6,000+ GCCs", "1,700+ in India", "$64.6B Export Value"],
   },
+  {
+    name: "GCC Compass",
+    desc: "The operating dashboard for GCC leaders — maturity assessments, 19-phase lifecycle map, AI strategic advisor, cost model calculator, and 500+ curated resources.",
+    url: "https://kr-gcc-compass.lovable.app",
+    screenshot: gccCompassScreenshot,
+    tag: "Lovable App",
+    stats: ["19-Phase Lifecycle", "AI Advisor", "Cost Model"],
+  },
 ];
 
 const promptsAndAI: Profile[] = [
