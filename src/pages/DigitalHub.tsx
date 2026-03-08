@@ -42,6 +42,7 @@ const ghPages = [
   { emoji: "⚛️", type: "Lovable App", name: "Quantum Computing Guide", desc: "201 essential quantum computing terms — searchable glossary across 6 categories.", link: "https://kr-quantum-hub.lovable.app/", external: true },
   { emoji: "🧠", type: "Lovable App", name: "Agentic AI Prompts Hub", desc: "200+ agentic AI prompts with PDF/JSON export and custom library upload.", link: "https://kr-agentic-ai-prompts.lovable.app", external: true },
   { emoji: "💹", type: "Lovable App", name: "Financial Engineering & Advisory Prompts", desc: "1,120+ curated prompts across 3 AI platforms with Bloomberg-style FINPROMPT Terminal.", link: "https://kr-finance-prompt-hub.lovable.app/", external: true },
+  { emoji: "🛡️", type: "Lovable App", name: "ACUITAS — AI QE Framework", desc: "7-pillar AI Quality Engineering framework aligned with ISO 42001, NIST AI RMF & EU AI Act. 6 use cases, 4 case studies, 6 templates.", link: "https://kr-acuiitas-clarity-frameworks.lovable.app/", external: true },
 ];
 
 const platforms = [
