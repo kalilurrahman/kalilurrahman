@@ -60,6 +60,14 @@ const promptsAndAI: Profile[] = [
     stats: ["7 Pillars", "6 Use Cases", "4 Case Studies", "6 Templates"],
   },
   {
+    name: "Social Authority Hub",
+    desc: "AI-powered content generation for thought leaders — authority command centre with AI Content Engine, Content Calendar, 90-Day Sprint planning, and multi-format export for LinkedIn, newsletters & whitepapers.",
+    url: "https://kr-social-authority-hub.lovable.app",
+    screenshot: socialAuthorityScreenshot,
+    tag: "Lovable App",
+    stats: ["5 Authority Pillars", "AI Content Engine", "90-Day Sprint"],
+  },
+  {
     name: "Agentic AI Prompts Hub",
     desc: "Browse 200+ agentic AI prompts grouped by category — export as PDF or JSON. Upload your own prompt library for a fully customisable experience.",
     url: "https://kr-agentic-ai-prompts.lovable.app",
