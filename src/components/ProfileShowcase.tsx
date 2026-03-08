@@ -36,6 +36,8 @@ import execScribeScreenshot from "@/assets/screenshots/exec-scribe.png";
 import kaggleSkillHubScreenshot from "@/assets/screenshots/kaggle-skill-hub.png";
 import aiLiteracyHubScreenshot from "@/assets/screenshots/ai-literacy-hub.png";
 import interviewPrepScreenshot from "@/assets/screenshots/interview-prep-vault.png";
+import cyberLexiconScreenshot from "@/assets/screenshots/cyber-lexicon-hub.png";
+import quizBlitzScreenshot from "@/assets/screenshots/quiz-blitz-hub.png";
 
 interface Profile {
   name: string;
