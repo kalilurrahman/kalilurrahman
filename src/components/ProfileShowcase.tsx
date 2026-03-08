@@ -27,6 +27,8 @@ import biztechQuizzerScreenshot from "@/assets/screenshots/biztech-quizzer.png";
 import newsAppScreenshot from "@/assets/screenshots/news-app.png";
 import farzi10thScreenshot from "@/assets/screenshots/farzi-10th.png";
 import arcadeGamesScreenshot from "@/assets/screenshots/arcade-games.png";
+import promptTerminalBuilderScreenshot from "@/assets/screenshots/prompt-terminal-builder.png";
+import veritasQEScreenshot from "@/assets/screenshots/veritas-qe-framework.png";
 
 interface Profile {
   name: string;
