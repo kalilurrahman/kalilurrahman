@@ -94,6 +94,22 @@ const promptsAndAI: Profile[] = [
     stats: ["510 Prompts", "46 Categories", "5 Export Formats"],
   },
   {
+    name: "Prompt Terminal Builder",
+    desc: "Interactive prompt engineering workbench — build, test, and refine AI prompts with a terminal-style interface. Template library, version history, and multi-model export.",
+    url: "https://kr-prompt-terminal-builder.lovable.app",
+    screenshot: promptTerminalBuilderScreenshot,
+    tag: "Lovable App",
+    stats: ["Terminal UI", "Prompt Templates", "Multi-Model Export"],
+  },
+  {
+    name: "VERITAS — QE Framework",
+    desc: "Verification, Evaluation, Risk, Integrity, Testing, Assurance & Standards — a comprehensive Quality Engineering framework with compliance mapping, testing standards, and verification processes.",
+    url: "https://kr-veritas-qe-framework.lovable.app",
+    screenshot: veritasQEScreenshot,
+    tag: "Framework",
+    stats: ["7 Pillars", "Compliance Mapping", "Testing Standards"],
+  },
+  {
     name: "PhD Research Assistant",
     desc: "v7.0 · 236 expert-grade prompts across 39 domains — covering PhD-exclusive tracks, qualitative & quantitative research methods, dissertation architecture, grant writing, academic publishing and more.",
     url: "https://kalilurrahman.github.io/PhDResearchAssistant.html",
