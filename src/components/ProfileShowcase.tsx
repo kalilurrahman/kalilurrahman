@@ -160,6 +160,30 @@ const trainingAndGuides: Profile[] = [
     stats: ["60 Programs", "15+ Industry Tracks", "4 Delivery Formats"],
   },
   {
+    name: "Corporate Upskilling Planner",
+    desc: "L&D roadmap builder for enterprise teams — generate structured 6/12-month learning roadmaps with printable skills matrices, individual paths, and certification alignment.",
+    url: "https://kr-corp-upskill.lovable.app",
+    screenshot: corpUpskillScreenshot,
+    tag: "Lovable App",
+    stats: ["Team Roadmaps", "Skills Matrix", "Cert Pathways"],
+  },
+  {
+    name: "QE Compass",
+    desc: "The definitive Quality Engineering reference & practice platform — ISTQB certification prep, AI-powered test case generation, 180+ quiz questions, 400+ glossary terms across 6 QE domains.",
+    url: "https://kr-qe-compass.lovable.app",
+    screenshot: qeCompassScreenshot,
+    tag: "Lovable App",
+    stats: ["6 QE Domains", "180+ Quizzes", "AI Test Gen"],
+  },
+  {
+    name: "Kaggle Bootcamp",
+    desc: "90-day structured learning path from Python basics to competitive machine learning — daily challenges, 15 notebook templates, competition strategies from a Kaggle Grandmaster.",
+    url: "https://kr-kaggle-skill-hub.lovable.app",
+    screenshot: kaggleSkillHubScreenshot,
+    tag: "Lovable App",
+    stats: ["90-Day Path", "90+ Challenges", "15 Templates"],
+  },
+  {
     name: "Quantum Computing Guide",
     desc: "Pocket glossary of 201 essential quantum computing terms — searchable, filterable across Physics, Hardware, Gates, Algorithms, Error Correction & Security.",
     url: "https://kr-quantum-hub.lovable.app/",
@@ -181,6 +205,14 @@ const trainingAndGuides: Profile[] = [
     screenshot: biztechQuizzerScreenshot,
     tag: "Lovable App",
     stats: ["9,000+ Questions", "9 Categories", "5 Game Modes"],
+  },
+  {
+    name: "Interview Prep Vault",
+    desc: "Technical interview preparation platform — coding challenges, behavioral questions, system design practice areas, and structured preparation guides.",
+    url: "https://kr-interview-prep-vault.lovable.app",
+    screenshot: interviewPrepScreenshot,
+    tag: "Lovable App",
+    stats: ["Coding Challenges", "System Design", "Behavioral Prep"],
   },
 ];
 
