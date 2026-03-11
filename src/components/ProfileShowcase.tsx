@@ -275,6 +275,46 @@ const hobbyAndPersonal: Profile[] = [
   },
 ];
 
+// ─── Additional projects (text-link cards, no screenshots) ───
+
+interface TextProfile {
+  name: string;
+  desc: string;
+  url: string;
+  tag: string;
+  stats?: string[];
+}
+
+const aiAndAgents: TextProfile[] = [
+  { name: "Agent Flow Studio", desc: "Visual AI agent workflow builder — design, chain, and orchestrate multi-step AI agent flows with drag-and-drop interface.", url: "https://kr-ai-agent-flow.lovable.app", tag: "Lovable App", stats: ["Visual Builder", "Agent Chains"] },
+  { name: "Agent Canvas", desc: "Interactive canvas for designing AI agent workflows — connect nodes, define triggers, and visualise autonomous agent pipelines.", url: "https://kr-ai-workflow-gen.lovable.app", tag: "Lovable App", stats: ["Canvas UI", "Pipeline Design"] },
+  { name: "Agent Weaver", desc: "Compose multi-agent systems — weave together specialised AI agents for complex tasks with configurable roles and handoffs.", url: "https://kr-ai-agent-weaver.lovable.app", tag: "Lovable App", stats: ["Multi-Agent", "Role Config"] },
+  { name: "AIOTI AI App", desc: "AI of Things Intelligence — exploring the intersection of artificial intelligence and IoT with practical applications.", url: "https://aiotiai.lovable.app", tag: "Lovable App", stats: ["AI + IoT", "Intelligence"] },
+];
+
+const toolsAndUtilities: TextProfile[] = [
+  { name: "Doc Transformer", desc: "AI-powered document simplification tool — transform complex technical documents into clear, accessible content for any audience.", url: "https://kr-tech-simplifier.lovable.app", tag: "Lovable App", stats: ["Doc Simplifier", "AI-Powered"] },
+  { name: "Profile Studio", desc: "Professional profile search and optimization tool — analyse, compare, and enhance professional profiles across platforms.", url: "https://kr-profile-search.lovable.app", tag: "Lovable App", stats: ["Profile Analysis", "Optimisation"] },
+  { name: "Profile Perfecter", desc: "Smart JD-to-profile matcher — align your professional profile with job descriptions using AI-powered gap analysis and recommendations.", url: "https://kr-jd-smart-profile.lovable.app", tag: "Lovable App", stats: ["JD Matching", "Gap Analysis"] },
+  { name: "TestForge AI", desc: "AI-powered test automation generator — create test scripts, test plans, and quality artefacts from requirements using large language models.", url: "https://kr-test-automator.lovable.app", tag: "Lovable App", stats: ["Test Gen", "AI Automation"] },
+  { name: "Nexus Unified Hub", desc: "All-in-one tool aggregator — unified access to multiple productivity and engineering tools in a single dashboard.", url: "https://kr-omni-tool-hub.lovable.app", tag: "Lovable App", stats: ["Unified Dashboard", "Multi-Tool"] },
+  { name: "Prompt Builder Hub", desc: "Terminal-inspired prompt composition studio — build, refine, and export structured prompts with template support.", url: "https://kr-terminal-muse-maker.lovable.app", tag: "Lovable App", stats: ["Prompt Composer", "Templates"] },
+];
+
+const learningAndKnowledge: TextProfile[] = [
+  { name: "Idea Vault Pro", desc: "App ideas vault — capture, organise, and prioritise product and project ideas with structured templates and scoring.", url: "https://kr-app-ideas-vault.lovable.app", tag: "Lovable App", stats: ["Idea Capture", "Prioritisation"] },
+  { name: "KR Insights", desc: "Curated insights hub — aggregated knowledge, trends, and analysis across technology, business, and leadership.", url: "https://kr-app-nexus.lovable.app", tag: "Lovable App", stats: ["Insights", "Trends"] },
+  { name: "Resource Navigator", desc: "Structured learning path hub — curated resources, courses, and progression tracks for technology skill development.", url: "https://kr-learning-path-hub.lovable.app", tag: "Lovable App", stats: ["Learning Paths", "Resources"] },
+  { name: "Social Dashboard Hub", desc: "Social media content dashboard — aggregate and showcase posts, quizzes, blogs, and thought leadership content.", url: "https://social-dashboard-hub.lovable.app", tag: "Lovable App", stats: ["Content Dashboard", "Social Media"] },
+];
+
+const morePersonalApps: TextProfile[] = [
+  { name: "Tetris Stack", desc: "Classic Tetris game with increasing difficulty — responsive web app playable on desktop and mobile.", url: "https://kr-tetris-stack.lovable.app", tag: "Game", stats: ["Classic Tetris", "Mobile Ready"] },
+  { name: "Expense Tracker", desc: "Personal finance tracking app — log expenses, set budgets, and visualise spending patterns with clean minimalist UI.", url: "https://kr-expense-tracker.lovable.app", tag: "Finance", stats: ["Budget Tracking", "Minimalist UI"] },
+  { name: "Jeopardy Quiz", desc: "Jeopardy-style quiz application — category-based questions with scoring, smooth animations, and responsive interface.", url: "https://kr-jeopardy-quiz.lovable.app", tag: "Game", stats: ["Jeopardy Style", "Scoring"] },
+  { name: "Mindful Flow", desc: "Personal productivity dashboard — track daily goals, to-do lists, finances, and habits in a unified mindful interface.", url: "https://mindful-flow-82.lovable.app", tag: "Productivity", stats: ["Goals", "Habits", "Finance"] },
+];
+
 const platformProfiles: Profile[] = [
   {
     name: "Main Portfolio",
@@ -409,6 +449,41 @@ const ProfileCard = ({ profile, index }: { profile: Profile; index: number }) =>
   </motion.a>
 );
 
+// ─── Text Link Card (no screenshot) ───
+
+const TextLinkCard = ({ profile, index }: { profile: TextProfile; index: number }) => (
+  <motion.a
+    href={profile.url}
+    target="_blank"
+    rel="noopener noreferrer"
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, margin: "-50px" }}
+    transition={{ duration: 0.4, delay: index * 0.04 }}
+    className="group block p-4 border border-border bg-card hover:border-primary/40 transition-all"
+  >
+    <div className="flex items-start justify-between gap-3">
+      <div className="flex-1">
+        <span className="inline-block px-2 py-0.5 text-[10px] tracking-[0.12em] uppercase bg-primary/10 text-primary border border-primary/20 mb-2">
+          {profile.tag}
+        </span>
+        <h4 className="font-serif text-base text-foreground group-hover:text-primary transition-colors mb-1.5">
+          {profile.name}
+        </h4>
+        <p className="text-xs text-muted-foreground leading-relaxed mb-2">{profile.desc}</p>
+        {profile.stats && (
+          <div className="flex flex-wrap gap-1.5">
+            {profile.stats.map((s) => (
+              <span key={s} className="px-1.5 py-0.5 text-[10px] bg-primary/10 text-primary border border-primary/20 rounded-sm">{s}</span>
+            ))}
+          </div>
+        )}
+      </div>
+      <ExternalLink className="w-3.5 h-3.5 text-muted-foreground group-hover:text-primary transition-colors shrink-0 mt-1" />
+    </div>
+  </motion.a>
+);
+
 // ─── Main Component ───
 
 const ProfileShowcase = () => {
@@ -425,7 +500,7 @@ const ProfileShowcase = () => {
       <div className="space-y-6">
 
         {/* ═══ GCC Playbook — Featured ═══ */}
-        <SubsectionHeader icon="🏢" title="GCC Advisory" count={1} />
+        <SubsectionHeader icon="🏢" title="GCC Advisory" count={gccSection.length} />
         <div className="space-y-8">
           {gccSection.map((p, i) => (
             <ProfileCard key={p.name} profile={p} index={i} />
@@ -433,26 +508,49 @@ const ProfileShowcase = () => {
         </div>
 
         {/* ═══ AI, Prompts & Frameworks ═══ */}
-        <SubsectionHeader icon="🤖" title="AI, Prompts & Frameworks" count={promptsAndAI.length} />
+        <SubsectionHeader icon="🤖" title="AI, Prompts & Frameworks" count={promptsAndAI.length + aiAndAgents.length} />
         <div className="space-y-8">
           {promptsAndAI.map((p, i) => (
             <ProfileCard key={p.name} profile={p} index={i} />
           ))}
         </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {aiAndAgents.map((p, i) => (
+            <TextLinkCard key={p.name} profile={p} index={i} />
+          ))}
+        </div>
+
+        {/* ═══ Tools & Utilities ═══ */}
+        <SubsectionHeader icon="🔧" title="Tools & Utilities" count={toolsAndUtilities.length} />
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {toolsAndUtilities.map((p, i) => (
+            <TextLinkCard key={p.name} profile={p} index={i} />
+          ))}
+        </div>
 
         {/* ═══ Training & Guides ═══ */}
-        <SubsectionHeader icon="🎓" title="Training & Technical Guides" count={trainingAndGuides.length} />
+        <SubsectionHeader icon="🎓" title="Training & Technical Guides" count={trainingAndGuides.length + learningAndKnowledge.length} />
         <div className="space-y-8">
           {trainingAndGuides.map((p, i) => (
             <ProfileCard key={p.name} profile={p} index={i} />
           ))}
         </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {learningAndKnowledge.map((p, i) => (
+            <TextLinkCard key={p.name} profile={p} index={i} />
+          ))}
+        </div>
 
         {/* ═══ Hobby & Personal ═══ */}
-        <SubsectionHeader icon="🎯" title="Personal & Side Projects" count={hobbyAndPersonal.length} />
+        <SubsectionHeader icon="🎯" title="Personal & Side Projects" count={hobbyAndPersonal.length + morePersonalApps.length} />
         <div className="space-y-8">
           {hobbyAndPersonal.map((p, i) => (
             <ProfileCard key={p.name} profile={p} index={i} />
+          ))}
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {morePersonalApps.map((p, i) => (
+            <TextLinkCard key={p.name} profile={p} index={i} />
           ))}
         </div>
 
