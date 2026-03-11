@@ -449,6 +449,41 @@ const ProfileCard = ({ profile, index }: { profile: Profile; index: number }) =>
   </motion.a>
 );
 
+// ─── Text Link Card (no screenshot) ───
+
+const TextLinkCard = ({ profile, index }: { profile: TextProfile; index: number }) => (
+  <motion.a
+    href={profile.url}
+    target="_blank"
+    rel="noopener noreferrer"
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, margin: "-50px" }}
+    transition={{ duration: 0.4, delay: index * 0.04 }}
+    className="group block p-4 border border-border bg-card hover:border-primary/40 transition-all"
+  >
+    <div className="flex items-start justify-between gap-3">
+      <div className="flex-1">
+        <span className="inline-block px-2 py-0.5 text-[10px] tracking-[0.12em] uppercase bg-primary/10 text-primary border border-primary/20 mb-2">
+          {profile.tag}
+        </span>
+        <h4 className="font-serif text-base text-foreground group-hover:text-primary transition-colors mb-1.5">
+          {profile.name}
+        </h4>
+        <p className="text-xs text-muted-foreground leading-relaxed mb-2">{profile.desc}</p>
+        {profile.stats && (
+          <div className="flex flex-wrap gap-1.5">
+            {profile.stats.map((s) => (
+              <span key={s} className="px-1.5 py-0.5 text-[10px] bg-primary/10 text-primary border border-primary/20 rounded-sm">{s}</span>
+            ))}
+          </div>
+        )}
+      </div>
+      <ExternalLink className="w-3.5 h-3.5 text-muted-foreground group-hover:text-primary transition-colors shrink-0 mt-1" />
+    </div>
+  </motion.a>
+);
+
 // ─── Main Component ───
 
 const ProfileShowcase = () => {
@@ -465,7 +500,7 @@ const ProfileShowcase = () => {
       <div className="space-y-6">
 
         {/* ═══ GCC Playbook — Featured ═══ */}
-        <SubsectionHeader icon="🏢" title="GCC Advisory" count={1} />
+        <SubsectionHeader icon="🏢" title="GCC Advisory" count={gccSection.length} />
         <div className="space-y-8">
           {gccSection.map((p, i) => (
             <ProfileCard key={p.name} profile={p} index={i} />
@@ -473,26 +508,49 @@ const ProfileShowcase = () => {
         </div>
 
         {/* ═══ AI, Prompts & Frameworks ═══ */}
-        <SubsectionHeader icon="🤖" title="AI, Prompts & Frameworks" count={promptsAndAI.length} />
+        <SubsectionHeader icon="🤖" title="AI, Prompts & Frameworks" count={promptsAndAI.length + aiAndAgents.length} />
         <div className="space-y-8">
           {promptsAndAI.map((p, i) => (
             <ProfileCard key={p.name} profile={p} index={i} />
           ))}
         </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {aiAndAgents.map((p, i) => (
+            <TextLinkCard key={p.name} profile={p} index={i} />
+          ))}
+        </div>
+
+        {/* ═══ Tools & Utilities ═══ */}
+        <SubsectionHeader icon="🔧" title="Tools & Utilities" count={toolsAndUtilities.length} />
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {toolsAndUtilities.map((p, i) => (
+            <TextLinkCard key={p.name} profile={p} index={i} />
+          ))}
+        </div>
 
         {/* ═══ Training & Guides ═══ */}
-        <SubsectionHeader icon="🎓" title="Training & Technical Guides" count={trainingAndGuides.length} />
+        <SubsectionHeader icon="🎓" title="Training & Technical Guides" count={trainingAndGuides.length + learningAndKnowledge.length} />
         <div className="space-y-8">
           {trainingAndGuides.map((p, i) => (
             <ProfileCard key={p.name} profile={p} index={i} />
           ))}
         </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {learningAndKnowledge.map((p, i) => (
+            <TextLinkCard key={p.name} profile={p} index={i} />
+          ))}
+        </div>
 
         {/* ═══ Hobby & Personal ═══ */}
-        <SubsectionHeader icon="🎯" title="Personal & Side Projects" count={hobbyAndPersonal.length} />
+        <SubsectionHeader icon="🎯" title="Personal & Side Projects" count={hobbyAndPersonal.length + morePersonalApps.length} />
         <div className="space-y-8">
           {hobbyAndPersonal.map((p, i) => (
             <ProfileCard key={p.name} profile={p} index={i} />
+          ))}
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {morePersonalApps.map((p, i) => (
+            <TextLinkCard key={p.name} profile={p} index={i} />
           ))}
         </div>
 
