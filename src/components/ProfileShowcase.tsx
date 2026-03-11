@@ -275,6 +275,46 @@ const hobbyAndPersonal: Profile[] = [
   },
 ];
 
+// ─── Additional projects (text-link cards, no screenshots) ───
+
+interface TextProfile {
+  name: string;
+  desc: string;
+  url: string;
+  tag: string;
+  stats?: string[];
+}
+
+const aiAndAgents: TextProfile[] = [
+  { name: "Agent Flow Studio", desc: "Visual AI agent workflow builder — design, chain, and orchestrate multi-step AI agent flows with drag-and-drop interface.", url: "https://kr-ai-agent-flow.lovable.app", tag: "Lovable App", stats: ["Visual Builder", "Agent Chains"] },
+  { name: "Agent Canvas", desc: "Interactive canvas for designing AI agent workflows — connect nodes, define triggers, and visualise autonomous agent pipelines.", url: "https://kr-ai-workflow-gen.lovable.app", tag: "Lovable App", stats: ["Canvas UI", "Pipeline Design"] },
+  { name: "Agent Weaver", desc: "Compose multi-agent systems — weave together specialised AI agents for complex tasks with configurable roles and handoffs.", url: "https://kr-ai-agent-weaver.lovable.app", tag: "Lovable App", stats: ["Multi-Agent", "Role Config"] },
+  { name: "AIOTI AI App", desc: "AI of Things Intelligence — exploring the intersection of artificial intelligence and IoT with practical applications.", url: "https://aiotiai.lovable.app", tag: "Lovable App", stats: ["AI + IoT", "Intelligence"] },
+];
+
+const toolsAndUtilities: TextProfile[] = [
+  { name: "Doc Transformer", desc: "AI-powered document simplification tool — transform complex technical documents into clear, accessible content for any audience.", url: "https://kr-tech-simplifier.lovable.app", tag: "Lovable App", stats: ["Doc Simplifier", "AI-Powered"] },
+  { name: "Profile Studio", desc: "Professional profile search and optimization tool — analyse, compare, and enhance professional profiles across platforms.", url: "https://kr-profile-search.lovable.app", tag: "Lovable App", stats: ["Profile Analysis", "Optimisation"] },
+  { name: "Profile Perfecter", desc: "Smart JD-to-profile matcher — align your professional profile with job descriptions using AI-powered gap analysis and recommendations.", url: "https://kr-jd-smart-profile.lovable.app", tag: "Lovable App", stats: ["JD Matching", "Gap Analysis"] },
+  { name: "TestForge AI", desc: "AI-powered test automation generator — create test scripts, test plans, and quality artefacts from requirements using large language models.", url: "https://kr-test-automator.lovable.app", tag: "Lovable App", stats: ["Test Gen", "AI Automation"] },
+  { name: "Nexus Unified Hub", desc: "All-in-one tool aggregator — unified access to multiple productivity and engineering tools in a single dashboard.", url: "https://kr-omni-tool-hub.lovable.app", tag: "Lovable App", stats: ["Unified Dashboard", "Multi-Tool"] },
+  { name: "Prompt Builder Hub", desc: "Terminal-inspired prompt composition studio — build, refine, and export structured prompts with template support.", url: "https://kr-terminal-muse-maker.lovable.app", tag: "Lovable App", stats: ["Prompt Composer", "Templates"] },
+];
+
+const learningAndKnowledge: TextProfile[] = [
+  { name: "Idea Vault Pro", desc: "App ideas vault — capture, organise, and prioritise product and project ideas with structured templates and scoring.", url: "https://kr-app-ideas-vault.lovable.app", tag: "Lovable App", stats: ["Idea Capture", "Prioritisation"] },
+  { name: "KR Insights", desc: "Curated insights hub — aggregated knowledge, trends, and analysis across technology, business, and leadership.", url: "https://kr-app-nexus.lovable.app", tag: "Lovable App", stats: ["Insights", "Trends"] },
+  { name: "Resource Navigator", desc: "Structured learning path hub — curated resources, courses, and progression tracks for technology skill development.", url: "https://kr-learning-path-hub.lovable.app", tag: "Lovable App", stats: ["Learning Paths", "Resources"] },
+  { name: "Social Dashboard Hub", desc: "Social media content dashboard — aggregate and showcase posts, quizzes, blogs, and thought leadership content.", url: "https://social-dashboard-hub.lovable.app", tag: "Lovable App", stats: ["Content Dashboard", "Social Media"] },
+];
+
+const morePersonalApps: TextProfile[] = [
+  { name: "Tetris Stack", desc: "Classic Tetris game with increasing difficulty — responsive web app playable on desktop and mobile.", url: "https://kr-tetris-stack.lovable.app", tag: "Game", stats: ["Classic Tetris", "Mobile Ready"] },
+  { name: "Expense Tracker", desc: "Personal finance tracking app — log expenses, set budgets, and visualise spending patterns with clean minimalist UI.", url: "https://kr-expense-tracker.lovable.app", tag: "Finance", stats: ["Budget Tracking", "Minimalist UI"] },
+  { name: "Jeopardy Quiz", desc: "Jeopardy-style quiz application — category-based questions with scoring, smooth animations, and responsive interface.", url: "https://kr-jeopardy-quiz.lovable.app", tag: "Game", stats: ["Jeopardy Style", "Scoring"] },
+  { name: "Mindful Flow", desc: "Personal productivity dashboard — track daily goals, to-do lists, finances, and habits in a unified mindful interface.", url: "https://mindful-flow-82.lovable.app", tag: "Productivity", stats: ["Goals", "Habits", "Finance"] },
+];
+
 const platformProfiles: Profile[] = [
   {
     name: "Main Portfolio",
