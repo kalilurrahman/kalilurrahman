@@ -184,15 +184,86 @@ Cloud        AWS · GitHub Pages · Vercel
 
 Here is a visual summary of the [kalilurrahman.lovable.app](https://kalilurrahman.lovable.app/) portfolio, showcasing some of the applications built and hosted across different platforms.
 
-### Main Portfolio - Desktop View
+### Home Page
 
-![Main Portfolio Desktop](src/assets/screenshots/main-portfolio-desktop.png)
+Here are the scrolled sections of the main Home page showcasing different parts of the portfolio.
 
-### Portfolio Library - Desktop View
+<details>
+<summary>View Home Page Screenshots</summary>
 
-![Portfolio Library Desktop](src/assets/screenshots/main-portfolio-library-desktop.png)
+![Home Part 1](src/assets/screenshots/portfolio-home-part-1.png)
+![Home Part 2](src/assets/screenshots/portfolio-home-part-2.png)
+![Home Part 3](src/assets/screenshots/portfolio-home-part-3.png)
+![Home Part 4](src/assets/screenshots/portfolio-home-part-4.png)
+![Home Part 5](src/assets/screenshots/portfolio-home-part-5.png)
+![Home Part 6](src/assets/screenshots/portfolio-home-part-6.png)
+![Home Part 7](src/assets/screenshots/portfolio-home-part-7.png)
+![Home Part 8](src/assets/screenshots/portfolio-home-part-8.png)
+![Home Part 9](src/assets/screenshots/portfolio-home-part-9.png)
+![Home Part 10](src/assets/screenshots/portfolio-home-part-10.png)
 
-### Main Portfolio - Mobile Views
+</details>
+
+### AI Agents
+
+An overview of AI agents and custom-built assistants.
+
+<details>
+<summary>View AI Agents Screenshots</summary>
+
+![AI Agents Part 1](src/assets/screenshots/portfolio-ai-agents-part-1.png)
+![AI Agents Part 2](src/assets/screenshots/portfolio-ai-agents-part-2.png)
+![AI Agents Part 3](src/assets/screenshots/portfolio-ai-agents-part-3.png)
+![AI Agents Part 4](src/assets/screenshots/portfolio-ai-agents-part-4.png)
+![AI Agents Part 5](src/assets/screenshots/portfolio-ai-agents-part-5.png)
+![AI Agents Part 6](src/assets/screenshots/portfolio-ai-agents-part-6.png)
+![AI Agents Part 7](src/assets/screenshots/portfolio-ai-agents-part-7.png)
+![AI Agents Part 8](src/assets/screenshots/portfolio-ai-agents-part-8.png)
+![AI Agents Part 9](src/assets/screenshots/portfolio-ai-agents-part-9.png)
+![AI Agents Part 10](src/assets/screenshots/portfolio-ai-agents-part-10.png)
+
+</details>
+
+### Digital Hub
+
+Centralized digital repository and resources section.
+
+<details>
+<summary>View Digital Hub Screenshots</summary>
+
+![Digital Hub Part 1](src/assets/screenshots/portfolio-digital-hub-part-1.png)
+![Digital Hub Part 2](src/assets/screenshots/portfolio-digital-hub-part-2.png)
+![Digital Hub Part 3](src/assets/screenshots/portfolio-digital-hub-part-3.png)
+![Digital Hub Part 4](src/assets/screenshots/portfolio-digital-hub-part-4.png)
+![Digital Hub Part 5](src/assets/screenshots/portfolio-digital-hub-part-5.png)
+
+</details>
+
+### Knowledge Hub
+
+Educational hubs, articles, and curated resources.
+
+<details>
+<summary>View Knowledge Hub Screenshots</summary>
+
+![Knowledge Hub Part 1](src/assets/screenshots/portfolio-knowledge-hub-part-1.png)
+![Knowledge Hub Part 2](src/assets/screenshots/portfolio-knowledge-hub-part-2.png)
+
+</details>
+
+### Library
+
+Complete repository listing and detailed application cards.
+
+<details>
+<summary>View Library Screenshots</summary>
+
+![Library Part 1](src/assets/screenshots/portfolio-library-part-1.png)
+![Library Part 2](src/assets/screenshots/portfolio-library-part-2.png)
+
+</details>
+
+### Mobile Views
 
 <div style="display: flex; gap: 10px;">
   <img src="src/assets/screenshots/main-portfolio-mobile.png" alt="Main Portfolio Mobile" width="250" />
