@@ -8,6 +8,31 @@ Building at the intersection of enterprise strategy and hands-on product enginee
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-kalilurrahman.github.io-333?style=flat-square)](https://kalilurrahman.github.io/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/kalilurrahman/)
 
+[![Lines Of Code](https://img.shields.io/badge/Lines_of_Code-21.4k-success?style=flat-square)](#)
+[![Total Repositories](https://img.shields.io/badge/Total_Repositories-89-blue?style=flat-square)](#)
+[![Domains](https://img.shields.io/badge/Domains-13-blue?style=flat-square)](#)
+[![Primary Language](https://img.shields.io/badge/TypeScript-Primary-3178C6?style=flat-square&logo=typescript)](#)
+[![Frontend Framework](https://img.shields.io/badge/React-Enabled-61DAFB?style=flat-square&logo=react)](#)
+[![Styling](https://img.shields.io/badge/Tailwind_CSS-Enabled-38B2AC?style=flat-square&logo=tailwind-css)](#)
+
+---
+
+## Table of Contents
+- [What I Build](#what-i-build)
+  - [AI / GenAI / Agentic AI](#ai--genai--agentic-ai)
+  - [Quality Engineering & Testing](#quality-engineering--testing)
+  - [GCC / Enterprise Strategy](#gcc--enterprise-strategy)
+  - [Data Science & Machine Learning](#data-science--machine-learning)
+  - [Finance & Stock Data](#finance--stock-data)
+  - [Web Apps & Tools](#web-apps--tools)
+  - [Career & Interview Prep](#career--interview-prep)
+  - [Education & Training](#education--training)
+  - [Content & Social](#content--social)
+  - [Games](#games)
+- [Tech Stack](#tech-stack)
+- [Portfolio Screenshots](#portfolio-screenshots)
+- [Stats](#stats)
+
 ---
 
 ## What I Build
@@ -152,6 +177,27 @@ Cloud        AWS · GitHub Pages · Vercel
 ## Stats
 
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=kalilurrahman&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=20808D&icon_color=20808D&text_color=e6edf3)
+
+---
+
+## Portfolio Screenshots
+
+Here is a visual summary of the [kalilurrahman.lovable.app](https://kalilurrahman.lovable.app/) portfolio, showcasing some of the applications built and hosted across different platforms.
+
+### Main Portfolio - Desktop View
+
+![Main Portfolio Desktop](src/assets/screenshots/main-portfolio-desktop.png)
+
+### Portfolio Library - Desktop View
+
+![Portfolio Library Desktop](src/assets/screenshots/main-portfolio-library-desktop.png)
+
+### Main Portfolio - Mobile Views
+
+<div style="display: flex; gap: 10px;">
+  <img src="src/assets/screenshots/main-portfolio-mobile.png" alt="Main Portfolio Mobile" width="250" />
+  <img src="src/assets/screenshots/main-portfolio-library-mobile.png" alt="Portfolio Library Mobile" width="250" />
+</div>
 
 ---
 
