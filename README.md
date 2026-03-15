@@ -201,4 +201,121 @@ Here is a visual summary of the [kalilurrahman.lovable.app](https://kalilurrahma
 
 ---
 
+
+
+### Themes
+
+The main portfolio site supports dynamic themes. Here is how it looks across different modes:
+
+<div style="display: flex; gap: 10px; flex-wrap: wrap;">
+  <img src="src/assets/screenshots/themes/theme_light.png" alt="Light Theme" width="400" />
+  <img src="src/assets/screenshots/themes/theme_dark.png" alt="Dark Theme" width="400" />
+  <img src="src/assets/screenshots/themes/theme_sepia.png" alt="Sepia Theme" width="400" />
+  <img src="src/assets/screenshots/themes/theme_midnight.png" alt="Midnight Theme" width="400" />
+</div>
+
+### Portfolio Sections
+
+Detailed sections showcasing impact, credentials, peer voices, awards, and publications.
+
+<div style="display: flex; gap: 10px; flex-wrap: wrap;">
+  <img src="src/assets/screenshots/tabs/tab_impact_numbers.png" alt="Impact Numbers" width="400" />
+  <img src="src/assets/screenshots/tabs/tab_credentials.png" alt="Credentials" width="400" />
+  <img src="src/assets/screenshots/tabs/tab_awards.png" alt="Awards" width="400" />
+  <img src="src/assets/screenshots/tabs/tab_publications.png" alt="Publications" width="400" />
+  <img src="src/assets/screenshots/tabs/tab_peer_voices.png" alt="Peer Voices" width="400" />
+</div>
+
+### Modal Views
+
+<div style="display: flex; gap: 10px; flex-wrap: wrap;">
+  <img src="src/assets/screenshots/modals/modal_credential.png" alt="Credential Modal View" width="400" />
+</div>
+
+### Agentic AI Prompts Hub
+
+<div style="display: flex; gap: 10px; flex-wrap: wrap;">
+  <img src="src/assets/screenshots/prompts/agentic_ai_prompts_hub_desktop.png" alt="Agentic Prompts Main" width="400" />
+  <img src="src/assets/screenshots/prompts/agentic_industry_about.png" alt="About Filter" width="400" />
+  <img src="src/assets/screenshots/prompts/agentic_industry_home.png" alt="Home Filter" width="400" />
+</div>
+
+### Finance Prompt Hub
+
+<div style="display: flex; gap: 10px; flex-wrap: wrap;">
+  <img src="src/assets/screenshots/prompts/financial_engineering__advisory_prompts_desktop.png" alt="Finance Prompts Main" width="400" />
+  <img src="src/assets/screenshots/prompts/finance_industry_investment_banking.png" alt="Investment Banking Filter" width="400" />
+</div>
+
+### App Directory Highlights
+
+<details>
+<summary>Click to view screenshots of individual applications</summary>
+<br>
+
+<div style="display: flex; gap: 10px; flex-wrap: wrap;">
+  <img src="src/assets/screenshots/apps/acronym_buster__cyber_lexicon_hub_desktop.png" alt="Acronym Buster  Cyber Lexicon Hub" width="300" />
+  <img src="src/assets/screenshots/apps/acuitas-framework.png" alt="Acuitas-Framework" width="300" />
+  <img src="src/assets/screenshots/apps/acuitas__ai_quality_engineering_framework_desktop.png" alt="Acuitas  Ai Quality Engineering Framework" width="300" />
+  <img src="src/assets/screenshots/apps/ai-literacy-hub.png" alt="Ai-Literacy-Hub" width="300" />
+  <img src="src/assets/screenshots/apps/ai_literacy_hub_desktop.png" alt="Ai Literacy Hub" width="300" />
+  <img src="src/assets/screenshots/apps/amazon-author.png" alt="Amazon-Author" width="300" />
+  <img src="src/assets/screenshots/apps/app_desktop.png" alt="App" width="300" />
+  <img src="src/assets/screenshots/apps/arcade-games.png" alt="Arcade-Games" width="300" />
+  <img src="src/assets/screenshots/apps/arcade_vault_desktop.png" alt="Arcade Vault" width="300" />
+  <img src="src/assets/screenshots/apps/biztech-quizzer.png" alt="Biztech-Quizzer" width="300" />
+  <img src="src/assets/screenshots/apps/biztech_quiz_arena_desktop.png" alt="Biztech Quiz Arena" width="300" />
+  <img src="src/assets/screenshots/apps/corp-upskill.png" alt="Corp-Upskill" width="300" />
+  <img src="src/assets/screenshots/apps/corporate_upskilling_planner_desktop.png" alt="Corporate Upskilling Planner" width="300" />
+  <img src="src/assets/screenshots/apps/cyber-lexicon-hub.png" alt="Cyber-Lexicon-Hub" width="300" />
+  <img src="src/assets/screenshots/apps/exec-scribe.png" alt="Exec-Scribe" width="300" />
+  <img src="src/assets/screenshots/apps/execcomms_forge_desktop.png" alt="Execcomms Forge" width="300" />
+  <img src="src/assets/screenshots/apps/farzi-10th.png" alt="Farzi-10Th" width="300" />
+  <img src="src/assets/screenshots/apps/farzi_10th__cbse_board_prep_desktop.png" alt="Farzi 10Th  Cbse Board Prep" width="300" />
+  <img src="src/assets/screenshots/apps/framer-portfolio.png" alt="Framer-Portfolio" width="300" />
+  <img src="src/assets/screenshots/apps/gcc-compass.png" alt="Gcc-Compass" width="300" />
+  <img src="src/assets/screenshots/apps/gcc-playbook.png" alt="Gcc-Playbook" width="300" />
+  <img src="src/assets/screenshots/apps/gcc_compass_desktop.png" alt="Gcc Compass" width="300" />
+  <img src="src/assets/screenshots/apps/gcc_playbook_desktop.png" alt="Gcc Playbook" width="300" />
+  <img src="src/assets/screenshots/apps/github-profile.png" alt="Github-Profile" width="300" />
+  <img src="src/assets/screenshots/apps/interview-prep-vault.png" alt="Interview-Prep-Vault" width="300" />
+  <img src="src/assets/screenshots/apps/interview_prep_vault_desktop.png" alt="Interview Prep Vault" width="300" />
+  <img src="src/assets/screenshots/apps/islamic-duas_collage.png" alt="Islamic-Duas Collage" width="300" />
+  <img src="src/assets/screenshots/apps/islamic-duas_desktop.png" alt="Islamic-Duas" width="300" />
+  <img src="src/assets/screenshots/apps/islamic-duas_mobile.png" alt="Islamic-Duas Mobile" width="300" />
+  <img src="src/assets/screenshots/apps/islamic_duas_desktop.png" alt="Islamic Duas" width="300" />
+  <img src="src/assets/screenshots/apps/kaggle-profile.png" alt="Kaggle-Profile" width="300" />
+  <img src="src/assets/screenshots/apps/kaggle-skill-hub.png" alt="Kaggle-Skill-Hub" width="300" />
+  <img src="src/assets/screenshots/apps/kaggle_bootcamp_desktop.png" alt="Kaggle Bootcamp" width="300" />
+  <img src="src/assets/screenshots/apps/linktree.png" alt="Linktree" width="300" />
+  <img src="src/assets/screenshots/apps/master-profile.png" alt="Master-Profile" width="300" />
+  <img src="src/assets/screenshots/apps/news-app.png" alt="News-App" width="300" />
+  <img src="src/assets/screenshots/apps/newsvault_desktop.png" alt="Newsvault" width="300" />
+  <img src="src/assets/screenshots/apps/phd-research-assistant.png" alt="Phd-Research-Assistant" width="300" />
+  <img src="src/assets/screenshots/apps/pocket-news_collage.png" alt="Pocket-News Collage" width="300" />
+  <img src="src/assets/screenshots/apps/pocket-news_desktop.png" alt="Pocket-News" width="300" />
+  <img src="src/assets/screenshots/apps/pocket-news_mobile.png" alt="Pocket-News Mobile" width="300" />
+  <img src="src/assets/screenshots/apps/pocket_news_desktop.png" alt="Pocket News" width="300" />
+  <img src="src/assets/screenshots/apps/qe-compass.png" alt="Qe-Compass" width="300" />
+  <img src="src/assets/screenshots/apps/qe_compass_desktop.png" alt="Qe Compass" width="300" />
+  <img src="src/assets/screenshots/apps/quantum-hub.png" alt="Quantum-Hub" width="300" />
+  <img src="src/assets/screenshots/apps/quantum_computing_guide_desktop.png" alt="Quantum Computing Guide" width="300" />
+  <img src="src/assets/screenshots/apps/quiz-blitz-hub.png" alt="Quiz-Blitz-Hub" width="300" />
+  <img src="src/assets/screenshots/apps/quiz_master__quiz_blitz_hub_desktop.png" alt="Quiz Master  Quiz Blitz Hub" width="300" />
+  <img src="src/assets/screenshots/apps/social-authority-hub.png" alt="Social-Authority-Hub" width="300" />
+  <img src="src/assets/screenshots/apps/social_authority_hub_desktop.png" alt="Social Authority Hub" width="300" />
+  <img src="src/assets/screenshots/apps/tech-curator-guide_collage.png" alt="Tech-Curator-Guide Collage" width="300" />
+  <img src="src/assets/screenshots/apps/tech-curator-guide_desktop.png" alt="Tech-Curator-Guide" width="300" />
+  <img src="src/assets/screenshots/apps/tech-curator-guide_mobile.png" alt="Tech-Curator-Guide Mobile" width="300" />
+  <img src="src/assets/screenshots/apps/tech_curator_guide_desktop.png" alt="Tech Curator Guide" width="300" />
+  <img src="src/assets/screenshots/apps/training-portfolio.png" alt="Training-Portfolio" width="300" />
+  <img src="src/assets/screenshots/apps/training_portfolio_desktop.png" alt="Training Portfolio" width="300" />
+  <img src="src/assets/screenshots/apps/veritas-qe-framework.png" alt="Veritas-Qe-Framework" width="300" />
+  <img src="src/assets/screenshots/apps/veritas__qe_framework_desktop.png" alt="Veritas  Qe Framework" width="300" />
+
+</div>
+</details>
+
+
+---
 *89 original repositories across 13 domains — shipping fast, building deep.*
