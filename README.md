@@ -50,12 +50,10 @@ Building tools and frameworks for practical AI adoption in the enterprise.
 | [kr-ai-literacy-hub](https://github.com/kalilurrahman/kr-ai-literacy-hub) | Comprehensive AI literacy platform for enterprise professionals |
 | [kr-prompt-terminal-builder](https://github.com/kalilurrahman/kr-prompt-terminal-builder) | Interactive terminal UI for building and testing prompts across LLM providers |
 | [krpromptsapp](https://github.com/kalilurrahman/krpromptsapp) | Full-stack prompt management application for teams |
-| [agenticAIVibeCodingProductBuilder](https://github.com/kalilurrahman/agenticAIVibeCodingProductBuilder) | Rapid product builder using agentic AI and vibe coding |
 | [Awesome-Prompts](https://github.com/kalilurrahman/Awesome-Prompts) | Curated awesome list of high-quality prompts for ChatGPT, Claude, Gemini |
 | [kr-ai-ml-tech-repo](https://github.com/kalilurrahman/kr-ai-ml-tech-repo) | Technical reference covering AI/ML concepts, architectures, and frameworks |
 | [kr-terminal-muse-maker](https://github.com/kalilurrahman/kr-terminal-muse-maker) | Terminal-based creative AI tool for content generation and brainstorming |
 | [ai-news-curator](https://github.com/kalilurrahman/ai-news-curator) | AI-powered news aggregation with intelligent filtering |
-| [aiotiai](https://github.com/kalilurrahman/aiotiai) | Exploring the intersection of IoT and AI for smart systems |
 
 ### Quality Engineering & Testing
 
@@ -63,7 +61,7 @@ Frameworks and tools for modern quality engineering — from strategy to automat
 
 | Repository | Description |
 |---|---|
-| [kr-veritas-qe-framework](https://github.com/kalilurrahman/kr-veritas-qe-framework) | Veritas QE Framework — comprehensive methodology for strategy, automation, and metrics |
+| [kr-veritas-qe-framework](https://github.com/kalilurrahman/kr-veritas-qe-framework) | Acuitas QE Framework — comprehensive methodology for strategy, automation, and metrics |
 | [kr-qe-compass](https://github.com/kalilurrahman/kr-qe-compass) | Interactive QE maturity assessment and improvement roadmap builder |
 | [kr-test-automator](https://github.com/kalilurrahman/kr-test-automator) | Intelligent test automation with AI-assisted test generation |
 | [AptestQualityEngineer](https://github.com/kalilurrahman/AptestQualityEngineer) | Aptest — AI-powered tool for automated test case generation |
@@ -88,12 +86,7 @@ From 1000 Kaggle notebooks to data visualization and ML coursework.
 
 | Repository | Description |
 |---|---|
-| [1000_KaggleNoteBooks](https://github.com/kalilurrahman/1000_KaggleNoteBooks) | Archive of 1000+ Kaggle notebooks — EDA, feature engineering, ML models |
 | [kr-kaggle-skill-hub](https://github.com/kalilurrahman/kr-kaggle-skill-hub) | Kaggle skill development hub with curated competitions and learning paths |
-| [dataviz_notebooks](https://github.com/kalilurrahman/dataviz_notebooks) | Data visualization notebooks exploring chart types and storytelling |
-| [CourseraDataScienceCapstone](https://github.com/kalilurrahman/CourseraDataScienceCapstone) | IBM Data Science Professional Certificate capstone project |
-| [practicalmachinelearning](https://github.com/kalilurrahman/practicalmachinelearning) | JHU Practical Machine Learning course exercises |
-| [tradingdatascience](https://github.com/kalilurrahman/tradingdatascience) | Data science for algorithmic trading — time series and quantitative strategies |
 
 ### Finance & Stock Data
 
@@ -123,7 +116,6 @@ Full-stack applications and developer utilities built with TypeScript/React.
 | [kr-tech-simplifier](https://github.com/kalilurrahman/kr-tech-simplifier) | Makes complex tech concepts accessible with plain-language explanations |
 | [kr-app-nexus](https://github.com/kalilurrahman/kr-app-nexus) | Centralized launchpad connecting all KR micro-apps |
 | [kr-quantum-hub](https://github.com/kalilurrahman/kr-quantum-hub) | Quantum computing educational hub with interactive lessons |
-| [OpenAICodexExampleCarousel](https://github.com/kalilurrahman/OpenAICodexExampleCarousel) | Interactive carousel showcasing OpenAI Codex code generation examples |
 
 ### Career & Interview Prep
 
@@ -141,7 +133,6 @@ Full-stack applications and developer utilities built with TypeScript/React.
 | [kr-biztech-quizzer](https://github.com/kalilurrahman/kr-biztech-quizzer) | Interactive business and technology quiz platform |
 | [kr-quiz-blitz-hub](https://github.com/kalilurrahman/kr-quiz-blitz-hub) | Fast-paced quiz platform with timed rounds and leaderboards |
 | [kr-training-portfolio](https://github.com/kalilurrahman/kr-training-portfolio) | Training materials, facilitator guides, and program designs |
-| [smarty-sparks](https://github.com/kalilurrahman/smarty-sparks) | Fun learning platform for kids with puzzles and educational games |
 | [kr-islamic-duas](https://github.com/kalilurrahman/kr-islamic-duas) | Islamic duas with Arabic text, transliteration, and translations |
 | [farzi-10th](https://github.com/kalilurrahman/farzi-10th) | Educational learning app for 10th grade students |
 
