@@ -3,9 +3,16 @@ const Footer = () => {
     <footer className="border-t border-border py-8">
       <div className="container max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
         <p className="text-xs text-muted-foreground">
-          © {new Date().getFullYear()} Kalilur Rahman. All rights reserved.
+          © Kalilur Rahman. All rights reserved.
         </p>
-        <div className="flex items-center gap-4">
+        <div className="flex flex-wrap items-center gap-4 justify-center">
+          <a
+            href="https://kalilur-portfolio.lovable.app"
+            className="text-xs font-medium text-primary hover:text-accent transition-colors"
+          >
+            All KR apps →
+          </a>
+          <span className="text-muted-foreground opacity-50 block md:inline hidden">|</span>
           <a
             href="https://www.linkedin.com/in/kalilurrahman/"
             target="_blank"
