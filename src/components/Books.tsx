@@ -5,85 +5,58 @@ import { ExternalLink } from "lucide-react";
 const books = [
   {
     title: "Python Data Visualisation Essentials Guide",
-    desc: "A practical guide covering Matplotlib, Seaborn, Pandas, Plotly, and more.",
-    url: "https://in.bpbonline.com/products/python-data-visualization-essential-guide",
+    desc: "A practical introduction to turning data into clear, compelling visual stories with Python.",
+    url: "https://example.com/book-1",
   },
   {
     title: "Science Of Selenium",
-    desc: "From fundamentals to frameworks — multi‑language usage and CI integration.",
-    url: "https://www.amazon.in/Science-Selenium-Automation-Framework-English-ebook/dp/B082KFY17B",
+    desc: "A hands-on guide to automation strategy, frameworks, and resilient quality engineering practices.",
+    url: "https://example.com/book-2",
   },
   {
     title: "Innovations in Testing",
-    desc: "A curated collection of testing‑focused blogs and reflections.",
-    url: "https://www.amazon.in/dp/B078LRPLK8",
+    desc: "A concise exploration of modern testing ideas, delivery models, and leadership perspectives.",
+    url: "https://example.com/book-3",
   },
-];
-
-const articles = [
-  "Impacts of DevOps on Testing",
-  "Impact of Digital Revolution on Testing Mobile & Web Apps over Cloud",
-  "Test Data Masking and Tool Pilot Experiences",
-  "Intelligent Testing Skills for Next Generation",
-  "Model Based Testing for Communications Industry",
 ];
 
 const Books = () => {
   return (
-    <Section id="books" title="Books & Publications" subtitle="Translating experience into frameworks and reference material.">
-      <div className="grid md:grid-cols-3 gap-6 mb-12">
+    <Section id="books" title="Published Works" subtitle="Selected books that capture practical lessons from engineering, automation, and transformation.">
+      <div className="mb-8 inline-flex border-b-2 border-teal pb-2">
+        <span className="text-sm font-semibold uppercase tracking-[0.2em] text-teal">Published Works</span>
+      </div>
+
+      <div className="grid gap-6 md:grid-cols-3">
         {books.map((book, i) => (
-          <motion.a
+          <motion.article
             key={book.title}
-            href={book.url}
-            target="_blank"
-            rel="noopener noreferrer"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: i * 0.1 }}
-            className="group p-6 border border-border bg-card hover:border-primary/40 hover:glow-gold transition-all"
+            className="group flex flex-col border border-border bg-card p-6"
           >
-            <div className="flex items-start justify-between mb-4">
-              <span className="text-2xl">📕</span>
-              <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
-            </div>
-            <h3 className="font-serif text-lg text-foreground group-hover:text-primary transition-colors mb-2">
-              {book.title}
-            </h3>
-            <p className="text-sm text-muted-foreground">{book.desc}</p>
-          </motion.a>
+            <img
+              src="/placeholder.svg"
+              alt={`${book.title} placeholder book cover`}
+              loading="lazy"
+              className="mb-5 aspect-[3/4] w-full rounded-md border border-border bg-secondary object-cover shadow-lg"
+            />
+            <h3 className="mb-2 font-serif text-xl text-foreground">{book.title}</h3>
+            <p className="mb-5 text-sm leading-relaxed text-muted-foreground">{book.desc}</p>
+            <a
+              href={book.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-teal transition-colors hover:text-primary"
+            >
+              Get the book →
+              <ExternalLink className="h-4 w-4" />
+            </a>
+          </motion.article>
         ))}
       </div>
-
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
-        className="p-6 border border-border bg-card"
-      >
-        <h3 className="font-serif text-lg text-foreground mb-4">Selected Articles & White Papers</h3>
-        <ul className="grid md:grid-cols-2 gap-2">
-          {articles.map((a) => (
-            <li key={a} className="flex gap-2 text-sm text-secondary-foreground/70">
-              <span className="text-primary shrink-0">—</span>
-              {a}
-            </li>
-          ))}
-        </ul>
-        <div className="flex gap-4 mt-6">
-          <a href="https://publicationslist.org/kalilur.rahman" target="_blank" rel="noopener noreferrer" className="text-sm text-primary hover:underline inline-flex items-center gap-1">
-            Publications List <ExternalLink className="w-3 h-3" />
-          </a>
-          <a href="https://scholar.google.com/citations?user=hCYBFKYAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" className="text-sm text-primary hover:underline inline-flex items-center gap-1">
-            Google Scholar <ExternalLink className="w-3 h-3" />
-          </a>
-          <a href="https://www.amazon.com/stores/Kalilur-Rahman/author/B0863JL6R7" target="_blank" rel="noopener noreferrer" className="text-sm text-primary hover:underline inline-flex items-center gap-1">
-            Amazon Author <ExternalLink className="w-3 h-3" />
-          </a>
-        </div>
-      </motion.div>
     </Section>
   );
 };
