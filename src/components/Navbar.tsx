@@ -22,6 +22,7 @@ const pageLinks = [
   { label: "Knowledge Hub", to: "/knowledge-hub", icon: BookOpen },
   { label: "AI Agents", to: "/ai-agents", icon: Bot },
   { label: "Digital Hub", to: "/digital-hub", icon: Globe },
+  { label: "Apps Portfolio", to: "/apps-portfolio", icon: Layers },
 ];
 
 const profileLinks = [

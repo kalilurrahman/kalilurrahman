@@ -15,6 +15,7 @@ import ProfileGCCAdvisor from "./pages/ProfileGCCAdvisor";
 import ProfileCoEChampion from "./pages/ProfileCoEChampion";
 import ProfileDigitalTransformation from "./pages/ProfileDigitalTransformation";
 import InstallPage from "./pages/InstallPage";
+import AppsPortfolio from "./pages/AppsPortfolio";
 
 const queryClient = new QueryClient();
 
@@ -32,6 +33,7 @@ const App = () => (
             <Route path="/digital-hub" element={<DigitalHub />} />
             <Route path="/knowledge-hub" element={<KnowledgeHubPage />} />
             <Route path="/ai-agents" element={<AgenticAIPage />} />
+            <Route path="/apps-portfolio" element={<AppsPortfolio />} />
             <Route path="/profile/ai-advisor" element={<ProfileAIAdvisor />} />
             <Route path="/profile/gcc-advisor" element={<ProfileGCCAdvisor />} />
             <Route path="/profile/coe-champion" element={<ProfileCoEChampion />} />
