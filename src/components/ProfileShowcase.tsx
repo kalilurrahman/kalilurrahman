@@ -119,8 +119,8 @@ const promptsAndAI: Profile[] = [
     stats: ["Terminal UI", "Prompt Templates", "Multi-Model Export"],
   },
   {
-    name: "VERITAS — QE Framework",
-    desc: "Verification, Evaluation, Risk, Integrity, Testing, Assurance & Standards — a comprehensive Quality Engineering framework with compliance mapping, testing standards, and verification processes.",
+    name: "ACUITAS - AI Quality Engineering Framework & CLARITY — AI Product Management Framework",
+    desc: "ACUITAS - AI Quality Engineering Framework - Assessment, Calibration, Understanding, Integrity, Testing, Assurance, and Surveillance for AI Systems & CLARITY — AI Product Management Framework - Conception, Landscape, Accountability, Responsible Design, Integration, Tracking, and Yield",
     url: "https://kr-veritas-qe-framework.lovable.app",
     screenshot: veritasQEScreenshot,
     tag: "Framework",
@@ -609,9 +609,8 @@ const ProfileShowcase = () => {
                       setSelectedRepo(repo.name);
                       setDropdownOpen(false);
                     }}
-                    className={`w-full flex items-center justify-between px-4 py-3 text-left hover:bg-primary/10 hover:text-primary transition-colors border-b border-border/30 last:border-0 ${
-                      selectedRepo === repo.name ? "bg-primary/10 text-primary" : "text-foreground"
-                    }`}
+                    className={`w-full flex items-center justify-between px-4 py-3 text-left hover:bg-primary/10 hover:text-primary transition-colors border-b border-border/30 last:border-0 ${selectedRepo === repo.name ? "bg-primary/10 text-primary" : "text-foreground"
+                      }`}
                   >
                     <span className="text-sm font-mono">{repo.name}</span>
                     <span className="text-xs text-muted-foreground ml-3 shrink-0">{repo.lang}</span>
