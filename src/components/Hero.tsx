@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Download } from "lucide-react";
+import { BarChart3, BookOpen, Globe2, Download, ExternalLink } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const badges = [
@@ -8,6 +8,12 @@ const badges = [
   "GCC Leader",
   "Quality Engineering",
   "AI & Data",
+];
+
+const credentials = [
+  { label: "Kaggle Legacy Grandmaster", icon: BarChart3 },
+  { label: "Top Global Thinker – Thinkers360", icon: Globe2 },
+  { label: "3 Published Books", icon: BookOpen },
 ];
 
 const stats = [
@@ -19,22 +25,20 @@ const stats = [
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background */}
+    <section className="relative min-h-[92vh] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
-        <img src={heroBg} alt="" className="w-full h-full object-cover opacity-40" />
+        <img src={heroBg} alt="Abstract editorial hero background" className="w-full h-full object-cover opacity-40" />
         <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background" />
       </div>
 
-      <div className="relative z-10 container max-w-6xl mx-auto px-6 py-32">
+      <div className="relative z-10 container max-w-6xl mx-auto px-6 py-20 md:py-16 lg:py-12">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center"
         >
-          {/* Monogram */}
-          <div className="inline-flex items-center justify-center w-20 h-20 border border-primary/40 rounded-sm mb-8">
+          <div className="inline-flex items-center justify-center w-20 h-20 border border-primary/40 rounded-sm mb-6">
             <span className="font-serif text-2xl text-primary">KR</span>
           </div>
 
@@ -42,12 +46,11 @@ const Hero = () => {
             Kalilur <span className="text-gradient-gold italic">Rahman</span>
           </h1>
 
-          <p className="text-muted-foreground tracking-[0.25em] uppercase text-sm md:text-base mb-8">
+          <p className="text-muted-foreground tracking-[0.25em] uppercase text-sm md:text-base mb-6">
             Global IT Executive · Author · Kaggle Grandmaster
           </p>
 
-          {/* Badges */}
-          <div className="flex flex-wrap justify-center gap-3 mb-12">
+          <div className="flex flex-wrap justify-center gap-3 mb-8">
             {badges.map((badge) => (
               <span
                 key={badge}
@@ -58,8 +61,27 @@ const Hero = () => {
             ))}
           </div>
 
-          {/* CTA */}
-          <div className="flex flex-wrap justify-center gap-4 mb-16">
+          <div className="mx-auto mb-6 grid max-w-5xl gap-3 rounded-2xl border border-border/70 bg-card/70 p-4 backdrop-blur-sm md:grid-cols-3">
+            {credentials.map((item) => {
+              const Icon = item.icon;
+              return (
+                <div key={item.label} className="flex items-center justify-center gap-3 rounded-xl border border-border/60 bg-background/50 px-4 py-3 text-left">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-teal text-teal-foreground">
+                    <Icon className="h-5 w-5" />
+                  </span>
+                  <span className="text-sm font-medium leading-snug text-foreground">{item.label}</span>
+                </div>
+              );
+            })}
+          </div>
+
+          <div className="mb-10 flex flex-wrap justify-center gap-4">
+            <a
+              href="mailto:kalilur@gmail.com"
+              className="inline-flex items-center gap-2 rounded-full bg-teal px-7 py-3 text-sm font-semibold tracking-wide text-teal-foreground shadow-sm transition-transform hover:-translate-y-0.5"
+            >
+              Invite me to speak →
+            </a>
             <a
               href="https://www.linkedin.com/in/kalilurrahman/"
               target="_blank"
@@ -78,28 +100,13 @@ const Hero = () => {
               <Download className="w-4 h-4" />
               Download CV / Resume
             </a>
-            <a
-              href="#contact"
-              onClick={(e) => {
-                e.preventDefault();
-                const el = document.querySelector("#contact");
-                if (el) {
-                  const top = el.getBoundingClientRect().top + window.scrollY - 60;
-                  window.scrollTo({ top, behavior: "smooth" });
-                }
-              }}
-              className="inline-flex items-center gap-2 px-6 py-3 border border-border text-foreground font-medium text-sm tracking-wide hover:border-primary/50 transition-colors"
-            >
-              Get in Touch
-            </a>
           </div>
 
-          {/* Stats */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto"
+            className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto"
           >
             {stats.map((stat) => (
               <div key={stat.label} className="p-4 border border-border/50 bg-card/50 backdrop-blur-sm">

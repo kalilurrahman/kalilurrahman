@@ -12,6 +12,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import KnowledgeHubSection from "@/components/KnowledgeHubSection";
+import Testimonials from "@/components/Testimonials";
 
 const Index = () => {
   return (
@@ -19,6 +20,8 @@ const Index = () => {
       <ScrollToTop />
       <Hero />
       <ExecutiveSummary />
+      <div className="section-divider" />
+      <Testimonials />
       <div className="section-divider" />
       <Leadership />
       <div className="section-divider" />
