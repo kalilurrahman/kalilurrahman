@@ -289,7 +289,7 @@ const aiAndAgents: TextProfile[] = [
   { name: "Agent Flow Studio", desc: "Visual AI agent workflow builder — design, chain, and orchestrate multi-step AI agent flows with drag-and-drop interface.", url: "https://kr-ai-agent-flow.lovable.app", tag: "Lovable App", stats: ["Visual Builder", "Agent Chains"] },
   { name: "Agent Canvas", desc: "Interactive canvas for designing AI agent workflows — connect nodes, define triggers, and visualise autonomous agent pipelines.", url: "https://kr-ai-workflow-gen.lovable.app", tag: "Lovable App", stats: ["Canvas UI", "Pipeline Design"] },
   { name: "Agent Weaver", desc: "Compose multi-agent systems — weave together specialised AI agents for complex tasks with configurable roles and handoffs.", url: "https://kr-ai-agent-weaver.lovable.app", tag: "Lovable App", stats: ["Multi-Agent", "Role Config"] },
-  { name: "AIOTI AI App", desc: "AI of Things Intelligence — exploring the intersection of artificial intelligence and IoT with practical applications.", url: "https://aiotiai.lovable.app", tag: "Lovable App", stats: ["AI + IoT", "Intelligence"] },
+
 ];
 
 const toolsAndUtilities: TextProfile[] = [

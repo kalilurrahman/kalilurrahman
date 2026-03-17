@@ -71,7 +71,7 @@ const ghPages = [
   { emoji: "💰", type: "Finance App", name: "Expense Tracker", desc: "Personal finance tracker — log expenses, set budgets, visualise spending.", link: "https://kr-expense-tracker.lovable.app", external: true },
   { emoji: "❓", type: "Game", name: "Jeopardy Quiz", desc: "Jeopardy-style quiz with category-based questions, scoring, and smooth animations.", link: "https://kr-jeopardy-quiz.lovable.app", external: true },
   { emoji: "🧘", type: "Productivity", name: "Mindful Flow", desc: "Personal dashboard — daily goals, to-do lists, finances, and habits.", link: "https://mindful-flow-82.lovable.app", external: true },
-  { emoji: "🌐", type: "Lovable App", name: "AIOTI AI App", desc: "AI of Things Intelligence — exploring AI and IoT intersections.", link: "https://aiotiai.lovable.app", external: true },
+
 ];
 
 const platforms = [
