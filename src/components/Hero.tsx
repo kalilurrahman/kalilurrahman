@@ -38,36 +38,21 @@ const Hero = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center"
         >
-          <div className="inline-flex items-center justify-center w-20 h-20 border border-primary/40 rounded-sm mb-6">
-            <span className="font-serif text-2xl text-primary">KR</span>
+          <div className="inline-flex items-center justify-center w-16 h-16 border border-primary/40 rounded-sm mb-4">
+            <span className="font-serif text-xl text-primary">KR</span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-serif mb-4">
+          <h1 className="text-5xl md:text-7xl font-serif mb-5">
             Kalilur <span className="text-gradient-gold italic">Rahman</span>
           </h1>
 
-          <p className="text-muted-foreground tracking-[0.25em] uppercase text-sm md:text-base mb-6">
-            Global IT Executive · Author · Kaggle Grandmaster
-          </p>
-
-          <div className="flex flex-wrap justify-center gap-3 mb-8">
-            {badges.map((badge) => (
-              <span
-                key={badge}
-                className="px-4 py-1.5 border border-border text-xs tracking-[0.15em] uppercase text-muted-foreground hover:border-primary/50 hover:text-primary transition-colors"
-              >
-                {badge}
-              </span>
-            ))}
-          </div>
-
-          <div className="mx-auto mb-6 grid max-w-5xl gap-3 rounded-2xl border border-border/70 bg-card/70 p-4 backdrop-blur-sm md:grid-cols-3">
+          <div className="mx-auto mb-6 grid max-w-5xl gap-3 rounded-2xl border border-border/70 bg-card/70 p-3 backdrop-blur-sm md:grid-cols-3">
             {credentials.map((item) => {
               const Icon = item.icon;
               return (
-                <div key={item.label} className="flex items-center justify-center gap-3 rounded-xl border border-border/60 bg-background/50 px-4 py-3 text-left">
-                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-teal text-teal-foreground">
-                    <Icon className="h-5 w-5" />
+                <div key={item.label} className="flex items-center justify-center gap-3 rounded-xl border border-border/60 bg-background/50 px-3 py-2.5 text-left">
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-teal text-teal-foreground">
+                    <Icon className="h-4 w-4" />
                   </span>
                   <span className="text-sm font-medium leading-snug text-foreground">{item.label}</span>
                 </div>
@@ -75,18 +60,36 @@ const Hero = () => {
             })}
           </div>
 
-          <div className="mb-10 flex flex-wrap justify-center gap-4">
+          <div className="mb-7 flex justify-center">
             <a
-              href="mailto:kalilur@gmail.com"
-              className="inline-flex items-center gap-2 rounded-full bg-teal px-7 py-3 text-sm font-semibold tracking-wide text-teal-foreground shadow-sm transition-transform hover:-translate-y-0.5"
+              href="mailto:rahman.kalilur@outlook.com"
+              className="inline-flex items-center gap-2 rounded-full bg-teal px-8 py-3.5 text-base font-semibold tracking-wide text-teal-foreground shadow-md transition-transform hover:-translate-y-0.5 hover:shadow-lg"
             >
               Invite me to speak →
             </a>
+          </div>
+
+          <p className="text-muted-foreground tracking-[0.25em] uppercase text-xs md:text-sm mb-4 mt-2">
+            Global IT Executive · Author · Kaggle Grandmaster
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-2 mb-6">
+            {badges.map((badge) => (
+              <span
+                key={badge}
+                className="px-3 py-1 border border-border text-[10px] md:text-xs tracking-[0.1em] uppercase text-muted-foreground hover:border-primary/50 hover:text-primary transition-colors"
+              >
+                {badge}
+              </span>
+            ))}
+          </div>
+
+          <div className="mb-8 flex flex-wrap justify-center gap-4">
             <a
               href="https://www.linkedin.com/in/kalilurrahman/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-medium text-sm tracking-wide hover:opacity-90 transition-opacity"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary text-primary-foreground font-medium text-sm tracking-wide hover:opacity-90 transition-opacity rounded"
             >
               Connect on LinkedIn
               <ExternalLink className="w-4 h-4" />
@@ -95,7 +98,7 @@ const Hero = () => {
               href="https://www.linkedin.com/in/kalilurrahman/overlay/1735344498686/single-media-viewer/?profileId=ACoAAA2T1rcBaEMOH-v4KDMJZZLSHiIpRjE5Jkk"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 border border-primary/40 text-primary font-medium text-sm tracking-wide hover:bg-primary/10 transition-colors"
+              className="inline-flex items-center gap-2 px-5 py-2.5 border border-primary/40 text-primary font-medium text-sm tracking-wide hover:bg-primary/10 transition-colors rounded"
             >
               <Download className="w-4 h-4" />
               Download CV / Resume
