@@ -27,7 +27,14 @@ const Hero = () => {
   return (
     <section className="relative min-h-[92vh] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
-        <img src={heroBg} alt="Abstract editorial hero background" className="w-full h-full object-cover opacity-40" />
+        <div className="w-full h-full bg-gradient-to-br from-primary/5 to-accent/5 animate-pulse absolute inset-0" />
+        <img
+          src={heroBg}
+          alt="Abstract editorial hero background"
+          className="w-full h-full object-cover opacity-40 transition-opacity duration-700"
+          loading="eager"
+          decoding="async"
+        />
         <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background" />
       </div>
 
@@ -52,7 +59,7 @@ const Hero = () => {
               return (
                 <div key={item.label} className="flex items-center justify-center gap-3 rounded-xl border border-border/60 bg-background/50 px-3 py-2.5 text-left">
                   <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-teal text-teal-foreground">
-                    <Icon className="h-4 w-4" />
+                    <Icon className="h-4 w-4" aria-hidden="true" />
                   </span>
                   <span className="text-sm font-medium leading-snug text-foreground">{item.label}</span>
                 </div>
@@ -62,8 +69,9 @@ const Hero = () => {
 
           <div className="mb-7 flex justify-center">
             <a
-              href="mailto:rahman.kalilur@outlook.com"
-              className="inline-flex items-center gap-2 rounded-full bg-teal px-8 py-3.5 text-base font-semibold tracking-wide text-teal-foreground shadow-md transition-transform hover:-translate-y-0.5 hover:shadow-lg"
+              href="mailto:kalilur@gmail.com"
+              className="inline-flex items-center gap-2 rounded-full bg-teal px-8 py-3.5 text-base font-semibold tracking-wide text-teal-foreground shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-teal/20 active:translate-y-0 active:shadow-md"
+              aria-label="Send email to invite Kalilur Rahman to speak"
             >
               Invite me to speak →
             </a>
@@ -74,13 +82,16 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-wrap justify-center gap-2 mb-6">
-            {badges.map((badge) => (
-              <span
+            {badges.map((badge, index) => (
+              <motion.span
                 key={badge}
-                className="px-3 py-1 border border-border text-[10px] md:text-xs tracking-[0.1em] uppercase text-muted-foreground hover:border-primary/50 hover:text-primary transition-colors"
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.3, delay: 0.6 + index * 0.05 }}
+                className="px-3 py-1 border border-border text-[10px] md:text-xs tracking-[0.1em] uppercase text-muted-foreground hover:border-primary/50 hover:text-primary hover:scale-105 transition-all duration-200 cursor-default"
               >
                 {badge}
-              </span>
+              </motion.span>
             ))}
           </div>
 
@@ -89,18 +100,20 @@ const Hero = () => {
               href="https://www.linkedin.com/in/kalilurrahman/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary text-primary-foreground font-medium text-sm tracking-wide hover:opacity-90 transition-opacity rounded"
+              className="group inline-flex items-center gap-2 px-5 py-2.5 bg-primary text-primary-foreground font-medium text-sm tracking-wide transition-all duration-300 hover:bg-primary/90 hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0 rounded"
+              aria-label="Connect with Kalilur Rahman on LinkedIn (opens in new tab)"
             >
               Connect on LinkedIn
-              <ExternalLink className="w-4 h-4" />
+              <ExternalLink className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden="true" />
             </a>
             <a
               href="https://www.linkedin.com/in/kalilurrahman/overlay/1735344498686/single-media-viewer/?profileId=ACoAAA2T1rcBaEMOH-v4KDMJZZLSHiIpRjE5Jkk"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 border border-primary/40 text-primary font-medium text-sm tracking-wide hover:bg-primary/10 transition-colors rounded"
+              className="group inline-flex items-center gap-2 px-5 py-2.5 border border-primary/40 text-primary font-medium text-sm tracking-wide transition-all duration-300 hover:bg-primary/10 hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0 rounded"
+              aria-label="Download Kalilur Rahman's CV or resume (opens in new tab)"
             >
-              <Download className="w-4 h-4" />
+              <Download className="w-4 h-4 transition-transform duration-300 group-hover:-translate-y-0.5" aria-hidden="true" />
               Download CV / Resume
             </a>
           </div>
@@ -112,7 +125,7 @@ const Hero = () => {
             className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto"
           >
             {stats.map((stat) => (
-              <div key={stat.label} className="p-4 border border-border/50 bg-card/50 backdrop-blur-sm">
+              <div key={stat.label} className="p-4 border border-border/50 bg-card/50 backdrop-blur-sm card-hover">
                 <p className="text-xs text-muted-foreground tracking-[0.15em] uppercase mb-1">{stat.label}</p>
                 <p className="text-xl font-serif text-primary">{stat.value}</p>
                 <p className="text-xs text-muted-foreground mt-0.5">{stat.sub}</p>
