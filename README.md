@@ -17,6 +17,16 @@ Building at the intersection of enterprise strategy and hands-on product enginee
 
 ---
 
+
+## Overview
+
+[Kalilur Rahman's Portfolio](https://kalilurrahman.lovable.app/) is a comprehensive, modern web application serving as a centralized hub connecting various professional facets, micro-apps, and specialized tools developed by Kalilur Rahman.
+
+### Key Features
+- **Centralized Hub**: Links to over 40 distinct applications ranging from Quality Engineering frameworks to AI Quiz platforms.
+- **Agentic AI Prompts Hub**: A curated repository of AI prompts tailored for specific industries (e.g., Finance & Banking, Healthcare & Medicine).
+- **Interactive UI**: Fully responsive design with dynamic Light/Dark mode switching across various themes.
+
 ## Table of Contents
 - [What I Build](#what-i-build)
   - [AI / GenAI / Agentic AI](#ai--genai--agentic-ai)
@@ -203,6 +213,8 @@ The main portfolio site supports dynamic themes. Here is how it looks across dif
   <img src="src/assets/screenshots/themes/theme_dark.png" alt="Dark Theme" width="400" />
   <img src="src/assets/screenshots/themes/theme_sepia.png" alt="Sepia Theme" width="400" />
   <img src="src/assets/screenshots/themes/theme_midnight.png" alt="Midnight Theme" width="400" />
+  <img src="src/assets/screenshots/themes/theme_dark_new.png" alt="Theme Dark Theme" width="400" />
+  <img src="src/assets/screenshots/themes/theme_light_new.png" alt="Theme Light Theme" width="400" />
 </div>
 
 ### Portfolio Sections
@@ -229,6 +241,10 @@ Detailed sections showcasing impact, credentials, peer voices, awards, and publi
   <img src="src/assets/screenshots/prompts/agentic_ai_prompts_hub_desktop.png" alt="Agentic Prompts Main" width="400" />
   <img src="src/assets/screenshots/prompts/agentic_industry_about.png" alt="About Filter" width="400" />
   <img src="src/assets/screenshots/prompts/agentic_industry_home.png" alt="Home Filter" width="400" />
+  <img src="src/assets/screenshots/prompts/agentic_industry_finance_and_banking.png" alt="Finance And Banking Filter" width="400" />
+  <img src="src/assets/screenshots/prompts/agentic_industry_healthcare_and_medicine.png" alt="Healthcare And Medicine Filter" width="400" />
+  <img src="src/assets/screenshots/prompts/agentic_industry_legal_and_compliance.png" alt="Legal And Compliance Filter" width="400" />
+  <img src="src/assets/screenshots/prompts/agentic_industry_marketing_and_communications.png" alt="Marketing And Communications Filter" width="400" />
 </div>
 
 ### Finance Prompt Hub
@@ -304,6 +320,34 @@ Detailed sections showcasing impact, credentials, peer voices, awards, and publi
   <img src="src/assets/screenshots/apps/veritas-qe-framework.png" alt="Veritas-Qe-Framework" width="300" />
   <img src="src/assets/screenshots/apps/veritas__qe_framework_desktop.png" alt="Veritas  Qe Framework" width="300" />
 
+  <img src="src/assets/screenshots/links/kalilur-portfolio_desktop.png" alt="Kalilur Portfolio" width="300" />
+  <img src="src/assets/screenshots/links/kalilur-portfolio_mobile.png" alt="Kalilur Portfolio" width="150" />
+  <img src="src/assets/screenshots/links/kalilurrahman_desktop.png" alt="Kalilurrahman" width="300" />
+  <img src="src/assets/screenshots/links/kalilurrahman_mobile.png" alt="Kalilurrahman" width="150" />
+  <img src="src/assets/screenshots/links/kr-app-ideas-vault_desktop.png" alt="Kr App Ideas Vault" width="300" />
+  <img src="src/assets/screenshots/links/kr-app-ideas-vault_mobile.png" alt="Kr App Ideas Vault" width="150" />
+  <img src="src/assets/screenshots/links/kr-exec-scribe_desktop.png" alt="Kr Exec Scribe" width="300" />
+  <img src="src/assets/screenshots/links/kr-exec-scribe_mobile.png" alt="Kr Exec Scribe" width="150" />
+  <img src="src/assets/screenshots/links/kr-finance-prompt-hub_desktop.png" alt="Kr Finance Prompt Hub Filter" width="300" />
+  <img src="src/assets/screenshots/links/kr-finance-prompt-hub_mobile.png" alt="Kr Finance Prompt Hub Filter" width="150" />
+  <img src="src/assets/screenshots/links/kr-omni-tool-hub_desktop.png" alt="Kr Omni Tool Hub" width="300" />
+  <img src="src/assets/screenshots/links/kr-omni-tool-hub_mobile.png" alt="Kr Omni Tool Hub" width="150" />
+  <img src="src/assets/screenshots/links/kr-quantum-hub_desktop.png" alt="Kr Quantum Hub" width="300" />
+  <img src="src/assets/screenshots/links/kr-quantum-hub_mobile.png" alt="Kr Quantum Hub" width="150" />
+  <img src="src/assets/screenshots/links/kr_expense_tracker_desktop.png" alt="Kr Expense Tracker" width="300" />
+  <img src="src/assets/screenshots/links/kr_expense_tracker_mobile.png" alt="Kr Expense Tracker" width="150" />
+  <img src="src/assets/screenshots/links/kr_finance_prompt_hub_desktop.png" alt="Kr Finance Prompt Hub Filter" width="300" />
+  <img src="src/assets/screenshots/links/kr_finance_prompt_hub_mobile.png" alt="Kr Finance Prompt Hub Filter" width="150" />
+  <img src="src/assets/screenshots/links/kr_gcc_compass_desktop.png" alt="Kr Gcc Compass" width="300" />
+  <img src="src/assets/screenshots/links/kr_gcc_compass_mobile.png" alt="Kr Gcc Compass" width="150" />
+  <img src="src/assets/screenshots/links/kr_interview_prep_vault_desktop.png" alt="Kr Interview Prep Vault" width="300" />
+  <img src="src/assets/screenshots/links/kr_interview_prep_vault_mobile.png" alt="Kr Interview Prep Vault" width="150" />
+  <img src="src/assets/screenshots/links/kr_jeopardy_quiz_desktop.png" alt="Kr Jeopardy Quiz" width="300" />
+  <img src="src/assets/screenshots/links/kr_jeopardy_quiz_mobile.png" alt="Kr Jeopardy Quiz" width="150" />
+  <img src="src/assets/screenshots/links/publicationslist.org_desktop.png" alt="Publicationslist.Org" width="300" />
+  <img src="src/assets/screenshots/links/publicationslist.org_mobile.png" alt="Publicationslist.Org" width="150" />
+  <img src="src/assets/screenshots/links/www.dellaleaders.com_desktop.png" alt="Www.Dellaleaders.Com" width="300" />
+  <img src="src/assets/screenshots/links/www.dellaleaders.com_mobile.png" alt="Www.Dellaleaders.Com" width="150" />
 </div>
 </details>
 
