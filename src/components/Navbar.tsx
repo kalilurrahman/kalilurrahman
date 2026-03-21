@@ -59,6 +59,7 @@ const Navbar = () => {
         <Link
           to="/"
           className="flex items-center gap-2 no-underline"
+          aria-label="Kalilur Rahman — Home"
         >
           <div className="w-7 h-7 border border-primary/40 flex items-center justify-center rounded">
             <span className="font-serif text-xs text-primary font-semibold">KR</span>
@@ -116,6 +117,9 @@ const Navbar = () => {
             <button
               onClick={() => setProfilesOpen(!profilesOpen)}
               onBlur={() => setTimeout(() => setProfilesOpen(false), 150)}
+              aria-expanded={profilesOpen}
+              aria-haspopup="true"
+              aria-label="Open profiles menu"
               className={`flex items-center gap-1 px-2 py-1 rounded text-[10px] tracking-wide transition-colors ${location.pathname.startsWith("/profile") ? "text-accent bg-accent/10 font-medium" : "text-muted-foreground hover:text-accent hover:bg-accent/5"}`}
             >
               <Briefcase className="w-3 h-3" />

@@ -13,10 +13,12 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import KnowledgeHubSection from "@/components/KnowledgeHubSection";
 import Testimonials from "@/components/Testimonials";
+import ScrollProgress from "@/components/ScrollProgress";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <ScrollProgress />
       <ScrollToTop />
       <Hero />
       <ExecutiveSummary />
