@@ -59,6 +59,7 @@ const Navbar = () => {
         <Link
           to="/"
           className="flex items-center gap-2 no-underline"
+          aria-label="Kalilur Rahman — Home"
         >
           <div className="w-7 h-7 border border-primary/40 flex items-center justify-center rounded">
             <span className="font-serif text-xs text-primary font-semibold">KR</span>
