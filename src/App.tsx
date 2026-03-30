@@ -20,6 +20,7 @@ const ProfileCoEChampion = lazy(() => import("./pages/ProfileCoEChampion"));
 const ProfileDigitalTransformation = lazy(() => import("./pages/ProfileDigitalTransformation"));
 const InstallPage = lazy(() => import("./pages/InstallPage"));
 const AppsPortfolio = lazy(() => import("./pages/AppsPortfolio"));
+const CancerBook = lazy(() => import("./pages/CancerBook"));
 
 const queryClient = new QueryClient();
 
@@ -46,6 +47,7 @@ const App = () => (
                   <Route path="/knowledge-hub" element={<KnowledgeHubPage />} />
                   <Route path="/ai-agents" element={<AgenticAIPage />} />
                   <Route path="/apps-portfolio" element={<AppsPortfolio />} />
+                  <Route path="/cancer-book" element={<CancerBook />} />
                   <Route path="/profile/ai-advisor" element={<ProfileAIAdvisor />} />
                   <Route path="/profile/gcc-advisor" element={<ProfileGCCAdvisor />} />
                   <Route path="/profile/coe-champion" element={<ProfileCoEChampion />} />

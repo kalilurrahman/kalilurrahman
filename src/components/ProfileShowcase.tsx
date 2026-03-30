@@ -388,8 +388,6 @@ const githubRepos = [
   { name: "IPLAuctionData", url: "https://github.com/kalilurrahman/IPLAuctionData", lang: "Data", summary: "IPL Player Auction Data — historical IPL auction datasets covering player bids, team assignments and price trends." },
 ];
 
-// ─── Subsection header ───
-
 const SubsectionHeader = ({ icon, title, count }: { icon: string; title: string; count: number }) => (
   <motion.div
     initial={{ opacity: 0, y: 20 }}
@@ -406,8 +404,6 @@ const SubsectionHeader = ({ icon, title, count }: { icon: string; title: string;
     <div className="flex-1 h-px bg-border ml-3" />
   </motion.div>
 );
-
-// ─── Profile Card ───
 
 const ProfileCard = ({ profile, index }: { profile: Profile; index: number }) => (
   <motion.a
@@ -454,8 +450,6 @@ const ProfileCard = ({ profile, index }: { profile: Profile; index: number }) =>
   </motion.a>
 );
 
-// ─── Text Link Card (no screenshot) ───
-
 const TextLinkCard = ({ profile, index }: { profile: TextProfile; index: number }) => (
   <motion.a
     href={profile.url}
@@ -488,8 +482,6 @@ const TextLinkCard = ({ profile, index }: { profile: TextProfile; index: number 
     </div>
   </motion.a>
 );
-
-// ─── Main Component ───
 
 const ProfileShowcase = () => {
   const [selectedRepo, setSelectedRepo] = useState<string>("");
