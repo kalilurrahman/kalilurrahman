@@ -95,14 +95,31 @@ async def get_news(constituency_name: str, district_name: str):
 # --- Serve Static Files (React Build) ---
 dist_path = os.path.join(os.getcwd(), "dist")
 
+# Ensure dist exists
 if os.path.exists(dist_path):
-    app.mount("/", StaticFiles(directory=dist_path, html=True), name="static")
+    # Support for internal assets (js, css, images)
+    # We mount /assets first to ensure it's prioritized for static assets
+    assets_path = os.path.join(dist_path, "assets")
+    if os.path.exists(assets_path):
+        app.mount("/assets", StaticFiles(directory=assets_path), name="assets")
 
-    @app.exception_handler(404)
-    async def not_found_handler(request, exc):
-        if not request.url.path.startswith("/api"):
-            return FileResponse(os.path.join(dist_path, "index.html"))
-        raise exc
+    # Mount remaining root-level files (favicon, etc)
+    app.mount("/static", StaticFiles(directory=dist_path), name="root_static")
+
+    @app.get("/{full_path:path}")
+    async def serve_spa(full_path: str):
+        # API routes are already handled above by FastAPI's router
+        # If it's not an API and not an asset, serve index.html
+        if full_path.startswith("api/"):
+            raise HTTPException(status_code=404, detail="API endpoint not found")
+        
+        # Check if the file exists in dist (e.g. favicon.svg)
+        file_path = os.path.join(dist_path, full_path)
+        if os.path.isfile(file_path):
+            return FileResponse(file_path)
+            
+        # Fallback to SPA root
+        return FileResponse(os.path.join(dist_path, "index.html"))
 else:
     @app.get("/")
     async def root():
