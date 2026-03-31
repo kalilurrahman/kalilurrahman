@@ -92,6 +92,24 @@ async def get_news(constituency_name: str, district_name: str):
     set_cached_result(cache_key, result)
     return result
 
+@app.get("/api/constituencies")
+async def get_constituencies():
+    """
+    Serves the full 234-constituency data model for frontend hydration.
+    """
+    # Serve from public/dist (Vite copies public content to dist root)
+    # Check dist first, then public for local dev
+    targets = [
+        os.path.join(os.getcwd(), "dist", "constituencies.json"),
+        os.path.join(os.getcwd(), "public", "constituencies.json")
+    ]
+    
+    for target in targets:
+        if os.path.exists(target):
+            return FileResponse(target)
+            
+    raise HTTPException(status_code=404, detail="Constituency data not found. Run data export first.")
+
 # --- Serve Static Files (React Build) ---
 dist_path = os.path.join(os.getcwd(), "dist")
 
@@ -106,13 +124,30 @@ if os.path.exists(dist_path):
     # Mount remaining root-level files (favicon, etc)
     app.mount("/static", StaticFiles(directory=dist_path), name="root_static")
 
+# --- Serve Static Files (React Build) ---
+# Use absolute path based on this file's location
+base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+dist_path = os.path.join(base_dir, "dist")
+
+# Ensure dist exists
+if os.path.exists(dist_path):
+    # Support for internal assets (js, css, images)
+    # We mount /assets first to ensure it's prioritized for static assets
+    assets_path = os.path.join(dist_path, "assets")
+    if os.path.exists(assets_path):
+        app.mount("/assets", StaticFiles(directory=assets_path), name="assets")
+
+    # Serve data assets explicitly
+    @app.get("/tn_assembly.geojson")
+    async def serve_geojson():
+        return FileResponse(os.path.join(dist_path, "tn_assembly.geojson"))
+
+    @app.get("/constituencies.json")
+    async def serve_constituencies_json():
+        return FileResponse(os.path.join(dist_path, "constituencies.json"))
+
     @app.get("/{full_path:path}")
     async def serve_spa(full_path: str):
-        # API routes are already handled above by FastAPI's router
-        # If it's not an API and not an asset, serve index.html
-        if full_path.startswith("api/"):
-            raise HTTPException(status_code=404, detail="API endpoint not found")
-        
         # Check if the file exists in dist (e.g. favicon.svg)
         file_path = os.path.join(dist_path, full_path)
         if os.path.isfile(file_path):
@@ -123,9 +158,10 @@ if os.path.exists(dist_path):
 else:
     @app.get("/")
     async def root():
-        return {"message": "Frontend build (dist/) not found. Run 'npm run build' first."}
+        return {"message": f"Frontend build (dist/) not found at {dist_path}. Run 'npm run build' first."}
 
 if __name__ == "__main__":
     import uvicorn
-    port = int(os.environ.get("PORT", 8000))
+    # Default port for Hugging Face Spaces is 7860
+    port = int(os.environ.get("PORT", 7860))
     uvicorn.run(app, host="0.0.0.0", port=port)

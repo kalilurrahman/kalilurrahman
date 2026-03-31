@@ -25,10 +25,9 @@ COPY --from=build-stage /app/dist ./dist
 # Copy the backend source code
 COPY backend ./backend
 
-# Default port for Hugging Face Spaces is often 7860, 
-# but we specify 8000 here to match our main.py.
-EXPOSE 8000
-ENV PORT=8000
+# Default port for Hugging Face Spaces is 7860
+EXPOSE 7860
+ENV PORT=7860
 
 # Run the backend server
-CMD ["python", "backend/main.py"]
+CMD ["python", "-m", "uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "7860"]

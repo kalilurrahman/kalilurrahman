@@ -5,7 +5,7 @@ Write-Host "--- TN Election Predictor 2026: Hugging Face Deployment Prep ---" -F
 
 # Define variables — User should update these
 $YOUR_USERNAME = "kalilurrahman" # Update this
-$YOUR_SPACE_NAME = "tn-election-predictor-2026" # Update this
+$YOUR_SPACE_NAME = "tnelectionpredictor2026" # Final corrected space name
 
 # 1. Check for remote
 $remotes = git remote
