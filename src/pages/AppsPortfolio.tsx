@@ -3,11 +3,11 @@ import { ExternalLink, Layers } from "lucide-react";
 
 const apps = [
   "kr-agentic-ai-prompts", "kr-ai-agent-flow", "kr-ai-workflow-gen",
-  "kr-finance-prompt-hub", "kr-ai-literacy-hub", "kr-prompt-terminal-builder",
+  "kr-prompt-terminal-builder",
   "krpromptsapp", "kr-ai-ml-tech-repo",
   "kr-terminal-muse-maker", "ai-news-curator",
   "kr-veritas-qe-framework", "kr-qe-compass", "kr-test-automator",
-  "gcc-playbook-hub", "kr-gcc-compass", "kr-exec-scribe", "kr-corp-upskill",
+  "gcc-playbook-hub", "kr-exec-scribe", "kr-corp-upskill",
   "kr-kaggle-skill-hub", 
   "kr-app-ideas-vault", "kr-omni-tool-hub", "kr-expense-tracker",
   "kr-news-app", "kr-tech-simplifier", "kr-app-nexus", "kr-quantum-hub",
@@ -21,7 +21,18 @@ const apps = [
   "kr-acuitas-clarity-frameworks",   // 77
   "kremergentportfolio",             // 78
   "kr-gcc-playbook-hub",             // 79
-  "kr-industry-capability-vibe-prompts" // 80
+  "kr-industry-capability-vibe-prompts", // 80
+  "kr-finance-prompt-hub",
+  "kr-ai-literacy-hub",
+  "kr-gcc-compass",
+  "cancer-knowledge-explorer",
+  "citaacc-ai-digest",
+  "gccleadership",
+  "kr-ai-learning-hub",
+  "kr-claudiator-skills",
+  "kr-healthcare-guidebook-hub",
+  "kr-pharma-guidebook-hub",
+  "kr-enterprise-architecture-hub"
 ];
 
 const formatName = (slug: string) => {

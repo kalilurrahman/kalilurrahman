@@ -71,7 +71,12 @@ const ghPages = [
   { emoji: "💰", type: "Finance App", name: "Expense Tracker", desc: "Personal finance tracker — log expenses, set budgets, visualise spending.", link: "https://kr-expense-tracker.lovable.app", external: true },
   { emoji: "❓", type: "Game", name: "Jeopardy Quiz", desc: "Jeopardy-style quiz with category-based questions, scoring, and smooth animations.", link: "https://kr-jeopardy-quiz.lovable.app", external: true },
   { emoji: "🧘", type: "Productivity", name: "Mindful Flow", desc: "Personal dashboard — daily goals, to-do lists, finances, and habits.", link: "https://mindful-flow-82.lovable.app", external: true },
-
+  { emoji: "🧬", type: "Lovable App", name: "Cancer Knowledge Explorer", desc: "A comprehensive clinical reference covering 101+ cancer types — symptoms, diagnostics, treatments.", link: "https://cancer-knowledge-explorer.lovable.app", external: true },
+  { emoji: "🎓", type: "Lovable App", name: "AI Learning Hub", desc: "Structured knowledge base for understanding artificial intelligence — from fundamentals to cutting-edge research.", link: "https://kr-ai-learning-hub.lovable.app", external: true },
+  { emoji: "🤖", type: "Lovable App", name: "Claudiator Skills", desc: "Browse 150+ productivity skills for Claude Code and Claude CoWork, by domain.", link: "https://kr-claudiator-skills.lovable.app", external: true },
+  { emoji: "🏥", type: "Lovable App", name: "Healthcare DX Guidebook", desc: "The definitive operating playbook for healthcare executives and GCC leaders — 60 chapters, 8 volumes.", link: "https://kr-healthcare-guidebook-hub.lovable.app", external: true },
+  { emoji: "💊", type: "Lovable App", name: "Pharma DX Guidebook", desc: "A definitive practitioner's guide to building, scaling, and leading pharmaceutical GCCs in the AI era.", link: "https://kr-pharma-guidebook-hub.lovable.app", external: true },
+  { emoji: "🏗️", type: "Lovable App", name: "Enterprise Architecture Hub", desc: "Comprehensive architecture intelligence portal for enterprise architects, CTOs, and transformation teams.", link: "https://kr-enterprise-architecture-hub.lovable.app", external: true },
 ];
 
 const platforms = [

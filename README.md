@@ -64,6 +64,8 @@ Building tools and frameworks for practical AI adoption in the enterprise.
 | [kr-ai-ml-tech-repo](https://github.com/kalilurrahman/kr-ai-ml-tech-repo) | Technical reference covering AI/ML concepts, architectures, and frameworks |
 | [kr-terminal-muse-maker](https://github.com/kalilurrahman/kr-terminal-muse-maker) | Terminal-based creative AI tool for content generation and brainstorming |
 | [ai-news-curator](https://github.com/kalilurrahman/ai-news-curator) | AI-powered news aggregation with intelligent filtering |
+| [kr-claudiator-skills](https://github.com/kalilurrahman/kr-claudiator-skills) | 150+ productivity skills for Claude Code and Claude CoWork, by domain |
+| [citaacc-ai-digest](https://github.com/kalilurrahman/citaacc-ai-digest) | Daily AI digest — latest updates, trends, and breakthroughs in Artificial Intelligence |
 
 ### Quality Engineering & Testing
 
@@ -89,6 +91,9 @@ Playbooks and tools for Global Capability Center setup, scaling, and maturity as
 | [kr-gcc-compass](https://github.com/kalilurrahman/kr-gcc-compass) | Interactive GCC maturity assessment and strategy compass |
 | [kr-exec-scribe](https://github.com/kalilurrahman/kr-exec-scribe) | Transform technical content into polished C-suite deliverables |
 | [kr-corp-upskill](https://github.com/kalilurrahman/kr-corp-upskill) | Corporate upskilling platform for enterprise learning programs |
+| [kr-gcc-playbook-hub](https://github.com/kalilurrahman/kr-gcc-playbook-hub) | Global Capability Center (GCC) Playbook Hub — comprehensive frameworks, maturity models, and operational guides for GCC setup and scaling |
+| [GCCLeadership](https://github.com/kalilurrahman/GCCLeadership) | GCC Leadership - Point Of View |
+| [kr-enterprise-architecture-hub](https://github.com/kalilurrahman/kr-enterprise-architecture-hub) | Comprehensive architecture intelligence portal for enterprise architects, CTOs, and transformation teams |
 
 ### Data Science & Machine Learning
 
@@ -126,6 +131,17 @@ Full-stack applications and developer utilities built with TypeScript/React.
 | [kr-tech-simplifier](https://github.com/kalilurrahman/kr-tech-simplifier) | Makes complex tech concepts accessible with plain-language explanations |
 | [kr-app-nexus](https://github.com/kalilurrahman/kr-app-nexus) | Centralized launchpad connecting all KR micro-apps |
 | [kr-quantum-hub](https://github.com/kalilurrahman/kr-quantum-hub) | Quantum computing educational hub with interactive lessons |
+| [kr-industry-capability-vibe-prompts](https://github.com/kalilurrahman/kr-industry-capability-vibe-prompts) | Enterprise app vibe coding prompts across 21 industries for scalable application development |
+
+### Healthcare & Life Sciences
+
+Dedicated tools and guidebooks for the healthcare and pharmaceutical domains.
+
+| Repository | Description |
+|---|---|
+| [cancer-knowledge-explorer](https://github.com/kalilurrahman/cancer-knowledge-explorer) | A comprehensive clinical reference covering 101+ cancer types — symptoms, diagnostics, treatments |
+| [kr-healthcare-guidebook-hub](https://github.com/kalilurrahman/kr-healthcare-guidebook-hub) | The definitive operating playbook for healthcare executives and GCC leaders — 60 chapters, 8 volumes |
+| [kr-pharma-guidebook-hub](https://github.com/kalilurrahman/kr-pharma-guidebook-hub) | A definitive practitioner's guide to building, scaling, and leading pharmaceutical GCCs in the AI era |
 
 ### Career & Interview Prep
 
@@ -145,6 +161,7 @@ Full-stack applications and developer utilities built with TypeScript/React.
 | [kr-training-portfolio](https://github.com/kalilurrahman/kr-training-portfolio) | Training materials, facilitator guides, and program designs |
 | [kr-islamic-duas](https://github.com/kalilurrahman/kr-islamic-duas) | Islamic duas with Arabic text, transliteration, and translations |
 | [farzi-10th](https://github.com/kalilurrahman/farzi-10th) | Educational learning app for 10th grade students |
+| [kr-ai-learning-hub](https://github.com/kalilurrahman/kr-ai-learning-hub) | Structured knowledge base for understanding artificial intelligence — from fundamentals to cutting-edge research |
 
 ### Content & Social
 
@@ -252,6 +269,19 @@ Detailed sections showcasing impact, credentials, peer voices, awards, and publi
 <div style="display: flex; gap: 10px; flex-wrap: wrap;">
   <img src="src/assets/screenshots/prompts/financial_engineering__advisory_prompts_desktop.png" alt="Finance Prompts Main" width="400" />
   <img src="src/assets/screenshots/prompts/finance_industry_investment_banking.png" alt="Investment Banking Filter" width="400" />
+</div>
+
+### Newly Added Projects Showcase
+
+<div style="display: flex; gap: 10px; flex-wrap: wrap;">
+  <img src="src/assets/screenshots/links/cancer-knowledge-explorer_desktop.png" alt="Cancer Knowledge Explorer Desktop" width="300" />
+  <img src="src/assets/screenshots/links/kr-healthcare-guidebook-hub_desktop.png" alt="Healthcare Guidebook Desktop" width="300" />
+  <img src="src/assets/screenshots/links/kr-pharma-guidebook-hub_desktop.png" alt="Pharma Guidebook Desktop" width="300" />
+  <img src="src/assets/screenshots/links/kr-gcc-playbook-hub_desktop.png" alt="GCC Playbook Desktop" width="300" />
+  <img src="src/assets/screenshots/links/kr-ai-learning-hub_desktop.png" alt="AI Learning Hub Desktop" width="300" />
+  <img src="src/assets/screenshots/links/kr-claudiator-skills_desktop.png" alt="Claudiator Skills Desktop" width="300" />
+  <img src="src/assets/screenshots/links/kr-enterprise-architecture-hub_desktop.png" alt="Enterprise Architecture Hub Desktop" width="300" />
+  <img src="src/assets/screenshots/links/kr-industry-capability-vibe-prompts_desktop.png" alt="Industry Vibe Prompts Desktop" width="300" />
 </div>
 
 ### App Directory Highlights

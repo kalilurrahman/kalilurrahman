@@ -289,7 +289,7 @@ const aiAndAgents: TextProfile[] = [
   { name: "Agent Flow Studio", desc: "Visual AI agent workflow builder — design, chain, and orchestrate multi-step AI agent flows with drag-and-drop interface.", url: "https://kr-ai-agent-flow.lovable.app", tag: "Lovable App", stats: ["Visual Builder", "Agent Chains"] },
   { name: "Agent Canvas", desc: "Interactive canvas for designing AI agent workflows — connect nodes, define triggers, and visualise autonomous agent pipelines.", url: "https://kr-ai-workflow-gen.lovable.app", tag: "Lovable App", stats: ["Canvas UI", "Pipeline Design"] },
   { name: "Agent Weaver", desc: "Compose multi-agent systems — weave together specialised AI agents for complex tasks with configurable roles and handoffs.", url: "https://kr-ai-agent-weaver.lovable.app", tag: "Lovable App", stats: ["Multi-Agent", "Role Config"] },
-
+  { name: "Claudiator Skills", desc: "Browse 150+ productivity skills for Claude Code and Claude CoWork, by domain.", url: "https://kr-claudiator-skills.lovable.app", tag: "Lovable App", stats: ["Claude Skills", "Productivity"] },
 ];
 
 const toolsAndUtilities: TextProfile[] = [
@@ -306,6 +306,11 @@ const learningAndKnowledge: TextProfile[] = [
   { name: "KR Insights", desc: "Curated insights hub — aggregated knowledge, trends, and analysis across technology, business, and leadership.", url: "https://kr-app-nexus.lovable.app", tag: "Lovable App", stats: ["Insights", "Trends"] },
   { name: "Resource Navigator", desc: "Structured learning path hub — curated resources, courses, and progression tracks for technology skill development.", url: "https://kr-learning-path-hub.lovable.app", tag: "Lovable App", stats: ["Learning Paths", "Resources"] },
   { name: "Social Dashboard Hub", desc: "Social media content dashboard — aggregate and showcase posts, quizzes, blogs, and thought leadership content.", url: "https://social-dashboard-hub.lovable.app", tag: "Lovable App", stats: ["Content Dashboard", "Social Media"] },
+  { name: "Cancer Knowledge Explorer", desc: "A comprehensive clinical reference covering 101+ cancer types — symptoms, diagnostics, treatments.", url: "https://cancer-knowledge-explorer.lovable.app", tag: "Health", stats: ["Cancer DB", "Medical"] },
+  { name: "AI Learning Hub", desc: "Structured knowledge base for understanding artificial intelligence — from fundamentals to cutting-edge research.", url: "https://kr-ai-learning-hub.lovable.app", tag: "Learning", stats: ["AI Courses", "Resources"] },
+  { name: "Healthcare DX Guidebook", desc: "The definitive operating playbook for healthcare executives and GCC leaders — 60 chapters, 8 volumes.", url: "https://kr-healthcare-guidebook-hub.lovable.app", tag: "Healthcare", stats: ["Playbook", "DX"] },
+  { name: "Pharma DX Guidebook", desc: "A definitive practitioner's guide to building, scaling, and leading pharmaceutical GCCs in the AI era.", url: "https://kr-pharma-guidebook-hub.lovable.app", tag: "Pharma", stats: ["Pharma GCC", "Strategy"] },
+  { name: "Enterprise Architecture Hub", desc: "Comprehensive architecture intelligence portal for enterprise architects, CTOs, and transformation teams.", url: "https://kr-enterprise-architecture-hub.lovable.app", tag: "Enterprise", stats: ["EA Hub", "Architecture"] },
 ];
 
 const morePersonalApps: TextProfile[] = [
