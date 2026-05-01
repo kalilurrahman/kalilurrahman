@@ -54,24 +54,24 @@ const Navbar = () => {
   const isHome = location.pathname === "/";
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/85 backdrop-blur-md border-b border-border/50">
       <div className="container max-w-6xl mx-auto px-4 flex items-center justify-between h-12">
         {/* Logo */}
         <Link
           to="/"
-          className="flex items-center gap-2 no-underline"
+          className="flex items-center gap-2 no-underline group"
           aria-label="Kalilur Rahman — Home"
         >
-          <div className="w-7 h-7 border border-primary/40 flex items-center justify-center rounded">
-            <span className="font-serif text-xs text-primary font-semibold">KR</span>
+          <div className="w-7 h-7 rounded-full border border-primary/40 flex items-center justify-center group-hover:border-primary transition-colors">
+            <span className="font-display text-[11px] text-primary font-semibold leading-none">KR</span>
           </div>
-          <span className="text-xs font-medium text-foreground tracking-wide hidden sm:block">
-            KALILUR RAHMAN
+          <span className="font-display text-base font-semibold text-foreground tracking-wide hidden sm:block leading-none">
+            Kalilur Rahman
           </span>
         </Link>
 
-        {/* Desktop nav */}
-        <div className="hidden lg:flex items-center gap-1">
+        {/* Desktop nav (xl+) — laptops fall back to the sheet menu */}
+        <div className="hidden xl:flex items-center gap-1">
           {/* Section links only on home */}
           {isHome && sectionLinks.map((item) => {
             const Icon = item.icon;
@@ -152,50 +152,70 @@ const Navbar = () => {
           <ThemeToggle />
         </div>
 
-        {/* Mobile */}
-        <div className="flex items-center gap-2 lg:hidden">
+        {/* Hamburger sheet — shown on mobile, tablet AND laptops (<xl) */}
+        <div className="flex items-center gap-2 xl:hidden">
           <ThemeToggle />
           <Sheet open={sheetOpen} onOpenChange={setSheetOpen}>
             <SheetTrigger asChild>
-              <button className="p-1.5 text-foreground" aria-label="Open menu">
+              <button
+                className="p-1.5 rounded-md text-foreground hover:text-primary hover:bg-primary/10 transition-colors"
+                aria-label="Open menu"
+              >
                 <Menu className="w-5 h-5" />
               </button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[280px] p-0">
+            <SheetContent side="right" className="w-[320px] sm:w-[360px] p-0">
               <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
-              <div className="p-5 space-y-5 overflow-y-auto h-full">
+              <div className="p-6 space-y-6 overflow-y-auto h-full">
+                {/* Brand header inside menu */}
+                <div className="flex items-center gap-3 pb-4 border-b border-border">
+                  <div className="w-9 h-9 rounded-full border border-primary/40 flex items-center justify-center">
+                    <span className="font-display text-sm text-primary font-semibold">KR</span>
+                  </div>
+                  <div className="flex flex-col leading-tight">
+                    <span className="font-display text-base font-semibold text-foreground">Kalilur Rahman</span>
+                    <span className="text-[10px] uppercase tracking-[0.14em] text-muted-foreground">Portfolio</span>
+                  </div>
+                </div>
+
                 {/* Home */}
-                <Link to="/" onClick={() => setSheetOpen(false)} className="flex items-center gap-2.5 text-sm font-medium text-foreground no-underline">
+                <Link
+                  to="/"
+                  onClick={() => setSheetOpen(false)}
+                  className="flex items-center gap-2.5 text-sm font-medium text-foreground no-underline hover:text-primary transition-colors"
+                >
                   <Home className="w-4 h-4 text-primary" />
                   Home
                 </Link>
 
                 {/* Sections (home only) */}
                 {isHome && (
-                  <div className="space-y-1">
-                    <span className="text-[9px] uppercase tracking-[0.12em] text-muted-foreground font-bold">Sections</span>
-                    {sectionLinks.map((item) => {
-                      const Icon = item.icon;
-                      return (
-                        <a
-                          key={item.label}
-                          href={item.href}
-                          onClick={(e) => { setSheetOpen(false); handleSmoothScroll(e, item.href); }}
-                          className="flex items-center gap-2.5 py-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
-                        >
-                          <Icon className="w-3.5 h-3.5" />
-                          {item.label}
-                        </a>
-                      );
-                    })}
+                  <div className="space-y-1.5">
+                    <span className="text-[10px] uppercase tracking-[0.14em] text-primary/80 font-bold">Sections</span>
+                    <div className="grid grid-cols-2 gap-x-4 gap-y-1">
+                      {sectionLinks.map((item) => {
+                        const Icon = item.icon;
+                        return (
+                          <a
+                            key={item.label}
+                            href={item.href}
+                            onClick={(e) => { setSheetOpen(false); handleSmoothScroll(e, item.href); }}
+                            className="flex items-center gap-2 py-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
+                          >
+                            <Icon className="w-3.5 h-3.5" />
+                            {item.label}
+                          </a>
+                        );
+                      })}
+                    </div>
                   </div>
                 )}
 
                 <div className="h-px bg-border" />
 
                 {/* Pages */}
-                <div className="space-y-1">
-                  <span className="text-[9px] uppercase tracking-[0.12em] text-muted-foreground font-bold">Pages</span>
+                <div className="space-y-1.5">
+                  <span className="text-[10px] uppercase tracking-[0.14em] text-primary/80 font-bold">Pages</span>
                   {pageLinks.map((pl) => {
                     const Icon = pl.icon;
                     const active = location.pathname === pl.to;
@@ -204,7 +224,7 @@ const Navbar = () => {
                         key={pl.label}
                         to={pl.to}
                         onClick={() => setSheetOpen(false)}
-                        className={`flex items-center gap-2.5 py-1.5 text-sm transition-colors ${active ? "text-primary font-medium" : "text-muted-foreground hover:text-primary"}`}
+                        className={`flex items-center gap-2.5 py-1.5 px-2 -mx-2 rounded-md text-sm transition-colors ${active ? "text-primary bg-primary/10 font-medium" : "text-muted-foreground hover:text-primary hover:bg-primary/5"}`}
                       >
                         <Icon className="w-3.5 h-3.5" />
                         {pl.label}
@@ -216,8 +236,8 @@ const Navbar = () => {
                 <div className="h-px bg-border" />
 
                 {/* Role Profiles */}
-                <div className="space-y-1">
-                  <span className="text-[9px] uppercase tracking-[0.12em] text-muted-foreground font-bold">Role Profiles</span>
+                <div className="space-y-1.5">
+                  <span className="text-[10px] uppercase tracking-[0.14em] text-accent/80 font-bold">Role Profiles</span>
                   {profileLinks.map((pl) => {
                     const Icon = pl.icon;
                     const active = location.pathname === pl.to;
@@ -226,7 +246,7 @@ const Navbar = () => {
                         key={pl.label}
                         to={pl.to}
                         onClick={() => setSheetOpen(false)}
-                        className={`flex items-center gap-2.5 py-1.5 text-sm transition-colors ${active ? "text-accent font-medium" : "text-muted-foreground hover:text-accent"}`}
+                        className={`flex items-center gap-2.5 py-1.5 px-2 -mx-2 rounded-md text-sm transition-colors ${active ? "text-accent bg-accent/10 font-medium" : "text-muted-foreground hover:text-accent hover:bg-accent/5"}`}
                       >
                         <Icon className="w-3.5 h-3.5" />
                         {pl.label}
