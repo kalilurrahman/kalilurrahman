@@ -14,7 +14,7 @@ export const projects: Project[] = [
   // FEATURED / PRIMARY PROJECTS
   {
     id: "kr-knowledge-hub",
-    name: "KR Knowledge Hub",
+    name: "Knowledge Hub",
     description: "Comprehensive searchable record — 482 certifications, 293 learning items, 16 publications, 13 awards, 33 recommendations.",
     emoji: "📚",
     type: "Static Site",
@@ -102,7 +102,7 @@ export const projects: Project[] = [
   {
     id: "kr-ai-literacy-hub",
     name: "AI Literacy Hub",
-    description: "AI education platform — courses, modules, and learning paths covering AI fundamentals.",
+    description: "Structured AI education platform — courses, modules, and guided learning paths covering AI fundamentals to applied use cases.",
     emoji: "🧠",
     type: "Lovable App",
     link: "https://kr-ai-literacy-hub.lovable.app",
@@ -112,7 +112,7 @@ export const projects: Project[] = [
   {
     id: "kr-ai-agent-weaver",
     name: "Agent Weaver",
-    description: "Compose multi-agent systems with configurable roles and handoffs.",
+    description: "Compose multi-agent systems with configurable roles, handoffs, and orchestration patterns for complex workflows.",
     emoji: "🕸️",
     type: "Lovable App",
     link: "https://kr-ai-agent-weaver.lovable.app",
@@ -238,7 +238,7 @@ export const projects: Project[] = [
   {
     id: "kr-tech-simplifier",
     name: "Doc Transformer",
-    description: "AI-powered document simplification — transform complex docs into clear, accessible content.",
+    description: "AI-powered document simplifier — transform dense technical or legal docs into clear, accessible plain-English content.",
     emoji: "📄",
     type: "Lovable App",
     link: "https://kr-tech-simplifier.lovable.app",
@@ -250,7 +250,7 @@ export const projects: Project[] = [
   {
     id: "kr-expense-tracker",
     name: "Expense Tracker",
-    description: "Personal finance tracker — log expenses, set budgets, visualise spending.",
+    description: "Personal finance tracker — log expenses, set monthly budgets, and visualise spending across categories.",
     emoji: "💰",
     type: "Finance App",
     link: "https://kr-expense-tracker.lovable.app",
@@ -260,7 +260,7 @@ export const projects: Project[] = [
   {
     id: "kr-tetris-stack",
     name: "Tetris Stack",
-    description: "Classic Tetris with increasing difficulty — responsive web app for desktop and mobile.",
+    description: "Classic Tetris reimagined for the browser — increasing difficulty, smooth controls, responsive on desktop and mobile.",
     emoji: "🟦",
     type: "Game",
     link: "https://kr-tetris-stack.lovable.app",
@@ -270,7 +270,7 @@ export const projects: Project[] = [
   {
     id: "kr-omni-tool-hub",
     name: "Nexus Unified Hub",
-    description: "All-in-one tool aggregator — unified access to multiple productivity tools.",
+    description: "All-in-one productivity hub — unified access to converters, calculators, and everyday utilities in a single workspace.",
     emoji: "🔗",
     type: "Lovable App",
     link: "https://kr-omni-tool-hub.lovable.app",
@@ -280,7 +280,7 @@ export const projects: Project[] = [
   {
     id: "kr-app-ideas-vault",
     name: "Idea Vault Pro",
-    description: "Capture, organise, and prioritise product and project ideas with scoring.",
+    description: "Capture, organise, and prioritise product and project ideas with scoring, tags, and structured backlogs.",
     emoji: "💡",
     type: "Lovable App",
     link: "https://kr-app-ideas-vault.lovable.app",
@@ -290,7 +290,7 @@ export const projects: Project[] = [
   {
     id: "social-dashboard-hub",
     name: "Social Dashboard Hub",
-    description: "Social media content dashboard — posts, quizzes, blogs, and thought leadership.",
+    description: "Unified social content dashboard — plan and showcase posts, quizzes, blogs, and thought-leadership pieces in one view.",
     emoji: "📱",
     type: "Lovable App",
     link: "https://social-dashboard-hub.lovable.app",
@@ -300,7 +300,7 @@ export const projects: Project[] = [
   {
     id: "mindful-flow",
     name: "Mindful Flow",
-    description: "Personal dashboard — daily goals, to-do lists, finances, and habits.",
+    description: "All-in-one personal dashboard — daily goals, to-do lists, finances, and habit tracking in a calm, focused UI.",
     emoji: "🧘",
     type: "Productivity",
     link: "https://mindful-flow-82.lovable.app",
