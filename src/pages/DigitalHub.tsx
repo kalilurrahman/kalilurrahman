@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ExternalLink } from "lucide-react";
+import { projects } from "@/data/projects";
 
 const stats = [
   { n: "29+", l: "Years Experience", sub: "IT, GCCs, Consulting" },
@@ -30,53 +30,6 @@ const profileLinks = [
   { icon: "⚙️", label: "GitHub", url: "https://github.com/kalilurrahman" },
   { icon: "🎨", label: "Framer Portfolio", url: "https://kalilurrahman.framer.website" },
   { icon: "✉️", label: "kalilur.rahman@gmail.com", url: "mailto:kalilur.rahman@gmail.com", external: false },
-];
-
-const ghPages = [
-  { emoji: "📚", type: "Static Site", name: "KR Knowledge Hub", desc: "Comprehensive searchable record — 482 certifications, 293 learning items, 16 publications, 13 awards, 33 recommendations.", link: "/knowledge-hub", external: false },
-  { emoji: "🤖", type: "Static Site · v3.0", name: "Agentic AI Library", desc: "350+ AI agent definitions across 28 categories — Technology, Research, Advisory, Engineering and more.", link: "/ai-agents", external: false },
-  { emoji: "📖", type: "GitHub · Open Source", name: "Quality Engineering Book by LLMs", desc: "An experimental book on Quality Engineering generated entirely by large language models.", link: "https://github.com/kalilurrahman/QualityEngineeringBookByLLMs", external: true },
-  { emoji: "🌐", type: "Portfolio Site", name: "Main Portfolio", desc: "Global IT Executive portfolio — executive summary, leadership, books, awards, projects, and omni-channel presence.", link: "/", external: false },
-  { emoji: "🎓", type: "Lovable App", name: "Training Portfolio", desc: "60 strategic corporate training programs across QE, AI, Healthcare, GCC Strategy & Leadership.", link: "https://kr-training-portfolio.lovable.app/", external: true },
-  { emoji: "🏢", type: "Lovable App", name: "GCC Playbook", desc: "Comprehensive guide to building and scaling Global Capability Centers — phases, maturity, geography.", link: "https://kr-gcc-playbook.lovable.app", external: true },
-  { emoji: "⚛️", type: "Lovable App", name: "Quantum Computing Guide", desc: "201 essential quantum computing terms — searchable glossary across 6 categories.", link: "https://kr-quantum-hub.lovable.app/", external: true },
-  { emoji: "🧠", type: "Lovable App", name: "Agentic AI Prompts Hub", desc: "200+ agentic AI prompts with PDF/JSON export and custom library upload.", link: "https://kr-agentic-ai-prompts.lovable.app", external: true },
-  { emoji: "🖥️", type: "Lovable App", name: "Prompt Terminal Builder", desc: "Interactive prompt engineering workbench — terminal-style interface with template library and multi-model export.", link: "https://kr-prompt-terminal-builder.lovable.app", external: true },
-  { emoji: "💹", type: "Lovable App", name: "Financial Engineering & Advisory Prompts", desc: "1,120+ curated prompts across 3 AI platforms with Bloomberg-style FINPROMPT Terminal.", link: "https://kr-finance-prompt-hub.lovable.app/", external: true },
-  { emoji: "🛡️", type: "Lovable App", name: "ACUITAS — AI QE Framework", desc: "7-pillar AI Quality Engineering framework aligned with ISO 42001, NIST AI RMF & EU AI Act. 6 use cases, 4 case studies, 6 templates.", link: "https://kr-acuiitas-clarity-frameworks.lovable.app/", external: true },
-  { emoji: "✅", type: "Lovable App", name: "VERITAS — QE Framework", desc: "Comprehensive Quality Engineering framework — Verification, Evaluation, Risk, Integrity, Testing, Assurance & Standards.", link: "https://kr-veritas-qe-framework.lovable.app", external: true },
-  { emoji: "🏢", type: "Lovable App", name: "GCC Compass", desc: "Operating dashboard for GCC leaders — maturity assessments, 19-phase lifecycle map, AI advisor, cost model calculator.", link: "https://kr-gcc-compass.lovable.app", external: true },
-  { emoji: "📝", type: "Lovable App", name: "ExecComms Forge", desc: "AI-powered executive communication builder — board memos, presentations, OKR write-ups. 40+ templates across 5 sectors.", link: "https://kr-exec-scribe.lovable.app", external: true },
-  { emoji: "🎯", type: "Lovable App", name: "Corporate Upskilling Planner", desc: "L&D roadmap builder — structured 6/12-month learning roadmaps with skills matrices and certification alignment.", link: "https://kr-corp-upskill.lovable.app", external: true },
-  { emoji: "🔍", type: "Lovable App", name: "QE Compass", desc: "Quality Engineering reference platform — ISTQB cert prep, AI test case generator, 180+ quizzes, 400+ glossary terms.", link: "https://kr-qe-compass.lovable.app", external: true },
-  { emoji: "📊", type: "Lovable App", name: "Kaggle Bootcamp", desc: "90-day learning path from Python basics to Kaggle competitions — daily challenges, notebook templates, Grandmaster strategies.", link: "https://kr-kaggle-skill-hub.lovable.app", external: true },
-  { emoji: "🧠", type: "Lovable App", name: "AI Literacy Hub", desc: "AI education platform — courses, modules, and learning paths covering AI fundamentals, machine learning, and neural networks.", link: "https://kr-ai-literacy-hub.lovable.app", external: true },
-  { emoji: "💼", type: "Lovable App", name: "Interview Prep Vault", desc: "Technical interview preparation — coding challenges, behavioral questions, system design practice, and structured guides.", link: "https://kr-interview-prep-vault.lovable.app", external: true },
-  { emoji: "🔐", type: "Lovable App", name: "Acronym Buster — Cyber Lexicon Hub", desc: "1,837 tech acronyms across Cyber Security, Infrastructure, Cloud & Operations — searchable reference cards.", link: "https://kr-cyber-lexicon-hub.lovable.app", external: true },
-  { emoji: "🧩", type: "Lovable App", name: "Quiz Master — Quiz Blitz Hub", desc: "Trending topic quiz platform — 9 categories including Technology, AI, Business, Finance & Current Affairs with leaderboard.", link: "https://kr-quiz-blitz-hub.lovable.app", external: true },
-  { emoji: "🤖", type: "Lovable App", name: "Agent Flow Studio", desc: "Visual AI agent workflow builder — design, chain, and orchestrate multi-step AI agent flows.", link: "https://kr-ai-agent-flow.lovable.app", external: true },
-  { emoji: "🎨", type: "Lovable App", name: "Agent Canvas", desc: "Interactive canvas for designing AI agent workflows — connect nodes and visualise pipelines.", link: "https://kr-ai-workflow-gen.lovable.app", external: true },
-  { emoji: "🕸️", type: "Lovable App", name: "Agent Weaver", desc: "Compose multi-agent systems with configurable roles and handoffs.", link: "https://kr-ai-agent-weaver.lovable.app", external: true },
-  { emoji: "📄", type: "Lovable App", name: "Doc Transformer", desc: "AI-powered document simplification — transform complex docs into clear, accessible content.", link: "https://kr-tech-simplifier.lovable.app", external: true },
-  { emoji: "👤", type: "Lovable App", name: "Profile Studio", desc: "Professional profile search and optimization tool across platforms.", link: "https://kr-profile-search.lovable.app", external: true },
-  { emoji: "🎯", type: "Lovable App", name: "Profile Perfecter", desc: "Smart JD-to-profile matcher with AI-powered gap analysis.", link: "https://kr-jd-smart-profile.lovable.app", external: true },
-  { emoji: "🧪", type: "Lovable App", name: "TestForge AI", desc: "AI-powered test automation generator — test scripts, plans, and quality artefacts from requirements.", link: "https://kr-test-automator.lovable.app", external: true },
-  { emoji: "🔗", type: "Lovable App", name: "Nexus Unified Hub", desc: "All-in-one tool aggregator — unified access to multiple productivity tools.", link: "https://kr-omni-tool-hub.lovable.app", external: true },
-  { emoji: "⌨️", type: "Lovable App", name: "Prompt Builder Hub", desc: "Terminal-inspired prompt composition studio with template support.", link: "https://kr-terminal-muse-maker.lovable.app", external: true },
-  { emoji: "💡", type: "Lovable App", name: "Idea Vault Pro", desc: "Capture, organise, and prioritise product and project ideas with scoring.", link: "https://kr-app-ideas-vault.lovable.app", external: true },
-  { emoji: "📈", type: "Lovable App", name: "KR Insights", desc: "Curated insights hub — trends and analysis across technology, business, and leadership.", link: "https://kr-app-nexus.lovable.app", external: true },
-  { emoji: "🗺️", type: "Lovable App", name: "Resource Navigator", desc: "Structured learning path hub — curated resources and progression tracks.", link: "https://kr-learning-path-hub.lovable.app", external: true },
-  { emoji: "📱", type: "Lovable App", name: "Social Dashboard Hub", desc: "Social media content dashboard — posts, quizzes, blogs, and thought leadership.", link: "https://social-dashboard-hub.lovable.app", external: true },
-  { emoji: "🟦", type: "Game", name: "Tetris Stack", desc: "Classic Tetris with increasing difficulty — responsive web app for desktop and mobile.", link: "https://kr-tetris-stack.lovable.app", external: true },
-  { emoji: "💰", type: "Finance App", name: "Expense Tracker", desc: "Personal finance tracker — log expenses, set budgets, visualise spending.", link: "https://kr-expense-tracker.lovable.app", external: true },
-  { emoji: "❓", type: "Game", name: "Jeopardy Quiz", desc: "Jeopardy-style quiz with category-based questions, scoring, and smooth animations.", link: "https://kr-jeopardy-quiz.lovable.app", external: true },
-  { emoji: "🧘", type: "Productivity", name: "Mindful Flow", desc: "Personal dashboard — daily goals, to-do lists, finances, and habits.", link: "https://mindful-flow-82.lovable.app", external: true },
-  { emoji: "🧬", type: "Lovable App", name: "Cancer Knowledge Explorer", desc: "A comprehensive clinical reference covering 101+ cancer types — symptoms, diagnostics, treatments.", link: "https://cancer-knowledge-explorer.lovable.app", external: true },
-  { emoji: "🎓", type: "Lovable App", name: "AI Learning Hub", desc: "Structured knowledge base for understanding artificial intelligence — from fundamentals to cutting-edge research.", link: "https://kr-ai-learning-hub.lovable.app", external: true },
-  { emoji: "🤖", type: "Lovable App", name: "Claudiator Skills", desc: "Browse 150+ productivity skills for Claude Code and Claude CoWork, by domain.", link: "https://kr-claudiator-skills.lovable.app", external: true },
-  { emoji: "🏥", type: "Lovable App", name: "Healthcare DX Guidebook", desc: "The definitive operating playbook for healthcare executives and GCC leaders — 60 chapters, 8 volumes.", link: "https://kr-healthcare-guidebook-hub.lovable.app", external: true },
-  { emoji: "💊", type: "Lovable App", name: "Pharma DX Guidebook", desc: "A definitive practitioner's guide to building, scaling, and leading pharmaceutical GCCs in the AI era.", link: "https://kr-pharma-guidebook-hub.lovable.app", external: true },
-  { emoji: "🏗️", type: "Lovable App", name: "Enterprise Architecture Hub", desc: "Comprehensive architecture intelligence portal for enterprise architects, CTOs, and transformation teams.", link: "https://kr-enterprise-architecture-hub.lovable.app", external: true },
 ];
 
 const platforms = [
@@ -179,29 +132,29 @@ export default function DigitalHub() {
           </div>
         </motion.div>
 
-        {/* GitHub Pages Projects */}
+        {/* Integrated Projects & Apps */}
         <motion.div className="mb-12" {...fadeUp}>
           <div className="mb-5">
-            <span className="inline-flex text-[10px] font-bold tracking-[0.14em] uppercase text-muted-foreground border border-border rounded px-2.5 py-0.5 font-mono mb-2">GitHub Pages Projects</span>
-            <h2 className="font-serif text-[22px] text-foreground mb-1">Static sites & interactive tools</h2>
-            <p className="text-[13px] text-muted-foreground">All projects hosted at kalilurrahman.github.io</p>
+            <span className="inline-flex text-[10px] font-bold tracking-[0.14em] uppercase text-muted-foreground border border-border rounded px-2.5 py-0.5 font-mono mb-2">Portfolio Ecosystem</span>
+            <h2 className="font-serif text-[22px] text-foreground mb-1">Integrated Projects & Apps</h2>
+            <p className="text-[13px] text-muted-foreground">Unified collection of GitHub repositories and Lovable applications</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-            {ghPages.map(p => {
+            {projects.map(p => {
               const inner = (
-                <div className="border border-border rounded-xl p-4 bg-card hover:border-primary hover:-translate-y-0.5 transition-all relative overflow-hidden group">
+                <div className="border border-border rounded-xl p-4 bg-card hover:border-primary hover:-translate-y-0.5 transition-all relative overflow-hidden group h-full">
                   <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-primary to-accent opacity-0 group-hover:opacity-100 transition-opacity" />
                   <span className="absolute top-3 right-3 text-[11px] text-muted-foreground">{p.external ? "↗" : "→"}</span>
                   <span className="text-xl block mb-2.5">{p.emoji}</span>
                   <span className="text-[9.5px] font-mono text-muted-foreground uppercase tracking-[0.1em] block mb-1">{p.type}</span>
                   <span className="font-semibold text-sm text-foreground block mb-1.5">{p.name}</span>
-                  <span className="text-xs text-muted-foreground leading-relaxed">{p.desc}</span>
+                  <span className="text-xs text-muted-foreground leading-relaxed">{p.description}</span>
                 </div>
               );
               return p.external ? (
-                <a key={p.name} href={p.link} target="_blank" rel="noopener noreferrer" className="no-underline">{inner}</a>
+                <a key={p.id} href={p.link} target="_blank" rel="noopener noreferrer" className="no-underline">{inner}</a>
               ) : (
-                <Link key={p.name} to={p.link} className="no-underline">{inner}</Link>
+                <Link key={p.id} to={p.link} className="no-underline">{inner}</Link>
               );
             })}
           </div>

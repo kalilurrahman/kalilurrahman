@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import Section from "./Section";
 
 const strengths = [
-  "Designing and scaling Quality Engineering CoEs in complex, regulated environments.",
-  "Leading GCCs and global delivery organisations with clear KPIs and P&L ownership.",
-  "Bringing data & AI practices into mainstream delivery and decision‑making.",
-  "Evangelising best practices via books, talks, and community engagement.",
+  "Strategic scaling of Global Capability Centers (GCCs) from inception to scale.",
+  "Architecting AI-driven Quality Engineering frameworks (ACUITAS, VERITAS).",
+  "Leading cross-functional digital transformation for GxP/regulated environments.",
+  "Multi-channel knowledge evangelism (3 books, 16 publications, global keynotes).",
 ];
 
 const ExecutiveSummary = () => {
@@ -20,21 +20,25 @@ const ExecutiveSummary = () => {
           className="md:col-span-3 space-y-5 text-secondary-foreground/80 leading-relaxed"
         >
           <p>
-            For over two and a half decades, I've been driven by a single mission:{" "}
-            <span className="text-foreground font-medium">transforming technology into tangible business value</span>.
-            My work spans consulting, advisory, and GCC leadership, with a focus on enterprise transformation,
-            Quality Engineering, and digital & data strategy.
+            For nearly three decades, I've been at the intersection of technology and business strategy, driven by a single mission:{" "}
+            <span className="text-foreground font-semibold italic">transforming enterprise complexity into measurable value.</span>
+            My experience spans global consulting, GCC advisory, and executive leadership, with a deep focus on 
+            <span className="text-foreground font-semibold"> Quality Engineering</span>, 
+            <span className="text-foreground font-semibold"> Digital Transformation</span>, and 
+            <span className="text-foreground font-semibold"> AI/Data Strategy</span>.
           </p>
           <p>
-            I bridge the worlds of strategy and execution — partnering with C‑level stakeholders,
-            shaping roadmaps, and then guiding globally distributed teams to deliver.
-            My approach is{" "}
-            <span className="text-foreground font-medium">data‑driven, pragmatic, and outcome‑oriented</span>.
+            Most recently as a <span className="text-foreground font-semibold">Director at Novartis</span>, I spearheaded the 
+            Data, Digital & IT strategy for the Global Capability Center, scaling operations from 
+            inception to a high-performing ecosystem of 400+ professionals. I bridge the worlds of strategy 
+            and execution — partnering with C-level stakeholders to shape roadmaps and guiding 
+            globally distributed teams to deliver.
           </p>
           <p>
-            Along the way, I've been recognised as a Top‑10 global thought leader,
-            awarded for innovative CIO leadership, and built a multi‑channel footprint as a
-            speaker, author, and Kaggle Legacy Grandmaster.
+            Recognized as a <span className="text-foreground font-semibold">#3 Global Top Thought Leader</span> (Thinkers360) 
+            and a <span className="text-foreground font-semibold">Kaggle Legacy Grandmaster</span>, I evangelize 
+            best practices through published works, international speaking, and the development of 
+            open-source frameworks like ACUITAS.
           </p>
         </motion.div>
 

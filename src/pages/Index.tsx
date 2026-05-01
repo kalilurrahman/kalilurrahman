@@ -14,6 +14,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import KnowledgeHubSection from "@/components/KnowledgeHubSection";
 import Testimonials from "@/components/Testimonials";
 import ScrollProgress from "@/components/ScrollProgress";
+import FeaturedProjects from "@/components/FeaturedProjects";
 
 const Index = () => {
   return (
@@ -24,6 +25,8 @@ const Index = () => {
       <ExecutiveSummary />
       <div className="section-divider" />
       <Testimonials />
+      <div className="section-divider" />
+      <FeaturedProjects />
       <div className="section-divider" />
       <Leadership />
       <div className="section-divider" />

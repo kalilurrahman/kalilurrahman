@@ -3,14 +3,14 @@ import Section from "./Section";
 import { ExternalLink } from "lucide-react";
 
 const repos = [
-  { name: "GitHub Profile", url: "https://github.com/kalilurrahman", desc: "41+ repositories" },
-  { name: "QE Book by LLMs", url: "https://github.com/kalilurrahman/QualityEngineeringBookByLLMs", desc: "LLM-generated book" },
-  { name: "QE Artefacts", url: "https://github.com/kalilurrahman/QualityEngineeringArtefacts", desc: "Templates & frameworks" },
+  { name: "GitHub Profile", url: "https://github.com/kalilurrahman", desc: "46+ repositories covering QE artifacts & LLMs" },
+  { name: "Kaggle Profile", url: "https://www.kaggle.com/kalilurrahman", desc: "Legacy Grandmaster · 1,265+ discussions" },
+  { name: "ACUITAS AI QE Framework", url: "https://kr-acuiitas-clarity-frameworks.lovable.app/", desc: "ISO 42001 & NIST AI RMF Aligned" },
 ];
 
 const DataAI = () => {
   return (
-    <Section id="data-ai" title="Data, AI & Kaggle" subtitle="From competitions to real‑world analytics.">
+    <Section id="data-ai" title="Data, AI & Kaggle" subtitle="From global competitions to enterprise-grade AI frameworks.">
       <div className="grid md:grid-cols-2 gap-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -22,16 +22,18 @@ const DataAI = () => {
           <div className="p-6 border border-primary/20 bg-primary/5 glow-gold">
             <h3 className="font-serif text-xl text-primary mb-3">Kaggle Legacy Grandmaster</h3>
             <p>
-              I hold the distinction of being a Kaggle Legacy Grandmaster, placing among the top
-              data practitioners globally. This journey sharpened my skills in feature engineering,
-              model building, working with noisy real‑world datasets, and collaborative problem‑solving.
+              I hold the distinction of being a Kaggle Legacy Grandmaster, encompassing roles as a 
+              <span className="text-foreground font-semibold"> Competitions Expert</span>, 
+              <span className="text-foreground font-semibold"> Datasets Expert</span>, and 
+              <span className="text-foreground font-semibold"> Notebooks Master</span>. 
+              With over 1,265 discussion contributions, I am active in the global data science community.
             </p>
           </div>
 
           <p>
-            Beyond competitions, I've developed analytics and visualisation approaches showcased in my
-            published book, used data‑driven techniques to optimise testing at scale, and experimented
-            with LLMs and generative AI for Quality Engineering content.
+            Beyond competitions, I've developed the <span className="text-foreground font-semibold">ACUITAS AI Quality Engineering Framework</span>, 
+            bridging the gap between traditional testing and the requirements of the EU AI Act and NIST AI RMF. 
+            My technical portfolio spans 46+ GitHub repositories focused on scaling automation and data-driven delivery.
           </p>
         </motion.div>
 

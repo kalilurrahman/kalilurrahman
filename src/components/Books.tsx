@@ -5,18 +5,18 @@ import { ExternalLink } from "lucide-react";
 const books = [
   {
     title: "Python Data Visualisation Essentials Guide",
-    desc: "A practical introduction to turning data into clear, compelling visual stories with Python.",
-    url: "https://example.com/book-1",
+    desc: "A practical guide to storytelling with data using Python, focusing on turning complex datasets into clear, compelling visual narratives.",
+    url: "https://www.amazon.com/author/kalilurrahman",
   },
   {
     title: "Science Of Selenium",
-    desc: "A hands-on guide to automation strategy, frameworks, and resilient quality engineering practices.",
-    url: "https://example.com/book-2",
+    desc: "A comprehensive, hands-on guide to automation strategy, resilient frameworks, and the core principles of quality engineering.",
+    url: "https://www.amazon.com/author/kalilurrahman",
   },
   {
     title: "Innovations in Testing",
-    desc: "A concise exploration of modern testing ideas, delivery models, and leadership perspectives.",
-    url: "https://example.com/book-3",
+    desc: "A thought leadership exploration of modern testing methodologies, delivery models, and future-ready leadership perspectives.",
+    url: "https://www.amazon.com/author/kalilurrahman",
   },
 ];
 

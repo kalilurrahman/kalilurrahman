@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 import Section from "./Section";
 
 const awards = [
-  { title: "#3 Global Top Thought Leader", org: "Thinkers360", desc: "Recognised for contributions in technology, digital transformation, and Quality Engineering." },
-  { title: "Innovative CIO Awards 2023", org: "CIOAXIS & CISOCONNECT", desc: "Honoured for innovative practices and leadership in digital transformation." },
-  { title: "IT NEXT100 Future CIO Award", org: "CIO&Leader / ITNext", desc: "Recognised through a rigorous, multi‑stage evaluation process." },
-  { title: "Pharma Leadership Award", org: "eLets Health Media", desc: "Awarded for contributions to digital initiatives in pharma." },
-  { title: "Corporate Quiz & Knowledge", org: "TATA Crucible & AMUL", desc: "Regional finalist and runner‑up — continuous learner mindset." },
-  { title: "Organisational Excellence", org: "Accenture & Vodafone", desc: "Outstanding delivery, knowledge sharing, and 'One Step Ahead'." },
+  { title: "#3 Global Top Thought Leader", org: "Thinkers360", desc: "Recognized for global contributions in Technology, Digital Transformation, and Quality Engineering." },
+  { title: "Innovative CIO Award 2023", org: "CIOAXIS & CISOCONNECT", desc: "Honored for leadership in digital transformation and innovative operating models." },
+  { title: "IT NEXT100 Future CIO Award", org: "CIO&Leader / ITNext", desc: "Recognized through a rigorous, multi-stage evaluation of technical and leadership expertise." },
+  { title: "Pharma Leadership Award", org: "eLets Health Media", desc: "Awarded for pioneering digital initiatives and leadership in the pharmaceutical sector." },
+  { title: "Corporate Quiz & Knowledge", org: "TATA Crucible & AMUL", desc: "Regional finalist and runner-up, demonstrating a commitment to continuous learning." },
+  { title: "Organizational Excellence", org: "Accenture & Vodafone", desc: "Recipient of multiple awards for outstanding delivery, knowledge sharing, and operational excellence." },
 ];
 
 const Awards = () => {

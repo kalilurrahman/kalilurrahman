@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 import Section from "./Section";
 
 const highlights = [
-  "Led enterprise transformation mandates in Pharma and Tech, with clear focus on business value and risk management.",
-  "Built and scaled Quality Engineering Centers of Excellence to standardise methods, tools, and KPIs across portfolios.",
-  "Partnered with C‑suite and functional leaders to align digital & data strategy with P&L and growth imperatives.",
-  "Managed globally distributed teams, shaping culture, talent strategy, and succession planning.",
-  "Introduced reusable frameworks and artefacts to accelerate time‑to‑value for testing and automation initiatives.",
+  "Recognized as a Top-10 Global Thought Leader (Thinkers360) in Technology and Digital Transformation.",
+  "Led enterprise transformation mandates in Pharma and Tech sectors, bridging C-suite strategy with globally distributed execution.",
+  "Built and scaled Quality Engineering Centers of Excellence (CoEs) for complex, GxP-regulated environments.",
+  "Direct experience scaling Novartis GCC from scratch to a 400+ person operation with 500% volume growth.",
+  "Managed globally distributed teams across 5 continents, shaping culture, talent strategy, and succession planning.",
 ];
 
 const Leadership = () => {

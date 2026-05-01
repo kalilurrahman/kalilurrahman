@@ -17,7 +17,7 @@ const certifications = [
 
 const Certifications = () => {
   return (
-    <Section id="certifications" title="Certifications" subtitle="Verified credentials and professional badges.">
+    <Section id="certifications" title="Certifications" subtitle="482+ verified credentials and professional badges across technology and leadership.">
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
         {certifications.map((cert, i) => (
           <motion.div
