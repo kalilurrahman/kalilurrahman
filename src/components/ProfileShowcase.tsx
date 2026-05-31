@@ -592,7 +592,7 @@ const ProfileShowcase = () => {
             </div>
             <div>
               <h3 className="font-serif text-xl text-foreground">GitHub Repositories</h3>
-              <p className="text-xs text-muted-foreground">46+ public repos — select one to explore</p>
+              <p className="text-xs text-muted-foreground">73+ public repos — select one to explore</p>
             </div>
             <a
               href="https://github.com/kalilurrahman"
@@ -692,7 +692,7 @@ const ProfileShowcase = () => {
               GitHub Profile
             </h3>
             <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-              46+ repositories — quality engineering artefacts, LLM experiments, Kaggle notebooks & more.
+              73+ repositories — quality engineering artefacts, LLM experiments, Kaggle notebooks & more.
             </p>
             <span className="inline-flex items-center gap-1.5 text-sm text-primary opacity-0 group-hover:opacity-100 transition-opacity">
               Visit Profile <ExternalLink className="w-3.5 h-3.5" />
