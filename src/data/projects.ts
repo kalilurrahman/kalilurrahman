@@ -8,7 +8,12 @@ export interface Project {
   external: boolean;
   category: 'AI & Agents' | 'Enterprise & GCC' | 'Quality Engineering' | 'Data & Knowledge' | 'Personal & Tools';
   featured?: boolean;
+  screenshot?: string;
 }
+
+/** Live screenshot helper using thum.io (no key required, cached). */
+const shot = (url: string): string =>
+  `https://image.thum.io/get/width/800/crop/600/noanimate/${url}`;
 
 export const projects: Project[] = [
   // FEATURED / PRIMARY PROJECTS
