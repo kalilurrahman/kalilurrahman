@@ -48,7 +48,8 @@ export const projects: Project[] = [
     link: "https://kr-finance-prompt-hub.lovable.app/",
     external: true,
     category: "AI & Agents",
-    featured: true
+    featured: true,
+    screenshot: shot("https://kr-finance-prompt-hub.lovable.app/")
   },
   {
     id: "kr-gcc-compass",
@@ -59,7 +60,8 @@ export const projects: Project[] = [
     link: "https://kr-gcc-compass.lovable.app",
     external: true,
     category: "Enterprise & GCC",
-    featured: true
+    featured: true,
+    screenshot: shot("https://kr-gcc-compass.lovable.app")
   },
   {
     id: "kr-acuitas",
@@ -70,7 +72,8 @@ export const projects: Project[] = [
     link: "https://kr-acuiitas-clarity-frameworks.lovable.app/",
     external: true,
     category: "Quality Engineering",
-    featured: true
+    featured: true,
+    screenshot: shot("https://kr-acuiitas-clarity-frameworks.lovable.app/")
   },
 
   // AI & AGENTS
@@ -82,7 +85,8 @@ export const projects: Project[] = [
     type: "Lovable App",
     link: "https://kr-agentic-ai-prompts.lovable.app",
     external: true,
-    category: "AI & Agents"
+    category: "AI & Agents",
+    screenshot: shot("https://kr-agentic-ai-prompts.lovable.app")
   },
   {
     id: "kr-ai-agent-flow",
@@ -92,7 +96,8 @@ export const projects: Project[] = [
     type: "Lovable App",
     link: "https://kr-ai-agent-flow.lovable.app",
     external: true,
-    category: "AI & Agents"
+    category: "AI & Agents",
+    screenshot: shot("https://kr-ai-agent-flow.lovable.app")
   },
   {
     id: "kr-prompt-terminal-builder",
@@ -102,7 +107,8 @@ export const projects: Project[] = [
     type: "Lovable App",
     link: "https://kr-prompt-terminal-builder.lovable.app",
     external: true,
-    category: "AI & Agents"
+    category: "AI & Agents",
+    screenshot: shot("https://kr-prompt-terminal-builder.lovable.app")
   },
   {
     id: "kr-ai-literacy-hub",
@@ -112,7 +118,8 @@ export const projects: Project[] = [
     type: "Lovable App",
     link: "https://kr-ai-literacy-hub.lovable.app",
     external: true,
-    category: "AI & Agents"
+    category: "AI & Agents",
+    screenshot: shot("https://kr-ai-literacy-hub.lovable.app")
   },
   {
     id: "kr-ai-agent-weaver",
@@ -122,7 +129,8 @@ export const projects: Project[] = [
     type: "Lovable App",
     link: "https://kr-ai-agent-weaver.lovable.app",
     external: true,
-    category: "AI & Agents"
+    category: "AI & Agents",
+    screenshot: shot("https://kr-ai-agent-weaver.lovable.app")
   },
   {
     id: "kr-ai-workflow-gen",
@@ -132,7 +140,8 @@ export const projects: Project[] = [
     type: "Lovable App",
     link: "https://kr-ai-workflow-gen.lovable.app",
     external: true,
-    category: "AI & Agents"
+    category: "AI & Agents",
+    screenshot: shot("https://kr-ai-workflow-gen.lovable.app")
   },
 
   // ENTERPRISE & GCC
@@ -144,7 +153,8 @@ export const projects: Project[] = [
     type: "Lovable App",
     link: "https://kr-training-portfolio.lovable.app/",
     external: true,
-    category: "Enterprise & GCC"
+    category: "Enterprise & GCC",
+    screenshot: shot("https://kr-training-portfolio.lovable.app/")
   },
   {
     id: "kr-gcc-playbook",
@@ -154,7 +164,8 @@ export const projects: Project[] = [
     type: "Lovable App",
     link: "https://kr-gcc-playbook.lovable.app",
     external: true,
-    category: "Enterprise & GCC"
+    category: "Enterprise & GCC",
+    screenshot: shot("https://kr-gcc-playbook.lovable.app")
   },
   {
     id: "kr-exec-scribe",
@@ -164,7 +175,8 @@ export const projects: Project[] = [
     type: "Lovable App",
     link: "https://kr-exec-scribe.lovable.app",
     external: true,
-    category: "Enterprise & GCC"
+    category: "Enterprise & GCC",
+    screenshot: shot("https://kr-exec-scribe.lovable.app")
   },
   {
     id: "kr-corp-upskill",
@@ -174,7 +186,8 @@ export const projects: Project[] = [
     type: "Lovable App",
     link: "https://kr-corp-upskill.lovable.app",
     external: true,
-    category: "Enterprise & GCC"
+    category: "Enterprise & GCC",
+    screenshot: shot("https://kr-corp-upskill.lovable.app")
   },
 
   // QUALITY ENGINEERING
@@ -186,7 +199,8 @@ export const projects: Project[] = [
     type: "Lovable App",
     link: "https://kr-qe-compass.lovable.app",
     external: true,
-    category: "Quality Engineering"
+    category: "Quality Engineering",
+    screenshot: shot("https://kr-qe-compass.lovable.app")
   },
   {
     id: "kr-veritas-qe-framework",
@@ -196,7 +210,8 @@ export const projects: Project[] = [
     type: "Lovable App",
     link: "https://kr-veritas-qe-framework.lovable.app",
     external: true,
-    category: "Quality Engineering"
+    category: "Quality Engineering",
+    screenshot: shot("https://kr-veritas-qe-framework.lovable.app")
   },
   {
     id: "kr-test-automator",
@@ -206,7 +221,8 @@ export const projects: Project[] = [
     type: "Lovable App",
     link: "https://kr-test-automator.lovable.app",
     external: true,
-    category: "Quality Engineering"
+    category: "Quality Engineering",
+    screenshot: shot("https://kr-test-automator.lovable.app")
   },
 
   // DATA & KNOWLEDGE
@@ -218,7 +234,8 @@ export const projects: Project[] = [
     type: "Lovable App",
     link: "https://kr-quantum-hub.lovable.app/",
     external: true,
-    category: "Data & Knowledge"
+    category: "Data & Knowledge",
+    screenshot: shot("https://kr-quantum-hub.lovable.app/")
   },
   {
     id: "kr-cyber-lexicon-hub",
@@ -228,7 +245,8 @@ export const projects: Project[] = [
     type: "Lovable App",
     link: "https://kr-cyber-lexicon-hub.lovable.app",
     external: true,
-    category: "Data & Knowledge"
+    category: "Data & Knowledge",
+    screenshot: shot("https://kr-cyber-lexicon-hub.lovable.app")
   },
   {
     id: "kr-quiz-blitz-hub",
@@ -238,7 +256,8 @@ export const projects: Project[] = [
     type: "Lovable App",
     link: "https://kr-quiz-blitz-hub.lovable.app",
     external: true,
-    category: "Data & Knowledge"
+    category: "Data & Knowledge",
+    screenshot: shot("https://kr-quiz-blitz-hub.lovable.app")
   },
   {
     id: "kr-tech-simplifier",
@@ -248,7 +267,8 @@ export const projects: Project[] = [
     type: "Lovable App",
     link: "https://kr-tech-simplifier.lovable.app",
     external: true,
-    category: "Data & Knowledge"
+    category: "Data & Knowledge",
+    screenshot: shot("https://kr-tech-simplifier.lovable.app")
   },
 
   // TOOLS & PERSONAL
@@ -260,7 +280,8 @@ export const projects: Project[] = [
     type: "Finance App",
     link: "https://kr-expense-tracker.lovable.app",
     external: true,
-    category: "Personal & Tools"
+    category: "Personal & Tools",
+    screenshot: shot("https://kr-expense-tracker.lovable.app")
   },
   {
     id: "kr-tetris-stack",
@@ -270,7 +291,8 @@ export const projects: Project[] = [
     type: "Game",
     link: "https://kr-tetris-stack.lovable.app",
     external: true,
-    category: "Personal & Tools"
+    category: "Personal & Tools",
+    screenshot: shot("https://kr-tetris-stack.lovable.app")
   },
   {
     id: "kr-omni-tool-hub",
@@ -280,7 +302,8 @@ export const projects: Project[] = [
     type: "Lovable App",
     link: "https://kr-omni-tool-hub.lovable.app",
     external: true,
-    category: "Personal & Tools"
+    category: "Personal & Tools",
+    screenshot: shot("https://kr-omni-tool-hub.lovable.app")
   },
   {
     id: "kr-app-ideas-vault",
@@ -290,7 +313,8 @@ export const projects: Project[] = [
     type: "Lovable App",
     link: "https://kr-app-ideas-vault.lovable.app",
     external: true,
-    category: "Personal & Tools"
+    category: "Personal & Tools",
+    screenshot: shot("https://kr-app-ideas-vault.lovable.app")
   },
   {
     id: "social-dashboard-hub",
@@ -300,7 +324,8 @@ export const projects: Project[] = [
     type: "Lovable App",
     link: "https://social-dashboard-hub.lovable.app",
     external: true,
-    category: "Personal & Tools"
+    category: "Personal & Tools",
+    screenshot: shot("https://social-dashboard-hub.lovable.app")
   },
   {
     id: "mindful-flow",
@@ -310,7 +335,8 @@ export const projects: Project[] = [
     type: "Productivity",
     link: "https://mindful-flow-82.lovable.app",
     external: true,
-    category: "Personal & Tools"
+    category: "Personal & Tools",
+    screenshot: shot("https://mindful-flow-82.lovable.app")
   }
 ];
 
