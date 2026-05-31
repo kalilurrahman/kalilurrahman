@@ -142,6 +142,7 @@ const AppsPortfolio = () => {
                   Explore {project.external ? <ExternalLink className="w-3.5 h-3.5" /> : "→"}
                 </a>
               </div>
+              </div>
             </motion.article>
           ))}
         </AnimatePresence>
