@@ -337,6 +337,289 @@ export const projects: Project[] = [
     external: true,
     category: "Personal & Tools",
     screenshot: shot("https://mindful-flow-82.lovable.app")
+  },
+
+  // ─── NEWLY ADDED LOVABLE APPS ───
+  {
+    id: "kr-claudiator-skills",
+    name: "Claudiator — Claude Skills Hub",
+    description: "Browsable directory of 129+ Claude SKILL.md prompts with copy-ready frontmatter, tool pills, and category filters.",
+    emoji: "⚔️",
+    type: "Lovable App",
+    link: "https://kr-claudiator-skills.lovable.app",
+    external: true,
+    category: "AI & Agents",
+    featured: true,
+    screenshot: shot("https://kr-claudiator-skills.lovable.app")
+  },
+  {
+    id: "kr-token-ops-hub",
+    name: "TokenOps",
+    description: "FinOps for LLMs — optimise AI token usage, model cost, and prompt efficiency across enterprise AI workloads.",
+    emoji: "🪙",
+    type: "Lovable App",
+    link: "https://kr-token-ops-hub.lovable.app",
+    external: true,
+    category: "AI & Agents",
+    screenshot: shot("https://kr-token-ops-hub.lovable.app")
+  },
+  {
+    id: "kr-social-authority-hub",
+    name: "Authority Engine",
+    description: "AI-powered social publishing platform — plan, draft, and amplify thought-leadership content across channels.",
+    emoji: "📣",
+    type: "Lovable App",
+    link: "https://kr-social-authority-hub.lovable.app",
+    external: true,
+    category: "AI & Agents",
+    screenshot: shot("https://kr-social-authority-hub.lovable.app")
+  },
+  {
+    id: "krpromptsapp",
+    name: "Claude 100 Prompts",
+    description: "Curated library of 100+ Claude prompts spanning research, productivity, writing, coding, and AI workflows.",
+    emoji: "📝",
+    type: "Lovable App",
+    link: "https://krpromptsapp.lovable.app",
+    external: true,
+    category: "AI & Agents",
+    screenshot: shot("https://krpromptsapp.lovable.app")
+  },
+  {
+    id: "kr-terminal-muse-maker",
+    name: "Prompt Muse",
+    description: "Terminal-style prompt composer for crafting, versioning, and exporting reusable AI prompt templates.",
+    emoji: "💻",
+    type: "Lovable App",
+    link: "https://kr-terminal-muse-maker.lovable.app",
+    external: true,
+    category: "AI & Agents",
+    screenshot: shot("https://kr-terminal-muse-maker.lovable.app")
+  },
+  {
+    id: "kr-industry-capability-vibe-prompts",
+    name: "IndustryBCM Prompt Library",
+    description: "Mobile-first vibe-coding prompt library — enterprise business capabilities across industries and domains.",
+    emoji: "🏭",
+    type: "Lovable App",
+    link: "https://kr-industry-capability-vibe-prompts.lovable.app",
+    external: true,
+    category: "AI & Agents",
+    screenshot: shot("https://kr-industry-capability-vibe-prompts.lovable.app")
+  },
+  {
+    id: "cit96-ai-digest",
+    name: "CITAACC AI Hub",
+    description: "CIT Alumni Association Chennai — curated AI articles, digests, and community knowledge hub.",
+    emoji: "🎓",
+    type: "Lovable App",
+    link: "https://cit96-ai-digest.lovable.app",
+    external: true,
+    category: "AI & Agents",
+    screenshot: shot("https://cit96-ai-digest.lovable.app")
+  },
+  {
+    id: "aiotiai",
+    name: "AIOTI AI",
+    description: "AIOTI AI digest — curated insights at the intersection of IoT, AI, and connected industry.",
+    emoji: "🌐",
+    type: "Lovable App",
+    link: "https://aiotiai.lovable.app",
+    external: true,
+    category: "AI & Agents",
+    screenshot: shot("https://aiotiai.lovable.app")
+  },
+
+  {
+    id: "kr-enterprise-architecture-hub",
+    name: "Enterprise Architecture Compass",
+    description: "Reference hub for enterprise architecture — frameworks, patterns, governance, and operating models.",
+    emoji: "🧭",
+    type: "Lovable App",
+    link: "https://kr-enterprise-architecture-hub.lovable.app",
+    external: true,
+    category: "Enterprise & GCC",
+    featured: true,
+    screenshot: shot("https://kr-enterprise-architecture-hub.lovable.app")
+  },
+  {
+    id: "kr-pharma-guidebook-hub",
+    name: "Pharma Navigator",
+    description: "Industry guidebook for Pharma GCC leaders — regulatory landscape, capability maps, and operating playbooks.",
+    emoji: "💊",
+    type: "Lovable App",
+    link: "https://kr-pharma-guidebook-hub.lovable.app",
+    external: true,
+    category: "Enterprise & GCC",
+    screenshot: shot("https://kr-pharma-guidebook-hub.lovable.app")
+  },
+  {
+    id: "kr-healthcare-guidebook-hub",
+    name: "Healthcare Industry Playbook",
+    description: "Go-to playbook for Healthcare GCC professionals — frameworks, maturity, and industry-specific guidance.",
+    emoji: "🏥",
+    type: "Lovable App",
+    link: "https://kr-healthcare-guidebook-hub.lovable.app",
+    external: true,
+    category: "Enterprise & GCC",
+    screenshot: shot("https://kr-healthcare-guidebook-hub.lovable.app")
+  },
+  {
+    id: "kr-app-builder-grid-playbook",
+    name: "App Builder Grid Playbook",
+    description: "Structured playbook for building a portfolio of AI-assisted apps — phases, patterns, and reusable recipes.",
+    emoji: "🧱",
+    type: "Lovable App",
+    link: "https://kr-app-builder-grid-playbook.lovable.app",
+    external: true,
+    category: "Enterprise & GCC",
+    screenshot: shot("https://kr-app-builder-grid-playbook.lovable.app")
+  },
+  {
+    id: "kr-jd-smart-profile",
+    name: "ProfileCraft AI",
+    description: "JD-tailored executive profile generator — ATS-optimised 1- and 2-pagers built from your career data.",
+    emoji: "📑",
+    type: "Lovable App",
+    link: "https://kr-jd-smart-profile.lovable.app",
+    external: true,
+    category: "Enterprise & GCC",
+    screenshot: shot("https://kr-jd-smart-profile.lovable.app")
+  },
+  {
+    id: "kr-profile-search",
+    name: "Profile Studio",
+    description: "Search and explore curated executive profiles, capabilities, and credentials in a unified workspace.",
+    emoji: "🔎",
+    type: "Lovable App",
+    link: "https://kr-profile-search.lovable.app",
+    external: true,
+    category: "Enterprise & GCC",
+    screenshot: shot("https://kr-profile-search.lovable.app")
+  },
+
+  {
+    id: "kr-phd-research-assistant",
+    name: "PhD Research Companion",
+    description: "AI-augmented research workspace — literature review, citations, and thesis structuring for doctoral work.",
+    emoji: "🎓",
+    type: "Lovable App",
+    link: "https://kr-phd-research-assistant.lovable.app",
+    external: true,
+    category: "Data & Knowledge",
+    featured: true,
+    screenshot: shot("https://kr-phd-research-assistant.lovable.app")
+  },
+  {
+    id: "kr-kaggle-skill-hub",
+    name: "Kaggle Bootcamp",
+    description: "From zero to Kaggle competitions in 90 days — structured curriculum from a Kaggle Grandmaster.",
+    emoji: "📊",
+    type: "Lovable App",
+    link: "https://kr-kaggle-skill-hub.lovable.app",
+    external: true,
+    category: "Data & Knowledge",
+    screenshot: shot("https://kr-kaggle-skill-hub.lovable.app")
+  },
+  {
+    id: "kr-biztech-quizzer",
+    name: "BizTech Quiz Arena",
+    description: "Enterprise-grade multi-format quiz platform spanning business, technology, leadership, and AI domains.",
+    emoji: "🎯",
+    type: "Lovable App",
+    link: "https://kr-biztech-quizzer.lovable.app",
+    external: true,
+    category: "Data & Knowledge",
+    screenshot: shot("https://kr-biztech-quizzer.lovable.app")
+  },
+  {
+    id: "kr-interview-prep-vault",
+    name: "Interview Ready Pro",
+    description: "Curated interview-prep vault — patterns, scenarios, and answer frameworks for senior technology roles.",
+    emoji: "💼",
+    type: "Lovable App",
+    link: "https://kr-interview-prep-vault.lovable.app",
+    external: true,
+    category: "Data & Knowledge",
+    screenshot: shot("https://kr-interview-prep-vault.lovable.app")
+  },
+  {
+    id: "kr-learning-path-hub",
+    name: "Resource Navigator",
+    description: "Structured learning paths — discover curated resources across AI, QE, GCC, and enterprise tech tracks.",
+    emoji: "🧭",
+    type: "Lovable App",
+    link: "https://kr-learning-path-hub.lovable.app",
+    external: true,
+    category: "Data & Knowledge",
+    screenshot: shot("https://kr-learning-path-hub.lovable.app")
+  },
+  {
+    id: "kr-tech-curator-guide",
+    name: "Tech Curator",
+    description: "Hand-curated guide to trending technology — tools, frameworks, and emerging tech worth your attention.",
+    emoji: "📰",
+    type: "Lovable App",
+    link: "https://kr-tech-curator-guide.lovable.app",
+    external: true,
+    category: "Data & Knowledge",
+    screenshot: shot("https://kr-tech-curator-guide.lovable.app")
+  },
+  {
+    id: "kr-pocket-news",
+    name: "Pocket News",
+    description: "Personal tech-news pocket — fast, distraction-free reading of curated industry headlines.",
+    emoji: "📱",
+    type: "Lovable App",
+    link: "https://kr-pocket-news.lovable.app",
+    external: true,
+    category: "Data & Knowledge",
+    screenshot: shot("https://kr-pocket-news.lovable.app")
+  },
+
+  {
+    id: "kr-arcade-games",
+    name: "Arcade Vault",
+    description: "Classic arcade gaming PWA — Tetris, Arkanoid, and Arrows reimagined with smooth modern controls.",
+    emoji: "🕹️",
+    type: "Game",
+    link: "https://kr-arcade-games.lovable.app",
+    external: true,
+    category: "Personal & Tools",
+    screenshot: shot("https://kr-arcade-games.lovable.app")
+  },
+  {
+    id: "kr-jeopardy-quiz",
+    name: "Jeopardy Quiz",
+    description: "Responsive Jeopardy-style quiz app with scoring, smooth interface, and local-only state.",
+    emoji: "❓",
+    type: "Game",
+    link: "https://kr-jeopardy-quiz.lovable.app",
+    external: true,
+    category: "Personal & Tools",
+    screenshot: shot("https://kr-jeopardy-quiz.lovable.app")
+  },
+  {
+    id: "kr-islamic-duas",
+    name: "Divine Duas & Hadith",
+    description: "Searchable collection of duas and hadith — clean reading experience with bookmarks and categories.",
+    emoji: "🕌",
+    type: "Lovable App",
+    link: "https://kr-islamic-duas.lovable.app",
+    external: true,
+    category: "Personal & Tools",
+    screenshot: shot("https://kr-islamic-duas.lovable.app")
+  },
+  {
+    id: "tn2026predictions",
+    name: "TN 2026 Election Predictor",
+    description: "Tamil Nadu 2026 election dashboard — constituency-level predictions, sentiment, and simulation panels.",
+    emoji: "🗳️",
+    type: "Lovable App",
+    link: "https://tn2026predictions.lovable.app",
+    external: true,
+    category: "Personal & Tools",
+    screenshot: shot("https://tn2026predictions.lovable.app")
   }
 ];
 
