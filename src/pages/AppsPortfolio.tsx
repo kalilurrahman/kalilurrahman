@@ -89,10 +89,29 @@ const AppsPortfolio = () => {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.9 }}
               transition={{ duration: 0.3, delay: index * 0.05 }}
-              className="group relative flex flex-col p-6 border border-border bg-card rounded-2xl hover:border-primary/40 hover:shadow-xl transition-all h-full"
+              className="group relative flex flex-col border border-border bg-card rounded-2xl hover:border-primary/40 hover:shadow-xl transition-all h-full overflow-hidden"
             >
-              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary/40 to-accent/40 opacity-0 group-hover:opacity-100 transition-opacity rounded-t-2xl" />
-              
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary/40 to-accent/40 opacity-0 group-hover:opacity-100 transition-opacity z-10" />
+
+              {project.screenshot && (
+                <a
+                  href={project.link}
+                  target={project.external ? "_blank" : undefined}
+                  rel={project.external ? "noopener noreferrer" : undefined}
+                  className="block relative aspect-[4/3] overflow-hidden bg-secondary/40 border-b border-border"
+                >
+                  <img
+                    src={project.screenshot}
+                    alt={`${project.name} preview`}
+                    loading="lazy"
+                    onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }}
+                    className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.04]"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-card/80 via-transparent to-transparent pointer-events-none" />
+                </a>
+              )}
+
+              <div className="flex flex-col flex-1 p-6">
               <div className="flex justify-between items-start mb-4">
                 <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-primary/10 text-2xl group-hover:scale-110 transition-transform">
                   {project.emoji}
@@ -122,6 +141,7 @@ const AppsPortfolio = () => {
                 >
                   Explore {project.external ? <ExternalLink className="w-3.5 h-3.5" /> : "→"}
                 </a>
+              </div>
               </div>
             </motion.article>
           ))}
