@@ -1,3 +1,4 @@
+import Seo from "@/components/Seo";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ExternalLink, Brain, Sparkles, BookOpen, Award, Cpu, Database, Bot, GraduationCap } from "lucide-react";
@@ -54,6 +55,12 @@ const engagementTypes = [
 export default function ProfileAIAdvisor() {
   return (
     <div className="min-h-screen bg-background">
+      <Seo
+        title="AI Advisor Profile — Enterprise AI & Agentic Strategy | Kalilur Rahman"
+        description="Persona profile for Enterprise AI advisory — agentic AI architecture, LLM/GenAI implementation, AI governance for regulated industries, 350+ agent definitions, Kaggle Grandmaster credentials."
+        path="/profile/ai-advisor"
+        type="profile"
+      />
 
       {/* Hero */}
       <motion.section className="relative py-20 px-6 overflow-hidden" {...fadeUp}>

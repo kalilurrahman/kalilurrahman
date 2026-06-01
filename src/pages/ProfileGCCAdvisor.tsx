@@ -1,3 +1,4 @@
+import Seo from "@/components/Seo";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ExternalLink, Building2, Users, TrendingUp, Globe, Target, BarChart3, Shield, Briefcase } from "lucide-react";
@@ -48,6 +49,12 @@ const engagementTypes = [
 export default function ProfileGCCAdvisor() {
   return (
     <div className="min-h-screen bg-background">
+      <Seo
+        title="GCC Advisor Profile — Global Capability Center Leadership | Kalilur Rahman"
+        description="GCC strategy and execution: built and led a 400+ person Global Capability Center, co-founded India's first pharma digital innovation hub, GCC maturity models, talent and operating models."
+        path="/profile/gcc-advisor"
+        type="profile"
+      />
 
       {/* Hero */}
       <motion.section className="relative py-20 px-6 overflow-hidden" {...fadeUp}>

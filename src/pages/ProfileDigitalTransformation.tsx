@@ -1,3 +1,4 @@
+import Seo from "@/components/Seo";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ExternalLink, Zap, Rocket, Globe, Award, Lightbulb, BarChart3, Smartphone, Cloud } from "lucide-react";
@@ -56,6 +57,12 @@ const publications = [
 export default function ProfileDigitalTransformation() {
   return (
     <div className="min-h-screen bg-background">
+      <Seo
+        title="Digital Transformation Leader Profile | Kalilur Rahman"
+        description="Enterprise digital transformation across Pharma and Technology — Cloud, Data & AI strategy, modernization roadmaps, P&L ownership, recognized Top-10 global thought leader."
+        path="/profile/digital-transformation"
+        type="profile"
+      />
 
       {/* Hero */}
       <motion.section className="relative py-20 px-6 overflow-hidden" {...fadeUp}>

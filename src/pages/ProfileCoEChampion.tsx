@@ -1,3 +1,4 @@
+import Seo from "@/components/Seo";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ExternalLink, Layers, Wrench, BookOpen, Award, CheckCircle, Cog, FlaskConical, GraduationCap } from "lucide-react";
@@ -50,6 +51,12 @@ const impactMetrics = [
 export default function ProfileCoEChampion() {
   return (
     <div className="min-h-screen bg-background">
+      <Seo
+        title="CoE Champion Profile — Quality Engineering Centre of Excellence | Kalilur Rahman"
+        description="Turned around a 220-member TCoE from negative margins to 30%+ profitability. Test automation, performance, AI-augmented QE, ACUITAS AI QE framework aligned with ISO 42001 & NIST AI RMF."
+        path="/profile/coe-champion"
+        type="profile"
+      />
 
       {/* Hero */}
       <motion.section className="relative py-20 px-6 overflow-hidden" {...fadeUp}>
