@@ -114,7 +114,7 @@ export default function KnowledgeHubPage() {
         <motion.div className="text-center py-10 px-5 relative overflow-hidden mb-10" {...fadeUp}>
           <div className="absolute -top-14 left-1/2 -translate-x-1/2 w-[700px] h-[300px] bg-[radial-gradient(ellipse,hsl(var(--primary)/0.06),transparent_70%)] pointer-events-none" />
           <div className="text-[10.5px] font-semibold tracking-[0.08em] uppercase text-muted-foreground mb-3">Professional Knowledge Record</div>
-          <h1 className="font-serif text-4xl md:text-5xl text-foreground mb-2">Kalilur <em className="text-primary italic">Rahman</em></h1>
+          <h1 className="font-serif text-4xl md:text-5xl text-foreground mb-2">Kalilur <em className="text-primary italic">Rahman</em><span className="block text-base md:text-lg font-sans text-muted-foreground mt-1 font-normal not-italic tracking-normal">Global IT Executive &amp; AI Leader</span></h1>
           <p className="text-[13.5px] text-muted-foreground mb-8">Global IT Executive · Author · Kaggle Grandmaster · #3 Global Top Thought Leader</p>
           <div className="flex flex-wrap justify-center gap-3">
             {heroStats.map(s => (
