@@ -628,7 +628,7 @@ const ProfileShowcase = () => {
 
             {dropdownOpen && (
               <div className="absolute top-full left-0 right-0 z-50 border border-border bg-card shadow-xl max-h-72 overflow-y-auto">
-                {githubRepos.map((repo) => (
+                {repoList.map((repo) => (
                   <button
                     key={repo.name}
                     onClick={() => {
