@@ -128,9 +128,9 @@ const AppsPortfolio = () => {
                 </span>
               </div>
               
-              <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+              <h2 className="text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
                 {project.name}
-              </h3>
+              </h2>
               
               <p className="text-sm text-muted-foreground leading-relaxed mb-6 line-clamp-3">
                 {project.description}
