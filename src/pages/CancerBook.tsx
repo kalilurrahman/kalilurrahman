@@ -1,3 +1,4 @@
+import Seo from "@/components/Seo";
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -407,6 +408,12 @@ export default function CancerBook() {
 
   return (
     <div className="min-h-screen bg-background">
+      <Seo
+        title="Cancer Knowledge Explorer — Comprehensive Reference Book | Kalilur Rahman"
+        description="A searchable, AI-assisted reference of cancer types — symptoms, screening, staging, treatment options, clinical trials and patient resources. Educational content; not medical advice."
+        path="/cancer-book"
+        keywords="cancer knowledge, oncology reference, cancer types, screening, treatment, patient resources"
+      />
 
       {/* ── Hero ── */}
       <div className="border-b border-border bg-gradient-to-b from-primary/5 to-transparent">

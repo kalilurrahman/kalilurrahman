@@ -1,3 +1,4 @@
+import Seo from "@/components/Seo";
 import { useState, useMemo } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -34,6 +35,12 @@ export default function AgenticAIPage() {
 
   return (
     <div className="min-h-screen bg-background">
+      <Seo
+        title="350+ AI Agents Library — Agentic AI Catalog | Kalilur Rahman"
+        description="Searchable library of 350+ production-ready AI agent definitions across 28 categories — autonomous agents, multi-agent orchestration, LangChain, CrewAI patterns, prompts and capability cards."
+        path="/ai-agents"
+        keywords="AI agents library, agentic AI, autonomous agents, LangChain, CrewAI, multi-agent orchestration, AI prompts catalog"
+      />
 
       <div className="flex">
         {/* Sidebar */}

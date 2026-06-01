@@ -1,3 +1,4 @@
+import Seo from "@/components/Seo";
 import Hero from "@/components/Hero";
 import ExecutiveSummary from "@/components/ExecutiveSummary";
 import Leadership from "@/components/Leadership";
@@ -19,6 +20,13 @@ import FeaturedProjects from "@/components/FeaturedProjects";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Seo
+        title="Kalilur Rahman | Global IT Executive, AI Thought Leader & Kaggle Grandmaster"
+        description="Kalilur Rahman — Global IT Executive with 29+ years in enterprise transformation, GCC leadership, AI/Data strategy and Quality Engineering. Kaggle Legacy Grandmaster, author of 3 books, 482 certifications, 350+ AI agents, Top-10 global thought leader."
+        path="/"
+        keywords="Kalilur Rahman, Global IT Executive, CIO, GCC Leadership, AI Strategy, Agentic AI, Kaggle Grandmaster, Quality Engineering, Digital Transformation, Enterprise Architecture, AI Thought Leader, Chennai India"
+        type="profile"
+      />
       <ScrollProgress />
       <ScrollToTop />
       <Hero />

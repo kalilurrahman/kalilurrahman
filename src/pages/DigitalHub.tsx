@@ -1,3 +1,4 @@
+import Seo from "@/components/Seo";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { projects } from "@/data/projects";
@@ -62,6 +63,12 @@ const fadeUp = {
 export default function DigitalHub() {
   return (
     <div className="min-h-screen bg-background">
+      <Seo
+        title="Digital Hub — Kalilur Rahman | Master Profile & Platforms"
+        description="One-page master profile aggregating every platform — LinkedIn, GitHub, Kaggle, Amazon, Google Scholar, Credly, Framer — plus 482 certifications, 16 publications and the full project portfolio of Kalilur Rahman."
+        path="/digital-hub"
+        keywords="Kalilur Rahman digital hub, master profile, LinkedIn Kaggle GitHub portfolio, certifications, publications"
+      />
 
       {/* Hero */}
       <motion.section className="text-center py-14 px-6 relative overflow-hidden" {...fadeUp}>
