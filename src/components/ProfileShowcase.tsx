@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { ExternalLink, ChevronDown, Github } from "lucide-react";
 import Section from "./Section";
+import { useGithubRepos } from "@/hooks/use-github-repos";
 
 import framerScreenshot from "@/assets/screenshots/apps/framer-portfolio.png";
 import githubScreenshot from "@/assets/screenshots/apps/github-profile.png";
