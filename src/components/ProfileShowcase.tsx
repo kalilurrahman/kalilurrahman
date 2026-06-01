@@ -509,6 +509,8 @@ const ProfileShowcase = () => {
   const { repos: liveRepos, total: liveTotal, updatedAt: liveUpdatedAt } = useGithubRepos(githubRepos);
   const repoList = liveRepos.length ? liveRepos : githubRepos;
   const selectedRepoData = repoList.find((r) => r.name === selectedRepo);
+
+  return (
     <Section
       id="profiles"
       title="Profile Showcase"
