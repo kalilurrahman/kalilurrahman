@@ -595,7 +595,14 @@ const ProfileShowcase = () => {
             </div>
             <div>
               <h3 className="font-serif text-xl text-foreground">GitHub Repositories</h3>
-              <p className="text-xs text-muted-foreground">73+ public repos — select one to explore</p>
+              <p className="text-xs text-muted-foreground">
+                {liveTotal}+ public repos — select one to explore
+                {liveUpdatedAt && (
+                  <span className="ml-2 font-mono opacity-70">
+                    · last push {new Date(liveUpdatedAt).toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" })}
+                  </span>
+                )}
+              </p>
             </div>
             <a
               href="https://github.com/kalilurrahman"
