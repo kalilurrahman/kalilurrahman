@@ -702,7 +702,7 @@ const ProfileShowcase = () => {
               GitHub Profile
             </h3>
             <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-              73+ repositories — quality engineering artefacts, LLM experiments, Kaggle notebooks & more.
+              {liveTotal}+ repositories — quality engineering artefacts, LLM experiments, Kaggle notebooks & more.
             </p>
             <span className="inline-flex items-center gap-1.5 text-sm text-primary opacity-0 group-hover:opacity-100 transition-opacity">
               Visit Profile <ExternalLink className="w-3.5 h-3.5" />
