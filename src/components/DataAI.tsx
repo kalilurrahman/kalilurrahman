@@ -3,7 +3,7 @@ import Section from "./Section";
 import { ExternalLink } from "lucide-react";
 
 const repos = [
-  { name: "GitHub Profile", url: "https://github.com/kalilurrahman", desc: "46+ repositories covering QE artifacts & LLMs" },
+  { name: "GitHub Profile", url: "https://github.com/kalilurrahman", desc: "73+ repositories covering QE artifacts & LLMs" },
   { name: "Kaggle Profile", url: "https://www.kaggle.com/kalilurrahman", desc: "Legacy Grandmaster · 1,265+ discussions" },
   { name: "ACUITAS AI QE Framework", url: "https://kr-acuiitas-clarity-frameworks.lovable.app/", desc: "ISO 42001 & NIST AI RMF Aligned" },
 ];
