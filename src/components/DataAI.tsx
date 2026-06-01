@@ -3,7 +3,7 @@ import Section from "./Section";
 import { ExternalLink } from "lucide-react";
 
 const repos = [
-  { name: "GitHub Profile", url: "https://github.com/kalilurrahman", desc: "46+ repositories covering QE artifacts & LLMs" },
+  { name: "GitHub Profile", url: "https://github.com/kalilurrahman", desc: "73+ repositories covering QE artifacts & LLMs" },
   { name: "Kaggle Profile", url: "https://www.kaggle.com/kalilurrahman", desc: "Legacy Grandmaster · 1,265+ discussions" },
   { name: "ACUITAS AI QE Framework", url: "https://kr-acuiitas-clarity-frameworks.lovable.app/", desc: "ISO 42001 & NIST AI RMF Aligned" },
 ];
@@ -33,7 +33,7 @@ const DataAI = () => {
           <p>
             Beyond competitions, I've developed the <span className="text-foreground font-semibold">ACUITAS AI Quality Engineering Framework</span>, 
             bridging the gap between traditional testing and the requirements of the EU AI Act and NIST AI RMF. 
-            My technical portfolio spans 46+ GitHub repositories focused on scaling automation and data-driven delivery.
+            My technical portfolio spans 73+ GitHub repositories focused on scaling automation and data-driven delivery.
           </p>
         </motion.div>
 

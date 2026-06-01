@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { ExternalLink, ChevronDown, Github } from "lucide-react";
 import Section from "./Section";
+import { useGithubRepos } from "@/hooks/use-github-repos";
 
 import framerScreenshot from "@/assets/screenshots/apps/framer-portfolio.png";
 import githubScreenshot from "@/assets/screenshots/apps/github-profile.png";
@@ -505,7 +506,9 @@ const TextLinkCard = ({ profile, index }: { profile: TextProfile; index: number 
 const ProfileShowcase = () => {
   const [selectedRepo, setSelectedRepo] = useState<string>("");
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const selectedRepoData = githubRepos.find((r) => r.name === selectedRepo);
+  const { repos: liveRepos, total: liveTotal, updatedAt: liveUpdatedAt } = useGithubRepos(githubRepos);
+  const repoList = liveRepos.length ? liveRepos : githubRepos;
+  const selectedRepoData = repoList.find((r) => r.name === selectedRepo);
 
   return (
     <Section
@@ -592,7 +595,14 @@ const ProfileShowcase = () => {
             </div>
             <div>
               <h3 className="font-serif text-xl text-foreground">GitHub Repositories</h3>
-              <p className="text-xs text-muted-foreground">73+ public repos — select one to explore</p>
+              <p className="text-xs text-muted-foreground">
+                {liveTotal}+ public repos — select one to explore
+                {liveUpdatedAt && (
+                  <span className="ml-2 font-mono opacity-70">
+                    · last push {new Date(liveUpdatedAt).toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" })}
+                  </span>
+                )}
+              </p>
             </div>
             <a
               href="https://github.com/kalilurrahman"
@@ -618,7 +628,7 @@ const ProfileShowcase = () => {
 
             {dropdownOpen && (
               <div className="absolute top-full left-0 right-0 z-50 border border-border bg-card shadow-xl max-h-72 overflow-y-auto">
-                {githubRepos.map((repo) => (
+                {repoList.map((repo) => (
                   <button
                     key={repo.name}
                     onClick={() => {
@@ -692,7 +702,7 @@ const ProfileShowcase = () => {
               GitHub Profile
             </h3>
             <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-              73+ repositories — quality engineering artefacts, LLM experiments, Kaggle notebooks & more.
+              {liveTotal}+ repositories — quality engineering artefacts, LLM experiments, Kaggle notebooks & more.
             </p>
             <span className="inline-flex items-center gap-1.5 text-sm text-primary opacity-0 group-hover:opacity-100 transition-opacity">
               Visit Profile <ExternalLink className="w-3.5 h-3.5" />
