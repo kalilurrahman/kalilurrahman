@@ -132,7 +132,7 @@ export default function AgenticAIPage() {
             <div key={sec.id} className="mb-10">
               <div className="flex items-center gap-2.5 pb-3 mb-4 border-b border-border">
                 <span className="text-xl">{sec.emoji}</span>
-                <span className="font-serif text-xl text-foreground">{sec.title}</span>
+                <h2 className="font-serif text-xl text-foreground">{sec.title}</h2>
                 <span className={`ml-auto rounded-lg px-2 py-0.5 text-[10px] font-mono ${sec.newBadge ? "bg-green-500/10 text-green-500 border border-green-500/20" : "bg-secondary text-muted-foreground"}`}>{sec.badge}</span>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
