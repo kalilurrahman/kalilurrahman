@@ -33,7 +33,7 @@ const DataAI = () => {
           <p>
             Beyond competitions, I've developed the <span className="text-foreground font-semibold">ACUITAS AI Quality Engineering Framework</span>, 
             bridging the gap between traditional testing and the requirements of the EU AI Act and NIST AI RMF. 
-            My technical portfolio spans 46+ GitHub repositories focused on scaling automation and data-driven delivery.
+            My technical portfolio spans 73+ GitHub repositories focused on scaling automation and data-driven delivery.
           </p>
         </motion.div>
 
