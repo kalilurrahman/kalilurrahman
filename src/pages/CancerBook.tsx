@@ -1,3 +1,4 @@
+import Seo from "@/components/Seo";
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {

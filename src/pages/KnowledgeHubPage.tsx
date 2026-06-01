@@ -1,3 +1,4 @@
+import Seo from "@/components/Seo";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -101,6 +102,12 @@ export default function KnowledgeHubPage() {
 
   return (
     <div className="min-h-screen bg-background">
+      <Seo
+        title="Knowledge Hub — 482 Certifications, 16 Publications & Research | Kalilur Rahman"
+        description="Curated knowledge library: 482 certifications across AWS, GCP, Azure, AI/ML, leadership; 16 publications and books; 13 awards; 293 learning completions; 33 recommendations from peers and C-suite leaders."
+        path="/knowledge-hub"
+        keywords="certifications, AWS Machine Learning Specialty, Kaggle Grandmaster, publications, white papers, awards"
+      />
 
       <main className="max-w-[1100px] mx-auto px-6 py-10">
         {/* Hero */}

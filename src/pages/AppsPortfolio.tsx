@@ -1,3 +1,4 @@
+import Seo from "@/components/Seo";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ExternalLink, Layers, Search } from "lucide-react";
@@ -16,6 +17,12 @@ const AppsPortfolio = () => {
 
   return (
     <div className="container max-w-6xl mx-auto px-6 py-24 min-h-screen">
+      <Seo
+        title="Apps Portfolio — 60+ Products, Tools & Lovable Apps | Kalilur Rahman"
+        description="A curated portfolio of 60+ applications spanning AI tools, quality engineering platforms, knowledge hubs, finance prompts, healthcare/pharma guides and developer utilities — built by Kalilur Rahman."
+        path="/apps-portfolio"
+        keywords="apps portfolio, Lovable apps, AI tools, quality engineering, knowledge hub, finance prompts, pharma healthcare guides"
+      />
       <div className="mb-16 text-center max-w-3xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
