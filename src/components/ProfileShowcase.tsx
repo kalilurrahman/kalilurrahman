@@ -506,9 +506,9 @@ const TextLinkCard = ({ profile, index }: { profile: TextProfile; index: number 
 const ProfileShowcase = () => {
   const [selectedRepo, setSelectedRepo] = useState<string>("");
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const selectedRepoData = githubRepos.find((r) => r.name === selectedRepo);
-
-  return (
+  const { repos: liveRepos, total: liveTotal, updatedAt: liveUpdatedAt } = useGithubRepos(githubRepos);
+  const repoList = liveRepos.length ? liveRepos : githubRepos;
+  const selectedRepoData = repoList.find((r) => r.name === selectedRepo);
     <Section
       id="profiles"
       title="Profile Showcase"
