@@ -42,8 +42,9 @@ const Hero = () => {
             <Rocket className="w-3 h-3" /> Digital Transformation & AI Strategy
           </motion.div>
 
-          <h1 className="text-6xl md:text-8xl font-serif mb-6 tracking-tight leading-none">
+          <h1 className="text-6xl md:text-8xl font-serif mb-4 tracking-tight leading-none">
             Kalilur <span className="text-gradient-gold italic">Rahman</span>
+            <span className="block text-lg md:text-2xl font-sans text-muted-foreground mt-3 font-normal not-italic tracking-normal">Global IT Executive &amp; AI Leader</span>
           </h1>
 
           <p className="max-w-2xl mx-auto text-muted-foreground text-lg md:text-xl leading-relaxed mb-10">
