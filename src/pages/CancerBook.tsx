@@ -197,6 +197,7 @@ function CancerDetailPanel({ cancer, onClose }: { cancer: CancerEntry; onClose: 
           </div>
           <button
             onClick={onClose}
+            aria-label="Close"
             className="p-2 rounded-sm hover:bg-border transition-colors text-muted-foreground hover:text-foreground shrink-0"
           >
             <X className="w-5 h-5" />
