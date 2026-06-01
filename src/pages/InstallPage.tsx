@@ -49,6 +49,11 @@ export default function InstallPage() {
 
   return (
     <div className="min-h-screen bg-background">
+      <Seo
+        title="Install the KR Portfolio App | Kalilur Rahman"
+        description="Install the Kalilur Rahman portfolio as a Progressive Web App on iOS, Android, macOS or Windows for offline access and a native-app experience."
+        path="/install"
+      />
       <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
