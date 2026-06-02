@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..800,50;1,9..144,300..700,50&family=Inter+Tight:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -200,24 +200,47 @@
     @apply border-border;
   }
 
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
   body {
     @apply bg-background text-foreground font-sans text-[15px];
-    font-family: 'DM Sans', system-ui, sans-serif;
+    font-family: 'Inter Tight', ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "ss01" 1, "cv11" 1;
+    font-optical-sizing: auto;
+    letter-spacing: -0.005em;
+    line-height: 1.6;
     overflow-wrap: break-word;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    font-weight: 600;
+  h1, h2, h3, h4, h5, h6, .font-serif, .font-display {
+    font-family: 'Fraunces', 'Iowan Old Style', Georgia, "Times New Roman", serif;
+    font-weight: 500;
+    font-optical-sizing: auto;
+    font-variation-settings: "opsz" 96, "SOFT" 50;
+    font-feature-settings: "kern" 1, "liga" 1, "dlig" 1, "onum" 1, "ss01" 1;
+    letter-spacing: -0.02em;
+    line-height: 1.08;
     overflow-wrap: anywhere;
   }
 
+  h1 { font-variation-settings: "opsz" 144, "SOFT" 50; font-weight: 500; letter-spacing: -0.03em; }
+  h2 { font-variation-settings: "opsz" 96, "SOFT" 50; font-weight: 500; letter-spacing: -0.025em; }
+  h3 { font-variation-settings: "opsz" 48, "SOFT" 50; font-weight: 600; letter-spacing: -0.02em; }
+  h4, h5, h6 { font-variation-settings: "opsz" 24, "SOFT" 50; font-weight: 600; letter-spacing: -0.015em; }
+
+  p, li { font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "ss01" 1; }
+
   code, pre, .font-mono {
-    font-family: 'JetBrains Mono', Menlo, monospace;
+    font-family: 'JetBrains Mono', ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-feature-settings: "liga" 1, "calt" 1, "zero" 1, "ss01" 1;
   }
 
-  .font-display {
-    font-family: 'Cormorant Garamond', Georgia, serif;
+  .font-sans {
+    font-family: 'Inter Tight', ui-sans-serif, system-ui, sans-serif;
   }
 }
 
