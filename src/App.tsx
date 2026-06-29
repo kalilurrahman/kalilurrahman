@@ -38,25 +38,35 @@ const App = () => (
             >
               Skip to main content
             </a>
-            <Navbar />
-            <main id="main-content" className="pt-12">
-              <Suspense fallback={<PageLoader />}>
-                <Routes>
-                  <Route path="/" element={<Index />} />
-                  <Route path="/digital-hub" element={<DigitalHub />} />
-                  <Route path="/knowledge-hub" element={<KnowledgeHubPage />} />
-                  <Route path="/ai-agents" element={<AgenticAIPage />} />
-                  <Route path="/apps-portfolio" element={<AppsPortfolio />} />
-                  <Route path="/cancer-book" element={<CancerBook />} />
-                  <Route path="/profile/ai-advisor" element={<ProfileAIAdvisor />} />
-                  <Route path="/profile/gcc-advisor" element={<ProfileGCCAdvisor />} />
-                  <Route path="/profile/coe-champion" element={<ProfileCoEChampion />} />
-                  <Route path="/profile/digital-transformation" element={<ProfileDigitalTransformation />} />
-                  <Route path="/install" element={<InstallPage />} />
-                  <Route path="*" element={<NotFound />} />
-                </Routes>
-              </Suspense>
-            </main>
+            <Suspense fallback={<PageLoader />}>
+              <Routes>
+                <Route path="/" element={<Index />} />
+                <Route
+                  path="*"
+                  element={
+                    <>
+                      <Navbar />
+                      <main id="main-content" className="pt-12">
+                        <Routes>
+                          <Route path="/digital-hub" element={<DigitalHub />} />
+                          <Route path="/knowledge-hub" element={<KnowledgeHubPage />} />
+                          <Route path="/ai-agents" element={<AgenticAIPage />} />
+                          <Route path="/apps-portfolio" element={<AppsPortfolio />} />
+                          <Route path="/cancer-book" element={<CancerBook />} />
+                          <Route path="/profile/ai-advisor" element={<ProfileAIAdvisor />} />
+                          <Route path="/profile/gcc-advisor" element={<ProfileGCCAdvisor />} />
+                          <Route path="/profile/coe-champion" element={<ProfileCoEChampion />} />
+                          <Route path="/profile/digital-transformation" element={<ProfileDigitalTransformation />} />
+                          <Route path="/install" element={<InstallPage />} />
+                          <Route path="*" element={<NotFound />} />
+                        </Routes>
+                      </main>
+                    </>
+                  }
+                />
+              </Routes>
+            </Suspense>
+
           </BrowserRouter>
         </ErrorBoundary>
       </TooltipProvider>
