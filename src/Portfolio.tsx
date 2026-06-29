@@ -322,4 +322,9 @@ export default function Portfolio() {
       <footer className="border-t border-[#e8e8ed] dark:border-[#2a2a2e] py-8 text-[13px] text-[#86868b]">
         <div className="max-w-[1120px] mx-auto px-6 flex justify-between flex-wrap gap-3.5">
           <span>© 2026 Kalilur Rahman. All rights reserved.</span>
-          <a href="https://kalilur-portfolio.lovable.app" target="_blank" rel="noopene
+          <a href="https://kalilur-portfolio.lovable.app" target="_blank" rel="noopener noreferrer" className="hover:text-[#1d1d1f] dark:hover:text-white transition-colors">kalilur-portfolio.lovable.app</a>
+        </div>
+      </footer>
+    </div>
+  );
+}
