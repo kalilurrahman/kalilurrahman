@@ -19,6 +19,7 @@ const entries: SitemapEntry[] = [
   { path: "/ai-agents", changefreq: "weekly", priority: "0.9" },
   { path: "/apps-portfolio", changefreq: "weekly", priority: "0.9" },
   { path: "/cancer-book", changefreq: "monthly", priority: "0.7" },
+  { path: "/tailored-cv", changefreq: "weekly", priority: "0.9" },
   { path: "/profile/ai-advisor", changefreq: "monthly", priority: "0.8" },
   { path: "/profile/gcc-advisor", changefreq: "monthly", priority: "0.8" },
   { path: "/profile/coe-champion", changefreq: "monthly", priority: "0.8" },
