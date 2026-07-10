@@ -14,16 +14,199 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      corpus_documents: {
+        Row: {
+          char_count: number
+          created_at: string
+          file_path: string | null
+          id: string
+          owner_id: string
+          parsed_text: string | null
+          persona_tags: string[]
+          source_type: Database["public"]["Enums"]["corpus_source_type"]
+          title: string
+        }
+        Insert: {
+          char_count?: number
+          created_at?: string
+          file_path?: string | null
+          id?: string
+          owner_id: string
+          parsed_text?: string | null
+          persona_tags?: string[]
+          source_type?: Database["public"]["Enums"]["corpus_source_type"]
+          title: string
+        }
+        Update: {
+          char_count?: number
+          created_at?: string
+          file_path?: string | null
+          id?: string
+          owner_id?: string
+          parsed_text?: string | null
+          persona_tags?: string[]
+          source_type?: Database["public"]["Enums"]["corpus_source_type"]
+          title?: string
+        }
+        Relationships: []
+      }
+      corpus_urls: {
+        Row: {
+          char_count: number
+          created_at: string
+          fetched_text: string | null
+          id: string
+          owner_id: string
+          persona_tags: string[]
+          title: string | null
+          url: string
+        }
+        Insert: {
+          char_count?: number
+          created_at?: string
+          fetched_text?: string | null
+          id?: string
+          owner_id: string
+          persona_tags?: string[]
+          title?: string | null
+          url: string
+        }
+        Update: {
+          char_count?: number
+          created_at?: string
+          fetched_text?: string | null
+          id?: string
+          owner_id?: string
+          persona_tags?: string[]
+          title?: string | null
+          url?: string
+        }
+        Relationships: []
+      }
+      generated_cvs: {
+        Row: {
+          created_at: string
+          id: string
+          industry: string | null
+          jd_text: string | null
+          jd_url: string | null
+          output_json: Json
+          owner_id: string | null
+          persona: string | null
+          role: string | null
+          tone: string | null
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          industry?: string | null
+          jd_text?: string | null
+          jd_url?: string | null
+          output_json: Json
+          owner_id?: string | null
+          persona?: string | null
+          role?: string | null
+          tone?: string | null
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          industry?: string | null
+          jd_text?: string | null
+          jd_url?: string | null
+          output_json?: Json
+          owner_id?: string | null
+          persona?: string | null
+          role?: string | null
+          tone?: string | null
+        }
+        Relationships: []
+      }
+      generation_rate_limits: {
+        Row: {
+          count: number
+          day: string
+          id: string
+          visitor_hash: string
+        }
+        Insert: {
+          count?: number
+          day?: string
+          id?: string
+          visitor_hash: string
+        }
+        Update: {
+          count?: number
+          day?: string
+          id?: string
+          visitor_hash?: string
+        }
+        Relationships: []
+      }
+      profiles: {
+        Row: {
+          created_at: string
+          display_name: string | null
+          email: string | null
+          id: string
+        }
+        Insert: {
+          created_at?: string
+          display_name?: string | null
+          email?: string | null
+          id: string
+        }
+        Update: {
+          created_at?: string
+          display_name?: string | null
+          email?: string | null
+          id?: string
+        }
+        Relationships: []
+      }
+      user_roles: {
+        Row: {
+          created_at: string
+          id: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          role?: Database["public"]["Enums"]["app_role"]
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      has_role: {
+        Args: {
+          _role: Database["public"]["Enums"]["app_role"]
+          _user_id: string
+        }
+        Returns: boolean
+      }
     }
     Enums: {
-      [_ in never]: never
+      app_role: "admin" | "user"
+      corpus_source_type:
+        | "cv"
+        | "cover_letter"
+        | "testimonial"
+        | "book"
+        | "publication"
+        | "other"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -150,6 +333,16 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      app_role: ["admin", "user"],
+      corpus_source_type: [
+        "cv",
+        "cover_letter",
+        "testimonial",
+        "book",
+        "publication",
+        "other",
+      ],
+    },
   },
 } as const
