@@ -148,13 +148,14 @@ if os.path.exists(dist_path):
 
     @app.get("/{full_path:path}")
     async def serve_spa(full_path: str):
-        # Check if the file exists in dist (e.g. favicon.svg)
-        file_path = os.path.join(dist_path, full_path)
-        if os.path.isfile(file_path):
-            return FileResponse(file_path)
-            
-        # Fallback to SPA root
-        return FileResponse(os.path.join(dist_path, "index.html"))
+        # Prevent path traversal: resolve requested path and ensure it stays within dist_path
+        dist_real = os.path.realpath(dist_path)
+        requested = os.path.realpath(os.path.join(dist_real, full_path))
+        if requested == dist_real or requested.startswith(dist_real + os.sep):
+            if os.path.isfile(requested):
+                return FileResponse(requested)
+        # Fallback to SPA root for unknown / unsafe paths
+        return FileResponse(os.path.join(dist_real, "index.html"))
 else:
     @app.get("/")
     async def root():
