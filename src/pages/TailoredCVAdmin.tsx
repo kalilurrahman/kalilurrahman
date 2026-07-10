@@ -9,7 +9,6 @@ import mammoth from "mammoth";
 
 // pdfjs setup for browser
 import * as pdfjsLib from "pdfjs-dist";
-// @ts-expect-error worker URL import
 import pdfjsWorker from "pdfjs-dist/build/pdf.worker.min.mjs?url";
 pdfjsLib.GlobalWorkerOptions.workerSrc = pdfjsWorker;
 
@@ -58,7 +57,7 @@ export default function TailoredCVAdmin() {
       for (let i = 1; i <= pdf.numPages; i++) {
         const page = await pdf.getPage(i);
         const content = await page.getTextContent();
-        text += content.items.map((it: { str?: string }) => it.str ?? "").join(" ") + "\n\n";
+        text += content.items.map((it) => ("str" in it ? it.str : "")).join(" ") + "\n\n";
       }
       return text;
     }

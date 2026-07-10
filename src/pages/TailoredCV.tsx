@@ -137,7 +137,7 @@ export default function TailoredCV() {
 
   const exportDocx = async () => {
     if (!cv) return;
-    const para = (t: string, opts: { bold?: boolean; size?: number; heading?: HeadingLevel } = {}) =>
+    const para = (t: string, opts: { bold?: boolean; size?: number; heading?: (typeof HeadingLevel)[keyof typeof HeadingLevel] } = {}) =>
       new Paragraph({
         heading: opts.heading,
         children: [new TextRun({ text: t, bold: opts.bold, size: opts.size })],
@@ -184,7 +184,8 @@ export default function TailoredCV() {
     const { error } = await supabase.from("generated_cvs").insert({
       owner_id: user?.id,
       industry, role, jd_text: jd, persona, tone,
-      output_json: cv as unknown as Record<string, unknown>,
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      output_json: cv as any,
     });
     if (error) toast.error(error.message);
     else toast.success("Variant saved.");
