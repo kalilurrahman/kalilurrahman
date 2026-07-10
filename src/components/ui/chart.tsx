@@ -63,6 +63,8 @@ function isValidCSSColor(value: string): boolean {
   return /^(#[0-9A-Fa-f]{3,8}|rgb\([\d\s,.%]+\)|rgba\([\d\s,.%]+\)|hsl\([\d\s,.%]+\)|hsla\([\d\s,.%]+\)|[a-zA-Z]+)$/.test(value.trim());
 }
 
+const sanitizeCssIdent = (value: string): string => value.replace(/[^a-zA-Z0-9_-]/g, "");
+
 const ChartStyle = ({ id, config }: { id: string; config: ChartConfig }) => {
   const colorConfig = Object.entries(config).filter(([_, config]) => config.theme || config.color);
 
@@ -70,17 +72,20 @@ const ChartStyle = ({ id, config }: { id: string; config: ChartConfig }) => {
     return null;
   }
 
+  const safeId = sanitizeCssIdent(id);
+
   return (
     <style
       dangerouslySetInnerHTML={{
         __html: Object.entries(THEMES)
           .map(
             ([theme, prefix]) => `
-${prefix} [data-chart=${id}] {
+${prefix} [data-chart=${safeId}] {
 ${colorConfig
   .map(([key, itemConfig]) => {
     const color = itemConfig.theme?.[theme as keyof typeof itemConfig.theme] || itemConfig.color;
-    return color && isValidCSSColor(color) ? `  --color-${key}: ${color};` : null;
+    const safeKey = sanitizeCssIdent(key);
+    return color && safeKey && isValidCSSColor(color) ? `  --color-${safeKey}: ${color};` : null;
   })
   .join("\n")}
 }
