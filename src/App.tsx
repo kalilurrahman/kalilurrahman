@@ -21,6 +21,9 @@ const ProfileDigitalTransformation = lazy(() => import("./pages/ProfileDigitalTr
 const InstallPage = lazy(() => import("./pages/InstallPage"));
 const AppsPortfolio = lazy(() => import("./pages/AppsPortfolio"));
 const CancerBook = lazy(() => import("./pages/CancerBook"));
+const TailoredCV = lazy(() => import("./pages/TailoredCV"));
+const TailoredCVAdmin = lazy(() => import("./pages/TailoredCVAdmin"));
+const AuthPage = lazy(() => import("./pages/Auth"));
 
 const queryClient = new QueryClient();
 
@@ -53,6 +56,9 @@ const App = () => (
                           <Route path="/ai-agents" element={<AgenticAIPage />} />
                           <Route path="/apps-portfolio" element={<AppsPortfolio />} />
                           <Route path="/cancer-book" element={<CancerBook />} />
+                          <Route path="/tailored-cv" element={<TailoredCV />} />
+                          <Route path="/tailored-cv/admin" element={<TailoredCVAdmin />} />
+                          <Route path="/auth" element={<AuthPage />} />
                           <Route path="/profile/ai-advisor" element={<ProfileAIAdvisor />} />
                           <Route path="/profile/gcc-advisor" element={<ProfileGCCAdvisor />} />
                           <Route path="/profile/coe-champion" element={<ProfileCoEChampion />} />
