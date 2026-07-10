@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { ThemeToggle } from "./ThemeToggle";
 import {
   Home, FileText, Trophy, Award, Users, Brain, Bot, BookOpen,
-  Briefcase, Building2, Layers, Zap, Globe, Mail, Menu, ChevronDown, HeartPulse, Download
+  Briefcase, Building2, Layers, Zap, Globe, Mail, Menu, ChevronDown, HeartPulse, Download, Sparkles
 } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 
@@ -19,6 +19,7 @@ const sectionLinks = [
 ];
 
 const pageLinks = [
+  { label: "Tailored CV", to: "/tailored-cv", icon: Sparkles },
   { label: "Knowledge Hub", to: "/knowledge-hub", icon: BookOpen },
   { label: "AI Agents", to: "/ai-agents", icon: Bot },
   { label: "Digital Hub", to: "/digital-hub", icon: Globe },
